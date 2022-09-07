@@ -1,0 +1,166 @@
+archetype (adl_version=1.4; uid=6e220876-32f7-4469-af5f-6507a75256b3)
+	openEHR-EHR-EVALUATION.verification_of_death.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2022-09-07">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"860ea60d5261c9cba6a43087c23fc6a4">
+		["build_uid"] = <"3de8bf04-dd0f-3374-b557-2987da9bc926">
+	>
+
+definition
+	EVALUATION[at0000] matches {    -- Verification_of_Death
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- D&T_verification
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- ID_confirmed
+						value matches {
+							DV_BOOLEAN matches {
+								value matches {true}
+							}
+						}
+					}
+					ELEMENT[at0006] occurrences matches {0..1} matches {    -- General_inspection
+						value matches {
+							DV_BOOLEAN matches {*}
+						}
+					}
+					ELEMENT[at0007] occurrences matches {0..1} matches {    -- Respiratory_effort
+						value matches {
+							DV_BOOLEAN matches {*}
+						}
+					}
+					ELEMENT[at0008] occurrences matches {0..1} matches {    -- Verbal_stimuli
+						value matches {
+							DV_BOOLEAN matches {*}
+						}
+					}
+					ELEMENT[at0009] occurrences matches {0..1} matches {    -- Painful_stimuli
+						value matches {
+							DV_BOOLEAN matches {*}
+						}
+					}
+					ELEMENT[at0010] occurrences matches {0..1} matches {    -- Pupil_assessment
+						value matches {
+							DV_BOOLEAN matches {*}
+						}
+					}
+					ELEMENT[at0011] occurrences matches {0..1} matches {    -- Pulse_check
+						value matches {
+							DV_BOOLEAN matches {*}
+						}
+					}
+					ELEMENT[at0012] occurrences matches {0..1} matches {    -- Heart_sounds
+						value matches {
+							DV_BOOLEAN matches {*}
+						}
+					}
+					ELEMENT[at0013] occurrences matches {0..1} matches {    -- Respiratory_sounds
+						value matches {
+							DV_BOOLEAN matches {*}
+						}
+					}
+					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Time_confirmation
+						value matches {
+							DV_BOOLEAN matches {*}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0004] matches {*}    -- Item tree
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Verification_of_Death">
+					description = <"Verification_of_Death">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"ID_confirmed">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"D&T_verification">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0006"] = <
+					text = <"General_inspection">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Respiratory_effort">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Verbal_stimuli">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Painful_stimuli">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Pupil_assessment">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Pulse_check">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Heart_sounds">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Respiratory_sounds">
+					description = <"">
+				>
+				["min"] = <
+					text = <"minute(s)">
+					description = <"minute">
+				>
+				["at0015"] = <
+					text = <"Time_confirmation">
+					description = <"">
+				>
+			>
+		>
+	>
