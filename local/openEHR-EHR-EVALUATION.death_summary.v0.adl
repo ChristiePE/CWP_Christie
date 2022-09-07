@@ -64,7 +64,7 @@ US Standard Certificate of Death [Internet]. Atlanta; Centre for Disease Control
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"18e22c71270d905e9a8ce62974b6c739">
+		["MD5-CAM-1.0.1"] = <"40bac87459b19c00533689b3a1eeb939">
 		["build_uid"] = <"2929d0ad-3bc1-4f57-b417-1f1b825a39d5">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -74,7 +74,7 @@ definition
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0116] occurrences matches {0..1} matches {    -- D&T_Death
+					ELEMENT[at0116] occurrences matches {0..1} matches {    -- D&T_death
 						value matches {
 							DV_DATE_TIME matches {*}
 						}
@@ -157,7 +157,7 @@ ontology
 					comment = <"For example: 'City Hospital'; 'Mother's house'; or 'Eiffel tower'. This data element has multiple occurrences to allow more than one level of detail about the place of death, such as recording both 'City Hospital' and 'Ward 6 North'.">
 				>
 				["at0116"] = <
-					text = <"D&T_Death">
+					text = <"D&T_death">
 					description = <"">
 				>
 			>
@@ -200,7 +200,7 @@ ontology
 					comment = <"For eksempel: 'Lokalsykehus', 'Forelders hus'; eller 'Eiffeltårnet'. Dette dataelementet har multiple forekomster for å tillate mer enn ett detaljnivå om dødssted, som for eksempel å registrere både 'Lokalsykehus' og 'Kirurgisk sengepost nord'.">
 				>
 				["at0116"] = <
-					text = <"*D&T_Death (en)">
+					text = <"*D&T_death (en)">
 					description = <"">
 				>
 			>
