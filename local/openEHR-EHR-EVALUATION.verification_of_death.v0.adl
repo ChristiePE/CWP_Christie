@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"fe0febaf2df424e94ece26ede87d9908">
+		["MD5-CAM-1.0.1"] = <"737d270285bb4540aaae9deb3562c3cb">
 		["build_uid"] = <"3de8bf04-dd0f-3374-b557-2987da9bc926">
 	>
 
@@ -44,14 +44,22 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0006] occurrences matches {0..1} matches {    -- General_inspection
+					ELEMENT[at0020] occurrences matches {0..1} matches {    -- General_inspection
 						value matches {
-							DV_BOOLEAN matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::at0021]    -- No signs of life
+								}
+							}
 						}
 					}
-					ELEMENT[at0007] occurrences matches {0..1} matches {    -- Respiratory_effort
+					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Respiratory_effort
 						value matches {
-							DV_BOOLEAN matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::at0023]    -- None
+								}
+							}
 						}
 					}
 					ELEMENT[at0008] occurrences matches {0..1} matches {    -- Verbal_stimuli
@@ -126,14 +134,6 @@ ontology
 					text = <"Item tree">
 					description = <"@ internal @">
 				>
-				["at0006"] = <
-					text = <"General_inspection">
-					description = <"">
-				>
-				["at0007"] = <
-					text = <"Respiratory_effort">
-					description = <"">
-				>
 				["at0008"] = <
 					text = <"Verbal_stimuli">
 					description = <"">
@@ -168,6 +168,22 @@ ontology
 				>
 				["at0017"] = <
 					text = <"Verifier">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"General_inspection">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"No signs of life">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Respiratory_effort">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"None">
 					description = <"">
 				>
 			>
