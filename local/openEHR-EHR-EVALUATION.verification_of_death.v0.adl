@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"860ea60d5261c9cba6a43087c23fc6a4">
+		["MD5-CAM-1.0.1"] = <"fe0febaf2df424e94ece26ede87d9908">
 		["build_uid"] = <"3de8bf04-dd0f-3374-b557-2987da9bc926">
 	>
 
@@ -87,6 +87,11 @@ definition
 					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Time_confirmation
 						value matches {
 							DV_BOOLEAN matches {*}
+						}
+					}
+					ELEMENT[at0017] occurrences matches {0..1} matches {    -- Verifier
+						value matches {
+							DV_TEXT matches {*}
 						}
 					}
 				}
@@ -159,6 +164,10 @@ ontology
 				>
 				["at0015"] = <
 					text = <"Time_confirmation">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Verifier">
 					description = <"">
 				>
 			>
