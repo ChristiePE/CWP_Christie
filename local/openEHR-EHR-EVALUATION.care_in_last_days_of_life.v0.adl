@@ -1,0 +1,77 @@
+archetype (adl_version=1.4; uid=b1f37717-97c3-45e0-8e4e-b4c44fa20030)
+	openEHR-EHR-EVALUATION.care_in_last_days_of_life.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2022-09-08">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"365951721277e72863a463b659d87f51">
+		["build_uid"] = <"0c8ae9f3-22a3-3f26-a664-430fb0c99594">
+	>
+
+definition
+	EVALUATION[at0000] matches {    -- Care_in_Last_Days_of_Life
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Bereavement risk assessment undertaken
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0003,    -- 1
+									at0004]    -- 2
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Care_in_Last_Days_of_Life">
+					description = <"Care_in_Last_Days_of_Life">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Bereavement risk assessment undertaken">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"1">
+					description = <"Yes">
+				>
+				["at0004"] = <
+					text = <"2">
+					description = <"No">
+				>
+			>
+		>
+	>
