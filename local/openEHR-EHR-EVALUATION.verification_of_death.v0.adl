@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2c7f1e571e7308247be4761cf64e3ffa">
+		["MD5-CAM-1.0.1"] = <"982d8a83345e5f03e396ddf5d19043dc">
 		["build_uid"] = <"3de8bf04-dd0f-3374-b557-2987da9bc926">
 	>
 
@@ -64,37 +64,63 @@ definition
 					}
 					ELEMENT[at0024] occurrences matches {0..1} matches {    -- Verbal_stimuli
 						value matches {
-							DV_CODED_TEXT matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::at0030]    -- No response
+								}
+							}
 						}
 					}
 					ELEMENT[at0025] occurrences matches {0..1} matches {    -- Painful_stimuli
 						value matches {
-							DV_CODED_TEXT matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::at0031]    -- No response
+								}
+							}
 						}
 					}
 					ELEMENT[at0026] occurrences matches {0..1} matches {    -- Pupil_assessment
 						value matches {
-							DV_CODED_TEXT matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::at0032]    -- Fixed and dilated
+								}
+							}
 						}
 					}
 					ELEMENT[at0027] occurrences matches {0..1} matches {    -- Pulse_check
 						value matches {
-							DV_CODED_TEXT matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::at0033]    -- None
+								}
+							}
 						}
 					}
 					ELEMENT[at0028] occurrences matches {0..1} matches {    -- Heart_sounds
 						value matches {
-							DV_CODED_TEXT matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::at0034]    -- None
+								}
+							}
 						}
 					}
 					ELEMENT[at0029] occurrences matches {0..1} matches {    -- Respiratory_sounds
 						value matches {
-							DV_CODED_TEXT matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::at0035]    -- None
+								}
+							}
 						}
 					}
 					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Time_confirmation
 						value matches {
-							DV_BOOLEAN matches {*}
+							DV_BOOLEAN matches {
+								value matches {true}
+							}
 						}
 					}
 					ELEMENT[at0017] occurrences matches {0..1} matches {    -- Verifier
@@ -184,6 +210,30 @@ ontology
 				>
 				["at0029"] = <
 					text = <"Respiratory_sounds">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"No response">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"No response">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Fixed and dilated">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"None">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"None">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"None">
 					description = <"">
 				>
 			>
