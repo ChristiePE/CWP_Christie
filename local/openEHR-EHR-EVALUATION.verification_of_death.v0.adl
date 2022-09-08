@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"737d270285bb4540aaae9deb3562c3cb">
+		["MD5-CAM-1.0.1"] = <"2c7f1e571e7308247be4761cf64e3ffa">
 		["build_uid"] = <"3de8bf04-dd0f-3374-b557-2987da9bc926">
 	>
 
@@ -62,34 +62,34 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0008] occurrences matches {0..1} matches {    -- Verbal_stimuli
+					ELEMENT[at0024] occurrences matches {0..1} matches {    -- Verbal_stimuli
 						value matches {
-							DV_BOOLEAN matches {*}
+							DV_CODED_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0009] occurrences matches {0..1} matches {    -- Painful_stimuli
+					ELEMENT[at0025] occurrences matches {0..1} matches {    -- Painful_stimuli
 						value matches {
-							DV_BOOLEAN matches {*}
+							DV_CODED_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0010] occurrences matches {0..1} matches {    -- Pupil_assessment
+					ELEMENT[at0026] occurrences matches {0..1} matches {    -- Pupil_assessment
 						value matches {
-							DV_BOOLEAN matches {*}
+							DV_CODED_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0011] occurrences matches {0..1} matches {    -- Pulse_check
+					ELEMENT[at0027] occurrences matches {0..1} matches {    -- Pulse_check
 						value matches {
-							DV_BOOLEAN matches {*}
+							DV_CODED_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0012] occurrences matches {0..1} matches {    -- Heart_sounds
+					ELEMENT[at0028] occurrences matches {0..1} matches {    -- Heart_sounds
 						value matches {
-							DV_BOOLEAN matches {*}
+							DV_CODED_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0013] occurrences matches {0..1} matches {    -- Respiratory_sounds
+					ELEMENT[at0029] occurrences matches {0..1} matches {    -- Respiratory_sounds
 						value matches {
-							DV_BOOLEAN matches {*}
+							DV_CODED_TEXT matches {*}
 						}
 					}
 					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Time_confirmation
@@ -134,30 +134,6 @@ ontology
 					text = <"Item tree">
 					description = <"@ internal @">
 				>
-				["at0008"] = <
-					text = <"Verbal_stimuli">
-					description = <"">
-				>
-				["at0009"] = <
-					text = <"Painful_stimuli">
-					description = <"">
-				>
-				["at0010"] = <
-					text = <"Pupil_assessment">
-					description = <"">
-				>
-				["at0011"] = <
-					text = <"Pulse_check">
-					description = <"">
-				>
-				["at0012"] = <
-					text = <"Heart_sounds">
-					description = <"">
-				>
-				["at0013"] = <
-					text = <"Respiratory_sounds">
-					description = <"">
-				>
 				["min"] = <
 					text = <"minute(s)">
 					description = <"minute">
@@ -184,6 +160,30 @@ ontology
 				>
 				["at0023"] = <
 					text = <"None">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Verbal_stimuli">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Painful_stimuli">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Pupil_assessment">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Pulse_check">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Heart_sounds">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"Respiratory_sounds">
 					description = <"">
 				>
 			>
