@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"982d8a83345e5f03e396ddf5d19043dc">
+		["MD5-CAM-1.0.1"] = <"1aec1478021f0bfec9247844b7395df6">
 		["build_uid"] = <"3de8bf04-dd0f-3374-b557-2987da9bc926">
 	>
 
@@ -44,75 +44,59 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0020] occurrences matches {0..1} matches {    -- General_inspection
+					ELEMENT[at0036] occurrences matches {0..1} matches {    -- Signs_of life
 						value matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::at0021]    -- No signs of life
-								}
+							DV_BOOLEAN matches {
+								value matches {false}
 							}
 						}
 					}
-					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Respiratory_effort
+					ELEMENT[at0043] occurrences matches {0..1} matches {    -- Respiratory_effort
 						value matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::at0023]    -- None
-								}
+							DV_BOOLEAN matches {
+								value matches {false}
 							}
 						}
 					}
-					ELEMENT[at0024] occurrences matches {0..1} matches {    -- Verbal_stimuli
+					ELEMENT[at0037] occurrences matches {0..1} matches {    -- Verbal_stimuli_response
 						value matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::at0030]    -- No response
-								}
+							DV_BOOLEAN matches {
+								value matches {false}
 							}
 						}
 					}
-					ELEMENT[at0025] occurrences matches {0..1} matches {    -- Painful_stimuli
+					ELEMENT[at0038] occurrences matches {0..1} matches {    -- Painful_stimuli_response
 						value matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::at0031]    -- No response
-								}
+							DV_BOOLEAN matches {
+								value matches {false}
 							}
 						}
 					}
-					ELEMENT[at0026] occurrences matches {0..1} matches {    -- Pupil_assessment
+					ELEMENT[at0039] occurrences matches {0..1} matches {    -- Fixed_dilated_pupils
 						value matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::at0032]    -- Fixed and dilated
-								}
+							DV_BOOLEAN matches {
+								value matches {true}
 							}
 						}
 					}
-					ELEMENT[at0027] occurrences matches {0..1} matches {    -- Pulse_check
+					ELEMENT[at0040] occurrences matches {0..1} matches {    -- Pulse_check
 						value matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::at0033]    -- None
-								}
+							DV_BOOLEAN matches {
+								value matches {false}
 							}
 						}
 					}
-					ELEMENT[at0028] occurrences matches {0..1} matches {    -- Heart_sounds
+					ELEMENT[at0041] occurrences matches {0..1} matches {    -- Heart_sounds
 						value matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::at0034]    -- None
-								}
+							DV_BOOLEAN matches {
+								value matches {false}
 							}
 						}
 					}
-					ELEMENT[at0029] occurrences matches {0..1} matches {    -- Respiratory_sounds
+					ELEMENT[at0042] occurrences matches {0..1} matches {    -- Respiratory_sounds
 						value matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::at0035]    -- None
-								}
+							DV_BOOLEAN matches {
+								value matches {false}
 							}
 						}
 					}
@@ -172,68 +156,36 @@ ontology
 					text = <"Verifier">
 					description = <"">
 				>
-				["at0020"] = <
-					text = <"General_inspection">
+				["at0036"] = <
+					text = <"Signs_of life">
 					description = <"">
 				>
-				["at0021"] = <
-					text = <"No signs of life">
+				["at0037"] = <
+					text = <"Verbal_stimuli_response">
 					description = <"">
 				>
-				["at0022"] = <
-					text = <"Respiratory_effort">
+				["at0038"] = <
+					text = <"Painful_stimuli_response">
 					description = <"">
 				>
-				["at0023"] = <
-					text = <"None">
+				["at0039"] = <
+					text = <"Fixed_dilated_pupils">
 					description = <"">
 				>
-				["at0024"] = <
-					text = <"Verbal_stimuli">
-					description = <"">
-				>
-				["at0025"] = <
-					text = <"Painful_stimuli">
-					description = <"">
-				>
-				["at0026"] = <
-					text = <"Pupil_assessment">
-					description = <"">
-				>
-				["at0027"] = <
+				["at0040"] = <
 					text = <"Pulse_check">
 					description = <"">
 				>
-				["at0028"] = <
+				["at0041"] = <
 					text = <"Heart_sounds">
 					description = <"">
 				>
-				["at0029"] = <
+				["at0042"] = <
 					text = <"Respiratory_sounds">
 					description = <"">
 				>
-				["at0030"] = <
-					text = <"No response">
-					description = <"">
-				>
-				["at0031"] = <
-					text = <"No response">
-					description = <"">
-				>
-				["at0032"] = <
-					text = <"Fixed and dilated">
-					description = <"">
-				>
-				["at0033"] = <
-					text = <"None">
-					description = <"">
-				>
-				["at0034"] = <
-					text = <"None">
-					description = <"">
-				>
-				["at0035"] = <
-					text = <"None">
+				["at0043"] = <
+					text = <"Respiratory_effort">
 					description = <"">
 				>
 			>
