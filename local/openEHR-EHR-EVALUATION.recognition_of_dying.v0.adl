@@ -1,0 +1,168 @@
+archetype (adl_version=1.4; uid=f1dee920-da9f-44f3-9399-e8f8b3b88bc0)
+	openEHR-EHR-EVALUATION.recognition_of_dying.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2022-08-26">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"3162543e2a9a5ce058e1945e81ffab76">
+		["build_uid"] = <"e246209d-1ae0-3986-b5a0-208637957018">
+	>
+
+definition
+	EVALUATION[at0000] matches {    -- Recognition_of_dying
+		protocol matches {
+			ITEM_TREE[at0001] matches {*}    -- Item tree
+		}
+		data matches {
+			ITEM_TREE[at0003] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0035] occurrences matches {0..1} matches {    -- Assesment_date_and_time
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+					ELEMENT[at0041] occurrences matches {0..1} matches {    -- Patient_condition
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0042,    -- A last days of life diagnosis remains appropriate
+									at0043]    -- Condition improved, so a last days of life diagnosis is now inappropriate
+								}
+							}
+						}
+					}
+					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Confirmed_by
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0005,    -- Consultant (responsible team)
+									at0006,    -- ST3 and above or equivalent (responsible team)
+									at0008,    -- Consultant (acute management)
+									at0009]    -- ST3 and above or equivalent (acute management)
+								}
+							}
+						}
+					}
+					ELEMENT[at0036] occurrences matches {0..1} matches {    -- Reviewer
+						value matches {
+							DV_CODED_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0011] occurrences matches {0..1} matches {    -- Recognition_of_dying_agreed_with
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0012,    -- Yes
+									at0013]    -- No
+								}
+							}
+						}
+					}
+					ELEMENT[at0014] occurrences matches {0..1} matches {    -- Decision_summary
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Recognition_of_dying">
+					description = <"Recognition_of_dying">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Confirmed_by">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Consultant (responsible team)">
+					description = <"Doctors directly responsible for the patient's overall cancer management">
+				>
+				["at0006"] = <
+					text = <"ST3 and above or equivalent (responsible team)">
+					description = <"Doctors directly responsible for the patient's overall cancer management">
+				>
+				["at0008"] = <
+					text = <"Consultant (acute management)">
+					description = <"Doctors making an acute decision who are not usually responsible for the patient's care">
+				>
+				["at0009"] = <
+					text = <"ST3 and above or equivalent (acute management)">
+					description = <"Doctors making an acute decision who are not usually responsible for the patient's care">
+				>
+				["at0011"] = <
+					text = <"Recognition_of_dying_agreed_with">
+					description = <"Has_the_recognition_of_dying_been_agreed_with_the_ward_based_team?">
+				>
+				["at0012"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Decision_summary">
+					description = <"Summary of the reasons why the recognition of dying has been made.">
+					comment = <"Max 1000 Characters">
+				>
+				["at0035"] = <
+					text = <"Assesment_date_and_time">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"Reviewer">
+					description = <"Consultant">
+				>
+				["at0041"] = <
+					text = <"Patient_condition">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"A last days of life diagnosis remains appropriate">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"Condition improved, so a last days of life diagnosis is now inappropriate">
+					description = <"">
+				>
+			>
+		>
+	>
