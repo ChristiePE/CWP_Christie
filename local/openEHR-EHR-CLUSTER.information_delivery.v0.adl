@@ -23,12 +23,30 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"373aa112cb7b2ef8c6e4f48f60f46609">
+		["MD5-CAM-1.0.1"] = <"eac602dd43ff2bb9c14b62c94a92ae8a">
 		["build_uid"] = <"4b730e5a-7284-3642-8d95-cc15135a30c2">
 	>
 
 definition
-	CLUSTER[at0000] matches {*}    -- Information_Delivery
+	CLUSTER[at0000] matches {    -- Information_Delivery
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Recipient
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Medium
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Notes
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
 
 ontology
 	term_definitions = <
@@ -37,6 +55,18 @@ ontology
 				["at0000"] = <
 					text = <"Information_Delivery">
 					description = <"Information_delivery">
+				>
+				["at0001"] = <
+					text = <"Recipient">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Medium">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Notes">
+					description = <"">
 				>
 			>
 		>
