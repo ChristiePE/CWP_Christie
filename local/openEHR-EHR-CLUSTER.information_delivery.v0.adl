@@ -1,0 +1,43 @@
+archetype (adl_version=1.4; uid=f7020451-ee4f-4a53-9f45-7c70082f0749)
+	openEHR-EHR-CLUSTER.information_delivery.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2022-09-09">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"373aa112cb7b2ef8c6e4f48f60f46609">
+		["build_uid"] = <"4b730e5a-7284-3642-8d95-cc15135a30c2">
+	>
+
+definition
+	CLUSTER[at0000] matches {*}    -- Information_Delivery
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Information_Delivery">
+					description = <"Information_delivery">
+				>
+			>
+		>
+	>
