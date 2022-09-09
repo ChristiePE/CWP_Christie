@@ -28,8 +28,9 @@ description
 End of Life Care Co-ordination: Core Content Standard Specification Available at http://www.isb.nhs.uk/documents/isb-1580/amd-29-2012/index_html
 
 NHS Scotland Key Information Summary">
-		["MD5-CAM-1.0.1"] = <"9DF5B23BF01246240BF2B91579FEE02D">
+		["MD5-CAM-1.0.1"] = <"9a65a6d08e59908fd954fa9af97f5e35">
 		["build_uid"] = <"2bb6cfad-4388-33e9-8420-01e6b2a85a73">
+		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
 
 definition
