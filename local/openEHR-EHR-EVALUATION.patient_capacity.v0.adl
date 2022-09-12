@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7f58061b25c95f1d60ccec3aa4b9c29c">
+		["MD5-CAM-1.0.1"] = <"58dd1620e02e06464c88ad6eb2b085f9">
 		["build_uid"] = <"5c7e3878-ecc5-3a39-bcfc-03516a32d7cb">
 	>
 
@@ -56,18 +56,6 @@ definition
 									[local::
 									at0010,    -- Yes
 									at0011]    -- No
-								}
-							}
-						}
-					}
-					ELEMENT[at0012] occurrences matches {0..1} matches {    -- Does the patient have mental capacity?
-						value matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::
-									at0013,    -- Yes
-									at0014,    -- No
-									at0015]    -- Don't know
 								}
 							}
 						}
@@ -126,22 +114,6 @@ ontology
 				>
 				["at0011"] = <
 					text = <"No">
-					description = <"">
-				>
-				["at0012"] = <
-					text = <"Does the patient have mental capacity?">
-					description = <"">
-				>
-				["at0013"] = <
-					text = <"Yes">
-					description = <"">
-				>
-				["at0014"] = <
-					text = <"No">
-					description = <"">
-				>
-				["at0015"] = <
-					text = <"Don't know">
 					description = <"">
 				>
 			>
