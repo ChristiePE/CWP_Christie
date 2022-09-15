@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"cdb30c667be235a8c18ae5348c1f10fa">
+		["MD5-CAM-1.0.1"] = <"08218c59d7752f37c6b1c75e0c17a509">
 		["build_uid"] = <"58e7ba76-f7e4-3e02-aa20-6370177f2ac8">
 	>
 
@@ -62,6 +62,25 @@ definition
 									[local::
 									at0010,    -- I confirm that the AaND decision remains in place
 									at0011]    -- I wish to cancel the AaND decision with the patient now for full resuscitation
+								}
+							}
+						}
+					}
+					ELEMENT[at0028] occurrences matches {0..1} matches {    -- Decision_to_cancel
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Escalation_status
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0023,    -- Individualised plan for end of life care
+									at0024,    -- Active ward care
+									at0025,    -- Level 2
+									at0026,    -- Level 3
+									at0027]    -- Plan for discharge (fast track)
 								}
 							}
 						}
@@ -170,7 +189,7 @@ ontology
 				>
 				["at0012"] = <
 					text = <"Timescale">
-					description = <"">
+					description = <"Timescale for AaND decision">
 				>
 				["at0013"] = <
 					text = <"Indefinite, the decision does not require reviewing">
@@ -182,7 +201,7 @@ ontology
 				>
 				["at0015"] = <
 					text = <"Next_review">
-					description = <"">
+					description = <"Time until next review">
 				>
 				["at0016"] = <
 					text = <"Decision_summary">
@@ -190,11 +209,11 @@ ontology
 				>
 				["at0017"] = <
 					text = <"Decision_details">
-					description = <"">
+					description = <"Details of the AaND discussion">
 				>
 				["at0018"] = <
 					text = <"Professionals_informed">
-					description = <"">
+					description = <"This refers to a consultant directly responsible or nursing shift leader/coordinator for the patients overall cancer management">
 				>
 				["at0019"] = <
 					text = <"Responsible consultant">
@@ -207,6 +226,36 @@ ontology
 				["at0021"] = <
 					text = <"None">
 					description = <"">
+				>
+				["at0022"] = <
+					text = <"Escalation_status">
+					description = <"Care consists of allow a natural death">
+				>
+				["at0023"] = <
+					text = <"Individualised plan for end of life care">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Active ward care">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Level 2">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Level 3">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Plan for discharge (fast track)">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Decision_to_cancel">
+					description = <"Details of decision to cancel AaND decision
+
+Summary of the reasons why the AaND decision has been cancelled and details of discussions with patient and closest person(s)">
 				>
 			>
 		>
