@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "2.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "f95e4504eca0bb75432514560924c1fd",
+      "MD5-CAM-1.0.1" : "29ccbeec016edb73f4a2ba9ee255be79",
       "PARENT:MD5-CAM-1.0.1" : "c15c31efc4568edb04d487a7fb203744"
     },
     "details" : {
@@ -109,7 +109,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "cdb30c667be235a8c18ae5348c1f10fa"
+        "PARENT:MD5-CAM-1.0.1" : "08218c59d7752f37c6b1c75e0c17a509"
       },
       "details" : {
         "en" : {
@@ -205,6 +205,12 @@
                   "attributeTuples" : [ ]
                 } ]
               } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0028.1",
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -318,6 +324,12 @@
             "code" : "at0017.1",
             "text" : "Details_of_the_AaND_discussion",
             "description" : ""
+          },
+          "at0028.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "Details_of_decision_to_cancel_AaND_decision",
+            "description" : "Details of decision to cancel AaND decision\n\nSummary of the reasons why the AaND decision has been cancelled and details of discussions with patient and closest person(s)"
           }
         }
       },
