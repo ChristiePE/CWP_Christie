@@ -22,7 +22,7 @@
       "sem_ver" : "1.0.0",
       "PARENT:MD5-CAM-1.0.1" : "fd52e9fa97561ca3d65a1efec2b225b3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "de5df0e93526ecfd4576530cde5c6b31"
+      "MD5-CAM-1.0.1" : "a6457f44352ca336b29113eb8df06961"
     },
     "details" : {
       "en" : {
@@ -70,21 +70,21 @@
         "referenceType" : "archetypeOverlay"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.7",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-prognosis-001.v0",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "ADMIN_ENTRY",
         "occurrences" : "0..1",
         "nodeId" : "at0.4",
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-consent-001.v0",
-        "referenceType" : "archetypeOverlay"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "EVALUATION",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.6",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-prognosis-001.v0",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
