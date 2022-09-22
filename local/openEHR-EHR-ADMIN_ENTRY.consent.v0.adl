@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5e8d27a8868a9d11780cc1af75ce7a09">
+		["MD5-CAM-1.0.1"] = <"501497df3773751dcd20c03fb4c17c02">
 		["build_uid"] = <"cfd89fc9-fa21-3674-9829-f492fa3317e1">
 	>
 
@@ -37,21 +37,10 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Obtained
-						value matches {
-							DV_BOOLEAN matches {*}
-						}
-					}
 					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Reason_not_obtained
 						value matches {
 							DV_TEXT matches {*}
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::
-									at0006,    -- Unconcious
-									at0007]    -- Patient not seen
-								}
-							}
+							DV_CODED_TEXT matches {*}
 						}
 					}
 				}
@@ -75,20 +64,8 @@ ontology
 					text = <"Description">
 					description = <"What is the patient consenting to">
 				>
-				["at0004"] = <
-					text = <"Obtained">
-					description = <"">
-				>
 				["at0005"] = <
 					text = <"Reason_not_obtained">
-					description = <"">
-				>
-				["at0006"] = <
-					text = <"Unconcious">
-					description = <"">
-				>
-				["at0007"] = <
-					text = <"Patient not seen">
 					description = <"">
 				>
 			>
