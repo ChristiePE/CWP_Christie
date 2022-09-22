@@ -1,0 +1,107 @@
+archetype (adl_version=1.4; uid=81cc3398-5f8d-4593-83f4-e8a869a96cab)
+	openEHR-EHR-EVALUATION.advance_care_planning.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2022-09-22">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"3281a90730be395e133296fcda2b5d04">
+		["build_uid"] = <"7db29795-463e-360a-a526-5cb746904a76">
+	>
+
+definition
+	EVALUATION[at0000] matches {    -- Advance_Care_Planning
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Date_and_time_of_ACP_assessment
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Advance_care_plan
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Advance_care_plan_status
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0006,    -- No known ACP
+									at0007,    -- ACP in place for all care including declining CPR
+									at0008]    -- ACP in place for care but does not decline CPR
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0002] matches {*}    -- Item tree
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Advance_Care_Planning">
+					description = <"Advance_Care_Planning">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Date_and_time_of_ACP_assessment">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Advance_care_plan">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Advance_care_plan_status">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"No known ACP">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"ACP in place for all care including declining CPR">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"ACP in place for care but does not decline CPR">
+					description = <"">
+				>
+			>
+		>
+	>
