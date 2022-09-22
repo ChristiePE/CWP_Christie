@@ -22,7 +22,7 @@
       "sem_ver" : "4.0.0",
       "PARENT:MD5-CAM-1.0.1" : "22426c971a985d28cc183aeb1a79f8fd",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "44524c1c78f6a8561f5204b98dcbef30"
+      "MD5-CAM-1.0.1" : "224a1d11ace0ee8a0acc413f9d729c47"
     },
     "details" : {
       "en" : {
@@ -147,10 +147,6 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
-                  "defaultValue" : {
-                    "value" : "Patient",
-                    "@type" : "DV_TEXT"
-                  },
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "value",
@@ -197,10 +193,6 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
-                  "defaultValue" : {
-                    "value" : "Verbal",
-                    "@type" : "DV_TEXT"
-                  },
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "value",
