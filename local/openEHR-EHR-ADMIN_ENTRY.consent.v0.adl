@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"19dd4c32dd9d0743e77e4f4437ef8643">
+		["MD5-CAM-1.0.1"] = <"23da66edc80fa981a84e5b743a9122d3">
 		["build_uid"] = <"cfd89fc9-fa21-3674-9829-f492fa3317e1">
 	>
 
@@ -32,17 +32,17 @@ definition
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Consent_to
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Covers
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Consent_obtained
+					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Obtained
 						value matches {
 							DV_BOOLEAN matches {*}
 						}
 					}
-					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Reason_consent_not_obtained
+					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Reason_not_obtained
 						value matches {
 							DV_TEXT matches {*}
 							DV_CODED_TEXT matches {
@@ -72,15 +72,15 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"Consent_to">
-					description = <"">
+					text = <"Covers">
+					description = <"What is the patient consenting to">
 				>
 				["at0004"] = <
-					text = <"Consent_obtained">
+					text = <"Obtained">
 					description = <"">
 				>
 				["at0005"] = <
-					text = <"Reason_consent_not_obtained">
+					text = <"Reason_not_obtained">
 					description = <"">
 				>
 				["at0006"] = <
