@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"de36572f58f719b544aab720ded689e1">
+		["MD5-CAM-1.0.1"] = <"cb78d12097e60eacc8f1dbaa08b8a74c">
 		["build_uid"] = <"7db29795-463e-360a-a526-5cb746904a76">
 	>
 
@@ -42,9 +42,16 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0009] occurrences matches {0..1} matches {    -- Advance_care_plan_status
+					ELEMENT[at0010] occurrences matches {0..1} matches {    -- Advance_care_plan_status
 						value matches {
-							DV_TEXT matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0011,    -- No known ACP
+									at0012,    -- ACP in place for all care including declining CPR
+									at0013]    -- ACP in place for care but does not decline CPR
+								}
+							}
 						}
 					}
 				}
@@ -79,8 +86,20 @@ ontology
 					text = <"Advance_care_plan">
 					description = <"">
 				>
-				["at0009"] = <
+				["at0010"] = <
 					text = <"Advance_care_plan_status">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"No known ACP">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"ACP in place for all care including declining CPR">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"ACP in place for care but does not decline CPR">
 					description = <"">
 				>
 			>
