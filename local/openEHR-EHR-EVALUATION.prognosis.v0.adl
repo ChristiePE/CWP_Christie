@@ -1,0 +1,87 @@
+archetype (adl_version=1.4; uid=451675a4-a7b2-4332-9f84-c43d607949c8)
+	openEHR-EHR-EVALUATION.prognosis.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2022-09-22">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"bfd90d1131fa7c2088f22867c2c05b57">
+		["build_uid"] = <"9ac3a9d9-1381-3ede-bd31-56cb8e6a6c5b">
+	>
+
+definition
+	EVALUATION[at0000] matches {    -- Prognosis
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Likely prognosis
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0003,    -- Currently stable. Prognosis around a year.
+									at0004,    -- Unstable with declining condition, may have repeated admission or co-morbidities. Prognosis of months.
+									at0005,    -- Deteriorating, but they are not in the terminal phase of their illness. Prognosis of weeks.
+									at0006]    -- In the terminal phase of their illness and likely to die within the next few days. Prognosis of days.
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Prognosis">
+					description = <"Prognosis">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Likely prognosis">
+					description = <"Patients with advancing disease whose condition is:">
+				>
+				["at0003"] = <
+					text = <"Currently stable. Prognosis around a year.">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Unstable with declining condition, may have repeated admission or co-morbidities. Prognosis of months.">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Deteriorating, but they are not in the terminal phase of their illness. Prognosis of weeks.">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"In the terminal phase of their illness and likely to die within the next few days. Prognosis of days.">
+					description = <"">
+				>
+			>
+		>
+	>
