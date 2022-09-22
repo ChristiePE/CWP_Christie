@@ -1,0 +1,62 @@
+archetype (adl_version=1.4; uid=4cdfc615-d6c4-4ba1-b6d2-ff5cebeff26b)
+	openEHR-EHR-COMPOSITION.advance_care_planning.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2022-09-22">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"12e9884ba1070ed7bbd5ae00e659534a">
+		["build_uid"] = <"3c351b47-482c-3557-9ecd-d97c1bb838bc">
+	>
+
+definition
+	COMPOSITION[at0000] matches {    -- Advance_Care_Planning
+		category matches {
+			DV_CODED_TEXT[at0001] matches {    -- Coded text
+				defining_code matches {
+					[openehr::433]
+				}
+			}
+		}
+		context matches {
+			EVENT_CONTEXT[at0002] matches {*}    -- Event Context
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Advance_Care_Planning">
+					description = <"Advance_Care_Planning">
+				>
+				["at0001"] = <
+					text = <"Coded text">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Event Context">
+					description = <"">
+				>
+			>
+		>
+	>
