@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"501497df3773751dcd20c03fb4c17c02">
+		["MD5-CAM-1.0.1"] = <"1c96950db1ca07e8e7a47e515c6cffa0">
 		["build_uid"] = <"cfd89fc9-fa21-3674-9829-f492fa3317e1">
 	>
 
@@ -35,6 +35,17 @@ definition
 					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Description
 						value matches {
 							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0006] occurrences matches {0..1} matches {    -- Obtained
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0007,    -- Yes
+									at0008]    -- No
+								}
+							}
 						}
 					}
 					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Reason_not_obtained
@@ -66,6 +77,18 @@ ontology
 				>
 				["at0005"] = <
 					text = <"Reason_not_obtained">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Obtained">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"No">
 					description = <"">
 				>
 			>
