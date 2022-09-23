@@ -22,7 +22,7 @@
       "sem_ver" : "7.0.0",
       "PARENT:MD5-CAM-1.0.1" : "fd52e9fa97561ca3d65a1efec2b225b3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "31e56a13feb71ee01d01f1596d9dd287"
+      "MD5-CAM-1.0.1" : "487f404ae039f9f251cd3f710c4b5cd9"
     },
     "details" : {
       "en" : {
@@ -225,7 +225,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "36092991131b5e6c2c335a432b73aeb0"
+        "PARENT:MD5-CAM-1.0.1" : "16839990e2daf772897ce24794eb3c18"
       },
       "details" : {
         "en" : {
@@ -583,12 +583,6 @@
             "code" : "at0000.1",
             "text" : "Preferred_priorities_for_care",
             "description" : "Information_Delivery"
-          },
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "Content",
-            "description" : ""
           }
         }
       },
@@ -622,7 +616,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "823218c79730f87b1c368322df6e9867"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.information_delivery.v0",
     "differential" : true,
