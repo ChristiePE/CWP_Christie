@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a3a4b2c4330e3956ea88dbd8dfb0b074">
+		["MD5-CAM-1.0.1"] = <"c7ff32c233590b45574cd308e17b4a86">
 		["build_uid"] = <"3ac2f129-7015-3a6e-ae64-01f9a3fe48b9">
 	>
 
@@ -32,19 +32,19 @@ definition
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Recipient
+					ELEMENT[at0031] occurrences matches {0..1} matches {    -- Recipient
 						value matches {
-							DV_TEXT matches {*}
+							DV_CODED_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Content
+					ELEMENT[at0033] occurrences matches {0..1} matches {    -- Content
 						value matches {
-							DV_TEXT matches {*}
+							DV_CODED_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Method_of_delivery
+					ELEMENT[at0034] occurrences matches {0..1} matches {    -- Method of delivery
 						value matches {
-							DV_TEXT matches {*}
+							DV_CODED_TEXT matches {*}
 						}
 					}
 					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Notes
@@ -69,20 +69,20 @@ ontology
 					text = <"Item tree">
 					description = <"@ internal @">
 				>
-				["at0002"] = <
+				["at0005"] = <
+					text = <"Notes">
+					description = <"">
+				>
+				["at0031"] = <
 					text = <"Recipient">
 					description = <"">
 				>
-				["at0003"] = <
+				["at0033"] = <
 					text = <"Content">
 					description = <"">
 				>
-				["at0004"] = <
-					text = <"Method_of_delivery">
-					description = <"">
-				>
-				["at0005"] = <
-					text = <"Notes">
+				["at0034"] = <
+					text = <"Method of delivery">
 					description = <"">
 				>
 			>
