@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "5.0.0",
+      "sem_ver" : "6.0.0",
       "PARENT:MD5-CAM-1.0.1" : "22426c971a985d28cc183aeb1a79f8fd",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "8d1a35373a8fa506f81cc30ec0e70d9b"
+      "MD5-CAM-1.0.1" : "5efe8cda7b347c7a30ba230444662b1a"
     },
     "details" : {
       "en" : {
@@ -162,7 +162,7 @@
                     "children" : [ {
                       "@type" : "C_STRING",
                       "rmTypeName" : "STRING",
-                      "constraint" : [ "Patient", "Family", "Next of kin", "District Nurse", "Macmillan Nurse", "Gp", "Other" ]
+                      "constraint" : [ "Advocate", "District Nurse", "Family", "Gp", "Independent mental capacity advocate", "Macmillan Nurse", "Next of kin", "Patient", "Significant others", "Other" ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -269,9 +269,57 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "42E30743E5A093075AA65AAF9B890DC0"
+        "PARENT:MD5-CAM-1.0.1" : "9595cefa7d5786a216c1c9415824b432"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere et fritekstsammendrag om sosiale omstendigheter, opplevelser eller erfaringer som kan ha en innvirkning på et individs helse. Arketypen gir et rammeverk der en kan nøste detaljerte CLUSTER-arketyper som beskriver ulike aspekter av sosiale omstendigheter, opplevelser eller erfaringer i detalj.",
+          "keywords" : [ "sosial", "familie", "partner", "utdanning", "utdannelse", "arbeid", "jobb", "ansettelse", "miljø", "omgivelser", "bolig", "boforhold", "økonomi", "fritid", "hobby", "aktivitet", "religion", "etnisitet", "språk", "nasjonalitet", "livssyn", "mestringsevne", "erfaringer", "natur", "karakter", "adferdsmønster" ],
+          "use" : "Brukes for å registrere et fritekstsammendrag om sosiale omstendigheter eller opplevelser som kan ha en innvirkning på et individs helse. \r\n\r\nBrukes for å inkludere fritekstbeskrivelser av sosiale omstendigheter eller erfaringer som allerede er registrert i eksisterende kliniske systemer til et arketypeformat.\r\n\r\nBruk som en kontainer arketype for å gi en felles gjenfinnbar ENTRY-arketype som kan inneholde detaljerte CLUSTER-arketyper. Eksempler på passende CLUSTER-arketyper kan være nære relasjoner, sosial støtte, boligforhold, arbeid, utdannelse og livssyn.\r\n\r\nBruken av uttrykket \"Sosialanamnese\" har stor variasjon. Arketypen er utviklet for å tillate representasjon av ulike konsepter som utrykker sosialanamnese i ulike kliniske sammenhenger ved hjelp av en blanding av gjenbrukbare CLUSTER-arketyper.",
+          "misuse" : "Brukes ikke for å registrere informasjon relatert til livsstil. For eksempel: Bruk spesifikke arketyper for bruk av alkohol, tobakk og andre substanser, kosthold og ernæring, og fysisk aktivitet.",
+          "copyright" : "© National E-Health Transition Authority, openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a narrative summary about social circumstances or experiences that may have a potential impact on an individual's health, and to provide a framework in which to nest detailed CLUSTER archetypes, each of which will describe the various aspects of social circumstances or experiences in detail.",
+          "keywords" : [ "social", "family", "education", "occupation", "environment", "housing", "finances", "social history" ],
+          "use" : "Use to record a narrative summary about social circumstances or experiences that may have a potential impact on an individual's health.\r\n\r\nUse to incorporate the narrative descriptions of social circumstances or experiences already captured within existing clinical systems into an archetyped format.\r\n\r\nUse as a container archetype - to provide a common, queryable ENTRY archetype in which specific, detailed CLUSTER archetypes can be nested. Examples of appropriate CLUSTER archetypes may include, and are not limited to, relationships with others, social supports, living arrangements, employment, education and religion.\r\n\r\nThe use of the term 'social summary' varies enormously in practice. This archetype has been designed to allow the concepts that express social history in varying clincial contexts to be represented with the appropriate mix of re-useable archetypes.",
+          "misuse" : "Not to be used to record Lifestyle-related information - for example, use specific archetypes for alcohol, tobacco and other substance use; diet and nutrition; and physical activity.",
+          "copyright" : "© National E-Health Transition Authority, openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "purpose" : "Registrare una sintesi narrativa sulle circostanze o esperienze sociali che possono avere un potenziale impatto sulla salute di un individuo, e fornire un quadro in cui annidare gli archetipi dettagliati di CLUSTER, ognuno dei quali descriverà in dettaglio i vari aspetti delle circostanze o delle esperienze sociali.",
+          "keywords" : [ "sociale", "famiglia", "educazione", "occupazione", "ambiente", "Alloggiamento", "finanze", "storia sociale" ],
+          "use" : "Utilizzare per registrare un riassunto narrativo su circostanze o esperienze sociali che possono avere un potenziale impatto sulla salute di un individuo.\r\n\r\nUtilizzare per incorporare le descrizioni narrative di circostanze o esperienze sociali già catturate all'interno di sistemi clinici esistenti in un formato archetipizzato.\r\n\r\nUso come archetipo contenitore - per fornire un archetipo comune e interrogabile di ENTRY in cui possono essere annidati specifici e dettagliati archetipi di CLUSTER. Esempi di archetipi di CLUSTER appropriati possono includere, e non sono limitati a, relazioni con gli altri, supporti sociali, organizzazione della vita, occupazione, istruzione e religione.\r\n\r\nL'uso del termine \"riassunto sociale\" varia enormemente nella pratica. Questo archetipo è stato progettato per consentire di rappresentare i concetti che esprimono la storia sociale in diversi contesti clinici con il giusto mix di archetipi riutilizzabili.",
+          "misuse" : "Da non utilizzare per registrare informazioni relative allo stile di vita - per esempio, utilizzare archetipi specifici per l'uso di alcol, tabacco e altre sostanze; dieta e nutrizione; e attività fisica.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.social_summary.v1",
     "differential" : true,
@@ -374,7 +422,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "a129de2dea2dd90f7e9f14283cde33c1"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.religious_affiliation.v0",
     "differential" : true,
