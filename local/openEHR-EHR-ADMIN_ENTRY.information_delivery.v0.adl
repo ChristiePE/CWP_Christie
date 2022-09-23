@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"6a4b781879bd6d7c892974f953ff7057">
+		["MD5-CAM-1.0.1"] = <"61c803d7a5c5a4666747e53b3d33b4a1">
 		["build_uid"] = <"3ac2f129-7015-3a6e-ae64-01f9a3fe48b9">
 	>
 
@@ -49,7 +49,30 @@ definition
 					}
 					ELEMENT[at0033] occurrences matches {0..1} matches {    -- Content
 						value matches {
-							DV_CODED_TEXT matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0060,    -- Communication has not been possible because of patient's condition
+									at0061,    -- Patient did not want to discuss any aspects of their condition
+									at0062,    -- No new topics since last review
+									at0063,    -- Recognition of dying
+									at0064,    -- AaND
+									at0065,    -- Making a will
+									at0066,    -- Marriage
+									at0067,    -- Preferences for care
+									at0068,    -- Changes to analgesia
+									at0069,    -- Changes to sedation
+									at0070,    -- Changes to medication
+									at0071,    -- Changes to active measures
+									at0072,    -- Changes to nutrition
+									at0073,    -- Changes to IV fluids
+									at0074,    -- Organ or tissue donation
+									at0075,    -- Funeral
+									at0076,    -- Urgency of burial
+									at0077,    -- Repatriation
+									at0078]    -- Other
+								}
+							}
 						}
 					}
 					ELEMENT[at0034] occurrences matches {0..1} matches {    -- Method of delivery
@@ -116,6 +139,82 @@ ontology
 					description = <"">
 				>
 				["at0040"] = <
+					text = <"Other">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"Communication has not been possible because of patient's condition">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"Patient did not want to discuss any aspects of their condition">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"No new topics since last review">
+					description = <"">
+				>
+				["at0063"] = <
+					text = <"Recognition of dying">
+					description = <"">
+				>
+				["at0064"] = <
+					text = <"AaND">
+					description = <"">
+				>
+				["at0065"] = <
+					text = <"Making a will">
+					description = <"">
+				>
+				["at0066"] = <
+					text = <"Marriage">
+					description = <"">
+				>
+				["at0067"] = <
+					text = <"Preferences for care">
+					description = <"">
+				>
+				["at0068"] = <
+					text = <"Changes to analgesia">
+					description = <"">
+				>
+				["at0069"] = <
+					text = <"Changes to sedation">
+					description = <"">
+				>
+				["at0070"] = <
+					text = <"Changes to medication">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"Changes to active measures">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"Changes to nutrition">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"Changes to IV fluids">
+					description = <"">
+				>
+				["at0074"] = <
+					text = <"Organ or tissue donation">
+					description = <"">
+				>
+				["at0075"] = <
+					text = <"Funeral">
+					description = <"">
+				>
+				["at0076"] = <
+					text = <"Urgency of burial">
+					description = <"">
+				>
+				["at0077"] = <
+					text = <"Repatriation">
+					description = <"">
+				>
+				["at0078"] = <
 					text = <"Other">
 					description = <"">
 				>
