@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1c96950db1ca07e8e7a47e515c6cffa0">
+		["MD5-CAM-1.0.1"] = <"36092991131b5e6c2c335a432b73aeb0">
 		["build_uid"] = <"cfd89fc9-fa21-3674-9829-f492fa3317e1">
 	>
 
@@ -32,11 +32,6 @@ definition
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Description
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
 					ELEMENT[at0006] occurrences matches {0..1} matches {    -- Obtained
 						value matches {
 							DV_CODED_TEXT matches {
@@ -50,8 +45,14 @@ definition
 					}
 					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Reason_not_obtained
 						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0009,    -- Unconcious
+									at0010]    -- Patient not seen
+								}
+							}
 							DV_TEXT matches {*}
-							DV_CODED_TEXT matches {*}
 						}
 					}
 				}
@@ -71,10 +72,6 @@ ontology
 					text = <"Item tree">
 					description = <"@ internal @">
 				>
-				["at0002"] = <
-					text = <"Description">
-					description = <"What is the patient consenting to">
-				>
 				["at0005"] = <
 					text = <"Reason_not_obtained">
 					description = <"">
@@ -89,6 +86,14 @@ ontology
 				>
 				["at0008"] = <
 					text = <"No">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Unconcious">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Patient not seen">
 					description = <"">
 				>
 			>
