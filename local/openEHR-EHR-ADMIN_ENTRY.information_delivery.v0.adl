@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"823218c79730f87b1c368322df6e9867">
+		["MD5-CAM-1.0.1"] = <"a3a4b2c4330e3956ea88dbd8dfb0b074">
 		["build_uid"] = <"3ac2f129-7015-3a6e-ae64-01f9a3fe48b9">
 	>
 
@@ -43,35 +43,6 @@ definition
 						}
 					}
 					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Method_of_delivery
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					allow_archetype CLUSTER[at0025] occurrences matches {0..*} matches {    -- Topics_discussed
-						include
-							archetype_id/value matches {/.*/}
-					}
-					ELEMENT[at0026] occurrences matches {0..1} matches {    -- General_Topics
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0027] occurrences matches {0..1} matches {    -- Patient_care_and_wishes
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0028] occurrences matches {0..1} matches {    -- Care_after_death
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0029] occurrences matches {0..1} matches {    -- Facilities
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0030] occurrences matches {0..1} matches {    -- Other
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -112,30 +83,6 @@ ontology
 				>
 				["at0005"] = <
 					text = <"Notes">
-					description = <"">
-				>
-				["at0025"] = <
-					text = <"Topics_discussed">
-					description = <"">
-				>
-				["at0026"] = <
-					text = <"General_Topics">
-					description = <"">
-				>
-				["at0027"] = <
-					text = <"Patient_care_and_wishes">
-					description = <"">
-				>
-				["at0028"] = <
-					text = <"Care_after_death">
-					description = <"">
-				>
-				["at0029"] = <
-					text = <"Facilities">
-					description = <"">
-				>
-				["at0030"] = <
-					text = <"Other">
 					description = <"">
 				>
 			>
