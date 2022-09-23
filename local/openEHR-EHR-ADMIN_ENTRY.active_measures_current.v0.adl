@@ -23,14 +23,27 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ed1f6bacf43cfc8bd6061414ec6f230d">
+		["MD5-CAM-1.0.1"] = <"23739ca898d6ec7bff91b53d27c1c72f">
 		["build_uid"] = <"83800541-b1ee-3036-88d6-cc75fb3449b7">
 	>
 
 definition
 	ADMIN_ENTRY[at0000] matches {    -- active_measures_current
 		data matches {
-			ITEM_TREE[at0001] matches {*}    -- Item tree
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Description
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Active_measures
+						value matches {
+							DV_CODED_TEXT matches {*}
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -45,6 +58,15 @@ ontology
 				["at0001"] = <
 					text = <"Item tree">
 					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Description">
+					description = <"What active measures is the patient receiving at this assessment?
+">
+				>
+				["at0003"] = <
+					text = <"Active_measures">
+					description = <"">
 				>
 			>
 		>
