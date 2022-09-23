@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"36092991131b5e6c2c335a432b73aeb0">
+		["MD5-CAM-1.0.1"] = <"16839990e2daf772897ce24794eb3c18">
 		["build_uid"] = <"cfd89fc9-fa21-3674-9829-f492fa3317e1">
 	>
 
@@ -32,6 +32,11 @@ definition
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0011] occurrences matches {0..1} matches {    -- Description
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
 					ELEMENT[at0006] occurrences matches {0..1} matches {    -- Obtained
 						value matches {
 							DV_CODED_TEXT matches {
@@ -94,6 +99,10 @@ ontology
 				>
 				["at0010"] = <
 					text = <"Patient not seen">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Description">
 					description = <"">
 				>
 			>
