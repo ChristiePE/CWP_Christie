@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4950a9fd225bde54d1a3700f3d732bdd">
+		["MD5-CAM-1.0.1"] = <"19c3e4b4ac0ba64d1b95d27734381df8">
 		["build_uid"] = <"c123d05a-7b93-3a28-9eb1-a4abeb7dbced">
 	>
 
@@ -37,9 +37,9 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Active_Measures
+					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Active_Measures
 						value matches {
-							DV_CODED_TEXT matches {*}
+							DV_TEXT matches {*}
 						}
 					}
 				}
@@ -63,7 +63,7 @@ ontology
 					text = <"Description">
 					description = <"What active measures is the patient receiving at this assessment: IV fluids, Antibiotics etc">
 				>
-				["at0003"] = <
+				["at0004"] = <
 					text = <"Active_Measures">
 					description = <"">
 				>
