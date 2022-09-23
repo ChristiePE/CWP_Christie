@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c7ff32c233590b45574cd308e17b4a86">
+		["MD5-CAM-1.0.1"] = <"6a4b781879bd6d7c892974f953ff7057">
 		["build_uid"] = <"3ac2f129-7015-3a6e-ae64-01f9a3fe48b9">
 	>
 
@@ -34,7 +34,17 @@ definition
 				items cardinality matches {0..*; unordered} matches {
 					ELEMENT[at0031] occurrences matches {0..1} matches {    -- Recipient
 						value matches {
-							DV_CODED_TEXT matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0035,    -- Advocate
+									at0036,    -- District Nurse
+									at0037,    -- Family
+									at0038,    -- Independent Mental Capacity Advocate
+									at0039,    -- Significant others
+									at0040]    -- Other
+								}
+							}
 						}
 					}
 					ELEMENT[at0033] occurrences matches {0..1} matches {    -- Content
@@ -83,6 +93,30 @@ ontology
 				>
 				["at0034"] = <
 					text = <"Method of delivery">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"Advocate">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"District Nurse">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"Family">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"Independent Mental Capacity Advocate">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"Significant others">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"Other">
 					description = <"">
 				>
 			>
