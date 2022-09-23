@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "8.1.0",
+      "sem_ver" : "9.0.0",
       "PARENT:MD5-CAM-1.0.1" : "22426c971a985d28cc183aeb1a79f8fd",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "6fbcac5a81eddab905fdb92f777dfc2b"
+      "MD5-CAM-1.0.1" : "2f084d0b7f9ee8c5a40cf13a5f47c2a5"
     },
     "details" : {
       "en" : {
@@ -127,7 +127,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "a3a4b2c4330e3956ea88dbd8dfb0b074"
+        "PARENT:MD5-CAM-1.0.1" : "b1d6492eac229db2db9592c15c5eb68d"
       },
       "details" : {
         "en" : {
@@ -227,6 +227,29 @@
                       "@type" : "C_STRING",
                       "rmTypeName" : "STRING",
                       "constraint" : [ "Verbal", "Leaflet" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0006.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "No new topics since last review", "No family or significant others present since last review" ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -504,7 +527,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "b4a0302c1fa45dc6927845a287a3c3b9"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.active_measures.v0",
     "differential" : true,
@@ -560,14 +596,7 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : {
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Description",
-            "description" : "What active measures is the patient receiving at this assessment: IV fluids, Antibiotics etc"
-          }
-        }
+        "en" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -599,7 +628,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "8b7ba014d4ed0685c06edf7649081678"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.diabetes.v0",
     "differential" : true,
