@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c09e26bc36be32e415b6f6b85cacd809">
+		["MD5-CAM-1.0.1"] = <"a53c8c78815c341a4fcff753cc1a7f3c">
 		["build_uid"] = <"3ac2f129-7015-3a6e-ae64-01f9a3fe48b9">
 	>
 
@@ -47,60 +47,34 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0006] occurrences matches {0..1} matches {    -- Topics_Discussed
+					ELEMENT[at0026] occurrences matches {0..1} matches {    -- General_Topics
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					CLUSTER[at0013] occurrences matches {0..1} matches {    -- General_Topics
-						items cardinality matches {1..*; unordered} matches {
-							ELEMENT[at0014] occurrences matches {0..1} matches {    -- DV_TEXT
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-							CLUSTER[at0015] occurrences matches {0..1} matches {    -- Patient_care_and_wishes
-								items cardinality matches {1..*; unordered} matches {
-									ELEMENT[at0017] occurrences matches {0..1} matches {    -- DV_TEXT
-										value matches {
-											DV_TEXT matches {*}
-										}
-									}
-									CLUSTER[at0018] occurrences matches {0..1} matches {    -- Care_after_death
-										items cardinality matches {1..*; unordered} matches {
-											ELEMENT[at0019] occurrences matches {0..1} matches {    -- DV_TEXT
-												value matches {
-													DV_TEXT matches {*}
-												}
-											}
-											CLUSTER[at0020] occurrences matches {0..1} matches {    -- Facilities
-												items cardinality matches {1..*; unordered} matches {
-													ELEMENT[at0021] occurrences matches {0..1} matches {    -- DV_TEXT
-														value matches {
-															DV_TEXT matches {*}
-														}
-													}
-													CLUSTER[at0022] occurrences matches {0..1} matches {    -- Other
-														items cardinality matches {1..*; unordered} matches {
-															ELEMENT[at0023] occurrences matches {0..1} matches {    -- DV_TEXT
-																value matches {
-																	DV_TEXT matches {*}
-																}
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
+					ELEMENT[at0027] occurrences matches {0..1} matches {    -- Patient_care_and_wishes
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0028] occurrences matches {0..1} matches {    -- Care_after_death
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0029] occurrences matches {0..1} matches {    -- Facilities
+						value matches {
+							DV_TEXT matches {*}
 						}
 					}
 					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Notes
 						value matches {
 							DV_TEXT matches {*}
 						}
+					}
+					allow_archetype CLUSTER[at0025] occurrences matches {0..*} matches {    -- Topics_discussed
+						include
+							archetype_id/value matches {/.*/}
 					}
 				}
 			}
@@ -135,48 +109,24 @@ ontology
 					text = <"Notes">
 					description = <"">
 				>
-				["at0006"] = <
-					text = <"Topics_Discussed">
+				["at0025"] = <
+					text = <"Topics_discussed">
 					description = <"">
 				>
-				["at0013"] = <
+				["at0026"] = <
 					text = <"General_Topics">
 					description = <"">
 				>
-				["at0014"] = <
-					text = <"DV_TEXT">
-					description = <"">
-				>
-				["at0015"] = <
+				["at0027"] = <
 					text = <"Patient_care_and_wishes">
 					description = <"">
 				>
-				["at0017"] = <
-					text = <"DV_TEXT">
-					description = <"">
-				>
-				["at0018"] = <
+				["at0028"] = <
 					text = <"Care_after_death">
 					description = <"">
 				>
-				["at0019"] = <
-					text = <"DV_TEXT">
-					description = <"">
-				>
-				["at0020"] = <
+				["at0029"] = <
 					text = <"Facilities">
-					description = <"">
-				>
-				["at0021"] = <
-					text = <"DV_TEXT">
-					description = <"">
-				>
-				["at0022"] = <
-					text = <"Other">
-					description = <"">
-				>
-				["at0023"] = <
-					text = <"DV_TEXT">
 					description = <"">
 				>
 			>
