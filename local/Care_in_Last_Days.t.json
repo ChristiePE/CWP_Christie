@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "24.0.0",
+      "sem_ver" : "25.0.0",
       "PARENT:MD5-CAM-1.0.1" : "22426c971a985d28cc183aeb1a79f8fd",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "83024204ca9bbaa43530201d1d52a463"
+      "MD5-CAM-1.0.1" : "9b66c7746cc352d8c07f1b8aa520db2b"
     },
     "details" : {
       "en" : {
@@ -90,7 +90,7 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "ADMIN_ENTRY",
         "occurrences" : "0..1",
-        "nodeId" : "at0.24",
+        "nodeId" : "at0.26",
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-information_delivery-001.v0",
@@ -498,7 +498,7 @@
     "translations" : [ ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "0b2a96ba-a64e-4ddd-904d-a6396013500c",
+    "uid" : "f41183f2-9bcf-458d-8f8e-577b7aaa18a4",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -507,7 +507,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "74689f951e0237315e6106ef63df4817"
+        "PARENT:MD5-CAM-1.0.1" : "912a804eb043ef30c7967adf7031674f"
       },
       "details" : { }
     },
@@ -534,8 +534,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "1..1",
-              "nodeId" : "at0031.1",
+              "nodeId" : "at0033",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
@@ -545,15 +544,15 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "rmTypeName" : "CODE_PHRASE",
                       "occurrences" : "1..1",
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "ac0.1" ],
-                      "selectedTerminologies" : [ ]
+                      "constraint" : [ "at0060", "at0061", "at0062", "at0063", "at0064", "at0065", "at0066", "at0067", "at0068", "at0069", "at0070", "at0071", "at0072", "at0073", "at0074", "at0075", "at0076", "at0077", "at0078" ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -563,7 +562,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0033.1",
+              "nodeId" : "at0034",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
@@ -573,37 +572,17 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "0..1",
+                      "rmTypeName" : "CODE_PHRASE",
+                      "occurrences" : "1..1",
                       "terminologyId" : {
-                        "value" : "local_terms"
+                        "value" : "local"
                       },
-                      "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
-                      "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
-                        "code" : "Communication has not been possible because of patient's condition",
-                        "value" : "Communication has not been possible because of patient's condition"
-                      } ]
+                      "constraint" : [ "at0079", "at0080" ]
                     } ]
                   } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0034.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -745,24 +724,12 @@
             "code" : "at0080",
             "text" : "Leaflet",
             "description" : ""
-          },
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.1",
-            "description" : ""
           }
         }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : {
-        "ac0.1" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.1",
-          "members" : [ "at0035", "at0036", "at0037", "at0038", "at0039", "at0040" ]
-        }
-      }
+      "valueSets" : { }
     },
     "adlVersion" : "1.4",
     "buildUid" : "3ac2f129-7015-3a6e-ae64-01f9a3fe48b9",
