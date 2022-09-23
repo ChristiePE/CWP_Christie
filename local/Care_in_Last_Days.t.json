@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "22.0.0",
+      "sem_ver" : "23.0.0",
       "PARENT:MD5-CAM-1.0.1" : "22426c971a985d28cc183aeb1a79f8fd",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "152f748da439531b4697b44fc7f4cf63"
+      "MD5-CAM-1.0.1" : "83024204ca9bbaa43530201d1d52a463"
     },
     "details" : {
       "en" : {
@@ -90,7 +90,7 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "ADMIN_ENTRY",
         "occurrences" : "0..1",
-        "nodeId" : "at0.26",
+        "nodeId" : "at0.24",
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-information_delivery-001.v0",
@@ -498,7 +498,7 @@
     "translations" : [ ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "0f31bd83-991f-449b-b7a9-b077150adaae",
+    "uid" : "0b2a96ba-a64e-4ddd-904d-a6396013500c",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -507,7 +507,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "19c0e5f61ae4ca5e1230629d886123f4"
+        "PARENT:MD5-CAM-1.0.1" : "74689f951e0237315e6106ef63df4817"
       },
       "details" : { }
     },
@@ -521,18 +521,248 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "ADMIN_ENTRY",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "1..1",
+              "nodeId" : "at0031.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.1" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0033.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "local_terms"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "local_terms" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "local_terms",
+                        "code" : "Communication has not been possible because of patient's condition",
+                        "value" : "Communication has not been possible because of patient's condition"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0034.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { }
+        "en" : {
+          "at0060" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0060",
+            "text" : "Communication has not been possible because of patient's condition",
+            "description" : ""
+          },
+          "at0061" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0061",
+            "text" : "Patient did not want to discuss any aspects of their condition",
+            "description" : ""
+          },
+          "at0062" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0062",
+            "text" : "No new topics since last review",
+            "description" : ""
+          },
+          "at0063" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0063",
+            "text" : "Recognition of dying",
+            "description" : ""
+          },
+          "at0064" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0064",
+            "text" : "AaND",
+            "description" : ""
+          },
+          "at0065" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065",
+            "text" : "Making a will",
+            "description" : ""
+          },
+          "at0066" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0066",
+            "text" : "Marriage",
+            "description" : ""
+          },
+          "at0067" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0067",
+            "text" : "Preferences for care",
+            "description" : ""
+          },
+          "at0068" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0068",
+            "text" : "Changes to analgesia",
+            "description" : ""
+          },
+          "at0069" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069",
+            "text" : "Changes to sedation",
+            "description" : ""
+          },
+          "at0070" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070",
+            "text" : "Changes to medication",
+            "description" : ""
+          },
+          "at0071" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0071",
+            "text" : "Changes to active measures",
+            "description" : ""
+          },
+          "at0072" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0072",
+            "text" : "Changes to nutrition",
+            "description" : ""
+          },
+          "at0073" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073",
+            "text" : "Changes to IV fluids",
+            "description" : ""
+          },
+          "at0074" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0074",
+            "text" : "Organ or tissue donation",
+            "description" : ""
+          },
+          "at0075" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0075",
+            "text" : "Funeral",
+            "description" : ""
+          },
+          "at0076" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0076",
+            "text" : "Urgency of burial",
+            "description" : ""
+          },
+          "at0077" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077",
+            "text" : "Repatriation",
+            "description" : ""
+          },
+          "at0078" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0078",
+            "text" : "Other",
+            "description" : ""
+          },
+          "at0079" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0079",
+            "text" : "Face to face",
+            "description" : ""
+          },
+          "at0080" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0080",
+            "text" : "Leaflet",
+            "description" : ""
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0035", "at0036", "at0037", "at0038", "at0039", "at0040" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "3ac2f129-7015-3a6e-ae64-01f9a3fe48b9",
