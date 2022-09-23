@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"61c803d7a5c5a4666747e53b3d33b4a1">
+		["MD5-CAM-1.0.1"] = <"19c0e5f61ae4ca5e1230629d886123f4">
 		["build_uid"] = <"3ac2f129-7015-3a6e-ae64-01f9a3fe48b9">
 	>
 
@@ -77,7 +77,13 @@ definition
 					}
 					ELEMENT[at0034] occurrences matches {0..1} matches {    -- Method of delivery
 						value matches {
-							DV_CODED_TEXT matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0079,    -- Face to face
+									at0080]    -- Leaflet
+								}
+							}
 						}
 					}
 					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Notes
@@ -216,6 +222,14 @@ ontology
 				>
 				["at0078"] = <
 					text = <"Other">
+					description = <"">
+				>
+				["at0079"] = <
+					text = <"Face to face">
+					description = <"">
+				>
+				["at0080"] = <
+					text = <"Leaflet">
 					description = <"">
 				>
 			>
