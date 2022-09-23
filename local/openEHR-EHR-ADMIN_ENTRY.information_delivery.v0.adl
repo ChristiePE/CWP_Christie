@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a53c8c78815c341a4fcff753cc1a7f3c">
+		["MD5-CAM-1.0.1"] = <"41e3b80f36b8b5b5f2c03502e7968609">
 		["build_uid"] = <"3ac2f129-7015-3a6e-ae64-01f9a3fe48b9">
 	>
 
@@ -46,6 +46,10 @@ definition
 						value matches {
 							DV_TEXT matches {*}
 						}
+					}
+					allow_archetype CLUSTER[at0025] occurrences matches {0..*} matches {    -- Topics_discussed
+						include
+							archetype_id/value matches {/.*/}
 					}
 					ELEMENT[at0026] occurrences matches {0..1} matches {    -- General_Topics
 						value matches {
@@ -71,10 +75,6 @@ definition
 						value matches {
 							DV_TEXT matches {*}
 						}
-					}
-					allow_archetype CLUSTER[at0025] occurrences matches {0..*} matches {    -- Topics_discussed
-						include
-							archetype_id/value matches {/.*/}
 					}
 				}
 			}
