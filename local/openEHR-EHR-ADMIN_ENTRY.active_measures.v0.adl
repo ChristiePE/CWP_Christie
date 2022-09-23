@@ -1,0 +1,72 @@
+archetype (adl_version=1.4; uid=0c3be1ab-51d8-4ef3-8632-f0f903e2d1f2)
+	openEHR-EHR-ADMIN_ENTRY.active_measures.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2022-09-23">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"4950a9fd225bde54d1a3700f3d732bdd">
+		["build_uid"] = <"c123d05a-7b93-3a28-9eb1-a4abeb7dbced">
+	>
+
+definition
+	ADMIN_ENTRY[at0000] matches {    -- Active_Measures
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Description
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Active_Measures
+						value matches {
+							DV_CODED_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Active_Measures">
+					description = <"Active_Measures">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Description">
+					description = <"What active measures is the patient receiving at this assessment: IV fluids, Antibiotics etc">
+				>
+				["at0003"] = <
+					text = <"Active_Measures">
+					description = <"">
+				>
+			>
+		>
+	>
