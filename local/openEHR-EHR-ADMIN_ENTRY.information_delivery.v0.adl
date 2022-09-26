@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"912a804eb043ef30c7967adf7031674f">
+		["MD5-CAM-1.0.1"] = <"36eb43ffbe6a2a8495bcd574f12690d9">
 		["build_uid"] = <"3ac2f129-7015-3a6e-ae64-01f9a3fe48b9">
 	>
 
@@ -53,7 +53,14 @@ definition
 					}
 					ELEMENT[at0034] occurrences matches {0..1} matches {    -- Method of delivery
 						value matches {
-							DV_CODED_TEXT matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0086,    -- Face to face
+									at0087,    -- Leaflet
+									at0088]    -- DVD
+								}
+							}
 						}
 					}
 					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Notes
@@ -88,7 +95,7 @@ ontology
 				>
 				["at0033"] = <
 					text = <"Content">
-					description = <"">
+					description = <"Topics discussed with the patient - add at Template Level">
 				>
 				["at0034"] = <
 					text = <"Method of delivery">
@@ -112,6 +119,18 @@ ontology
 				>
 				["at0085"] = <
 					text = <"Other">
+					description = <"">
+				>
+				["at0086"] = <
+					text = <"Face to face">
+					description = <"">
+				>
+				["at0087"] = <
+					text = <"Leaflet">
+					description = <"">
+				>
+				["at0088"] = <
+					text = <"DVD">
 					description = <"">
 				>
 			>
