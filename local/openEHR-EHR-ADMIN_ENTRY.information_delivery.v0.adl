@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"208ad09b568237e578db484ef3177acc">
+		["MD5-CAM-1.0.1"] = <"1c0983af3394e236135fe2e565df0da2">
 		["build_uid"] = <"3ac2f129-7015-3a6e-ae64-01f9a3fe48b9">
 	>
 
@@ -32,7 +32,7 @@ definition
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0031] occurrences matches {0..1} matches {    -- Recipient
+					ELEMENT[at0031] occurrences matches {0..0} matches {    -- Recipient
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -46,7 +46,7 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0091] occurrences matches {0..1} matches {    -- Content
+					ELEMENT[at0091] occurrences matches {0..0} matches {    -- Content
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -78,7 +78,7 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0034] occurrences matches {0..1} matches {    -- Method of delivery
+					ELEMENT[at0034] occurrences matches {0..0} matches {    -- Method of delivery
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -90,7 +90,7 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Notes
+					ELEMENT[at0005] occurrences matches {0..0} matches {    -- Notes
 						value matches {
 							DV_TEXT matches {*}
 						}
