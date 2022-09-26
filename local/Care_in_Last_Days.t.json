@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "32.2.0",
+      "sem_ver" : "33.0.0",
       "PARENT:MD5-CAM-1.0.1" : "22426c971a985d28cc183aeb1a79f8fd",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "90d3b50c0b2faf3ef92dfa12ff30174d"
+      "MD5-CAM-1.0.1" : "9ec1882be2a861cbdff1ed291f9de192"
     },
     "details" : {
       "en" : {
@@ -90,7 +90,7 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "ADMIN_ENTRY",
         "occurrences" : "0..1",
-        "nodeId" : "at0.28",
+        "nodeId" : "at0.30",
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-information_delivery-001.v0",
@@ -591,7 +591,7 @@
     "translations" : [ ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "5fbf01af-0546-4096-98f7-205167404bb1",
+    "uid" : "1677716a-10f9-43cb-b5b0-59a9214220bb",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -600,22 +600,9 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "e8d8d9d2efe0d35e1bcb9053a07a1249"
+        "PARENT:MD5-CAM-1.0.1" : "2539e172cd96c9238d08e13de6b4167a"
       },
-      "details" : {
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "keywords" : [ ],
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
+      "details" : { }
     },
     "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.information_delivery.v0",
     "differential" : true,
@@ -640,7 +627,8 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0031.1",
+              "occurrences" : "0..*",
+              "nodeId" : "at0031",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
@@ -652,36 +640,12 @@
                     "rmAttributeName" : "defining_code",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "rmTypeName" : "CODE_PHRASE",
                       "occurrences" : "1..1",
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "ac0.1" ],
-                      "selectedTerminologies" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0090.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_STRING",
-                      "rmTypeName" : "STRING",
-                      "constraint" : [ "Communication has not been possible because of patient's condition", "Patient did not want to discuss any aspects of their condition", "No new topics since last review", "Recognition of dying", "AaND", "Making a will", "Marriage", "Preferences for care", "Changes to analgesia", "Changes to sedation", "Changes to medication", "Changes to active measures", "Changes to nutrition", "Changes to IV fluids", "Organ or tissue donation", "Funeral", "Urgency of burial", "Repatriation", "Other" ]
+                      "constraint" : [ "at0081", "at0082", "at0083", "at0084", "at0085" ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -699,30 +663,11 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : {
-          "at0090.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0090.1",
-            "text" : "Topics discussed with the patient and or others",
-            "description" : "Topics discussed with the patient - add details at Template Level"
-          },
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.1",
-            "description" : ""
-          }
-        }
+        "en" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : {
-        "ac0.1" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.1",
-          "members" : [ "at0081", "at0082", "at0083", "at0084", "at0085" ]
-        }
-      }
+      "valueSets" : { }
     },
     "adlVersion" : "1.4",
     "buildUid" : "3ac2f129-7015-3a6e-ae64-01f9a3fe48b9",
