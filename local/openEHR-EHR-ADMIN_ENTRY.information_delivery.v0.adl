@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d40e9ffaaf7362f5137e039550a07f87">
+		["MD5-CAM-1.0.1"] = <"208ad09b568237e578db484ef3177acc">
 		["build_uid"] = <"3ac2f129-7015-3a6e-ae64-01f9a3fe48b9">
 	>
 
@@ -32,7 +32,7 @@ definition
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0031] occurrences matches {0..*} matches {    -- Recipient
+					ELEMENT[at0031] occurrences matches {0..1} matches {    -- Recipient
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -46,12 +46,39 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0090] occurrences matches {0..*} matches {    -- Content
+					ELEMENT[at0091] occurrences matches {0..1} matches {    -- Content
 						value matches {
-							DV_TEXT matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0092,    -- Communication has not been possible because of patient's condition
+									at0093,    -- Patient did not want to discuss any aspects of their condition
+									at0094,    -- No new topics since last review
+									at0095,    -- *General topics
+									at0096,    -- Recognition of dying
+									at0097,    -- AaND
+									at0098,    -- Making a will
+									at0099,    -- Marriage
+									at0100,    -- *Patient care and wishes
+									at0101,    -- Preferences for care
+									at0102,    -- Changes to analgesia
+									at0103,    -- Changes to sedation
+									at0104,    -- Changes to medication
+									at0105,    -- Changes to active measures
+									at0106,    -- Changes to nutrition
+									at0107,    -- Changes to IV fluids
+									at0108,    -- *Wishes for after death
+									at0109,    -- Organ or tissue donation
+									at0110,    -- Funeral
+									at0111,    -- Urgency of burial
+									at0112,    -- Repatriation
+									at0113,    -- *Other
+									at0114]    -- Other
+								}
+							}
 						}
 					}
-					ELEMENT[at0034] occurrences matches {0..*} matches {    -- Method of delivery
+					ELEMENT[at0034] occurrences matches {0..1} matches {    -- Method of delivery
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -129,9 +156,101 @@ ontology
 					text = <"DVD">
 					description = <"">
 				>
-				["at0090"] = <
+				["at0091"] = <
 					text = <"Content">
-					description = <"Topics discussed with the patient - add details at Template Level">
+					description = <"">
+				>
+				["at0092"] = <
+					text = <"Communication has not been possible because of patient's condition">
+					description = <"">
+				>
+				["at0093"] = <
+					text = <"Patient did not want to discuss any aspects of their condition">
+					description = <"">
+				>
+				["at0094"] = <
+					text = <"No new topics since last review">
+					description = <"">
+				>
+				["at0095"] = <
+					text = <"*General topics">
+					description = <"">
+				>
+				["at0096"] = <
+					text = <"Recognition of dying">
+					description = <"">
+				>
+				["at0097"] = <
+					text = <"AaND">
+					description = <"">
+				>
+				["at0098"] = <
+					text = <"Making a will">
+					description = <"">
+				>
+				["at0099"] = <
+					text = <"Marriage">
+					description = <"">
+				>
+				["at0100"] = <
+					text = <"*Patient care and wishes">
+					description = <"">
+				>
+				["at0101"] = <
+					text = <"Preferences for care">
+					description = <"">
+				>
+				["at0102"] = <
+					text = <"Changes to analgesia">
+					description = <"">
+				>
+				["at0103"] = <
+					text = <"Changes to sedation">
+					description = <"">
+				>
+				["at0104"] = <
+					text = <"Changes to medication">
+					description = <"">
+				>
+				["at0105"] = <
+					text = <"Changes to active measures">
+					description = <"">
+				>
+				["at0106"] = <
+					text = <"Changes to nutrition">
+					description = <"">
+				>
+				["at0107"] = <
+					text = <"Changes to IV fluids">
+					description = <"">
+				>
+				["at0108"] = <
+					text = <"*Wishes for after death">
+					description = <"">
+				>
+				["at0109"] = <
+					text = <"Organ or tissue donation">
+					description = <"">
+				>
+				["at0110"] = <
+					text = <"Funeral">
+					description = <"">
+				>
+				["at0111"] = <
+					text = <"Urgency of burial">
+					description = <"">
+				>
+				["at0112"] = <
+					text = <"Repatriation">
+					description = <"">
+				>
+				["at0113"] = <
+					text = <"*Other">
+					description = <"">
+				>
+				["at0114"] = <
+					text = <"Other">
+					description = <"">
 				>
 			>
 		>
