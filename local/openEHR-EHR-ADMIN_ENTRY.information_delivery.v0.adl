@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c8baefe35d6326d3025b874781043725">
+		["MD5-CAM-1.0.1"] = <"23bf2b33b9ecc956fa90f7d824795858">
 		["build_uid"] = <"3ac2f129-7015-3a6e-ae64-01f9a3fe48b9">
 	>
 
@@ -44,15 +44,20 @@ definition
 					}
 					CLUSTER[at0118] occurrences matches {0..1} matches {    -- Content
 						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[at0126] occurrences matches {0..1} matches {    -- Content
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
 							CLUSTER[at0119] occurrences matches {0..1} matches {    -- Content
 								items cardinality matches {1..*; unordered} matches {
+									ELEMENT[at0129] occurrences matches {0..1} matches {    -- Content
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
 									CLUSTER[at0120] occurrences matches {0..1} matches {    -- Content
 										items cardinality matches {1..*; unordered} matches {
-											ELEMENT[at0123] occurrences matches {0..1} matches {    -- Content
-												value matches {
-													DV_TEXT matches {*}
-												}
-											}
 											ELEMENT[at0125] occurrences matches {0..1} matches {    -- Content
 												value matches {
 													DV_TEXT matches {*}
@@ -119,11 +124,15 @@ ontology
 					text = <"Content">
 					description = <"">
 				>
-				["at0123"] = <
+				["at0125"] = <
 					text = <"Content">
 					description = <"">
 				>
-				["at0125"] = <
+				["at0126"] = <
+					text = <"Content">
+					description = <"">
+				>
+				["at0129"] = <
 					text = <"Content">
 					description = <"">
 				>
