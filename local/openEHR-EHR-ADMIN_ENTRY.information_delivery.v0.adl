@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"23bf2b33b9ecc956fa90f7d824795858">
+		["MD5-CAM-1.0.1"] = <"94c2a9a71ac9879757cef36bf386d72a">
 		["build_uid"] = <"3ac2f129-7015-3a6e-ae64-01f9a3fe48b9">
 	>
 
@@ -44,21 +44,21 @@ definition
 					}
 					CLUSTER[at0118] occurrences matches {0..1} matches {    -- Content
 						items cardinality matches {1..*; unordered} matches {
-							ELEMENT[at0126] occurrences matches {0..1} matches {    -- Content
+							ELEMENT[at0126] occurrences matches {0..*} matches {    -- Content
 								value matches {
 									DV_TEXT matches {*}
 								}
 							}
 							CLUSTER[at0119] occurrences matches {0..1} matches {    -- Content
 								items cardinality matches {1..*; unordered} matches {
-									ELEMENT[at0129] occurrences matches {0..1} matches {    -- Content
+									ELEMENT[at0129] occurrences matches {0..*} matches {    -- Content
 										value matches {
 											DV_TEXT matches {*}
 										}
 									}
 									CLUSTER[at0120] occurrences matches {0..1} matches {    -- Content
 										items cardinality matches {1..*; unordered} matches {
-											ELEMENT[at0125] occurrences matches {0..1} matches {    -- Content
+											ELEMENT[at0125] occurrences matches {0..*} matches {    -- Content
 												value matches {
 													DV_TEXT matches {*}
 												}
