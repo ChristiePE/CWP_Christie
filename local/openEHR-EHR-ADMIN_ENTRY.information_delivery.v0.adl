@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7f584c9e7e25ecb0f0db57af53c7b3b5">
+		["MD5-CAM-1.0.1"] = <"c8baefe35d6326d3025b874781043725">
 		["build_uid"] = <"3ac2f129-7015-3a6e-ae64-01f9a3fe48b9">
 	>
 
@@ -46,7 +46,20 @@ definition
 						items cardinality matches {1..*; unordered} matches {
 							CLUSTER[at0119] occurrences matches {0..1} matches {    -- Content
 								items cardinality matches {1..*; unordered} matches {
-									CLUSTER[at0120] occurrences matches {0..1} matches {*}    -- Content
+									CLUSTER[at0120] occurrences matches {0..1} matches {    -- Content
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0123] occurrences matches {0..1} matches {    -- Content
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0125] occurrences matches {0..1} matches {    -- Content
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+										}
+									}
 								}
 							}
 						}
@@ -103,6 +116,14 @@ ontology
 					description = <"">
 				>
 				["at0120"] = <
+					text = <"Content">
+					description = <"">
+				>
+				["at0123"] = <
+					text = <"Content">
+					description = <"">
+				>
+				["at0125"] = <
 					text = <"Content">
 					description = <"">
 				>
