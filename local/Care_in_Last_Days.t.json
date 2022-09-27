@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "47.0.0",
+      "sem_ver" : "47.1.0",
       "PARENT:MD5-CAM-1.0.1" : "22426c971a985d28cc183aeb1a79f8fd",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "bd3314452b5f4005da94c50fed42163b"
+      "MD5-CAM-1.0.1" : "bb7f5bba68ed6417d182cb272e601b84"
     },
     "details" : {
       "en" : {
@@ -130,15 +130,6 @@
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-information_delivery-005.v0",
-        "referenceType" : "archetypeOverlay"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "ADMIN_ENTRY",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.28",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-information_delivery-006.v0",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
@@ -645,7 +636,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "94c2a9a71ac9879757cef36bf386d72a"
+        "PARENT:MD5-CAM-1.0.1" : "5927629fc3302bdbf4d040e82117ba23"
       },
       "details" : { }
     },
@@ -685,60 +676,6 @@
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..0",
-              "nodeId" : "at0118.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "items",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0126.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "CLUSTER",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0119.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "items",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0129.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0120.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "items",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0125.1",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0117.1",
@@ -756,6 +693,42 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
+          "at0118" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0118",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0119" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0119",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0120" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0120",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0125" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0125",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0126" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0126",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0129" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0129",
+            "text" : "Content",
+            "description" : ""
+          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
@@ -792,7 +765,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "94c2a9a71ac9879757cef36bf386d72a"
+        "PARENT:MD5-CAM-1.0.1" : "5927629fc3302bdbf4d040e82117ba23"
       },
       "details" : { }
     },
@@ -832,60 +805,6 @@
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..0",
-              "nodeId" : "at0118.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "items",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0126.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "CLUSTER",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0119.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "items",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0129.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0120.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "items",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0125.1",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0117.1",
@@ -917,6 +836,42 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
+          "at0118" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0118",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0119" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0119",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0120" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0120",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0125" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0125",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0126" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0126",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0129" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0129",
+            "text" : "Content",
+            "description" : ""
+          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
@@ -959,7 +914,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "94c2a9a71ac9879757cef36bf386d72a"
+        "PARENT:MD5-CAM-1.0.1" : "5927629fc3302bdbf4d040e82117ba23"
       },
       "details" : { }
     },
@@ -999,60 +954,6 @@
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..0",
-              "nodeId" : "at0118.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "items",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0126.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "CLUSTER",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0119.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "items",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0129.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0120.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "items",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0125.1",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0117.1",
@@ -1084,6 +985,42 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
+          "at0118" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0118",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0119" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0119",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0120" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0120",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0125" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0125",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0126" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0126",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0129" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0129",
+            "text" : "Content",
+            "description" : ""
+          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
@@ -1120,7 +1057,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "94c2a9a71ac9879757cef36bf386d72a"
+        "PARENT:MD5-CAM-1.0.1" : "5927629fc3302bdbf4d040e82117ba23"
       },
       "details" : { }
     },
@@ -1192,60 +1129,6 @@
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..0",
-              "nodeId" : "at0118.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "items",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0126.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "CLUSTER",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0119.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "items",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0129.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0120.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "items",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0125.1",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0117.1",
@@ -1270,6 +1153,42 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
+          "at0118" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0118",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0119" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0119",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0120" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0120",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0125" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0125",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0126" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0126",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0129" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0129",
+            "text" : "Content",
+            "description" : ""
+          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
@@ -1306,7 +1225,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "94c2a9a71ac9879757cef36bf386d72a"
+        "PARENT:MD5-CAM-1.0.1" : "5927629fc3302bdbf4d040e82117ba23"
       },
       "details" : { }
     },
@@ -1362,60 +1281,6 @@
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..0",
-              "nodeId" : "at0118.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "items",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0126.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "CLUSTER",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0119.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "items",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0129.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0120.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "items",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0125.1",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0117.1",
@@ -1440,180 +1305,46 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
+          "at0118" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0118",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0119" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0119",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0120" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0120",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0125" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0125",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0126" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0126",
+            "text" : "Content",
+            "description" : ""
+          },
+          "at0129" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0129",
+            "text" : "Content",
+            "description" : ""
+          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Patient care and wishes",
-            "description" : "Information_Delivery"
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "3ac2f129-7015-3a6e-ae64-01f9a3fe48b9",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "e1769ff4-2d0e-44ea-9148-06cd04f5a5ac",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "94c2a9a71ac9879757cef36bf386d72a"
-      },
-      "details" : { }
-    },
-    "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.information_delivery.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-ADMIN_ENTRY.ovl-information_delivery-006.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "ADMIN_ENTRY",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "data",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ITEM_TREE",
-          "nodeId" : "at0001",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0115.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0116.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_STRING",
-                      "rmTypeName" : "STRING",
-                      "constraint" : [ "Organ or tissue donation", "Funeral", "Urgency of burial", "Repatriation" ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..0",
-              "nodeId" : "at0118.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "items",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0126.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "CLUSTER",
-                  "occurrences" : "0..0",
-                  "nodeId" : "at0119.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "items",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0129.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0120.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "items",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0125.1",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0117.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ],
-      "attributeCustomizations" : {
-        "data" : {
-          "aliases" : {
-            "en" : "Wishes for after death"
-          }
-        }
-      }
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Wishes for after death",
             "description" : "Information_Delivery"
           }
         }
