@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"845b4e1b6116354ad29901cbf345a2d5">
+		["MD5-CAM-1.0.1"] = <"7f584c9e7e25ecb0f0db57af53c7b3b5">
 		["build_uid"] = <"3ac2f129-7015-3a6e-ae64-01f9a3fe48b9">
 	>
 
@@ -40,6 +40,15 @@ definition
 					ELEMENT[at0116] occurrences matches {0..*} matches {    -- Content
 						value matches {
 							DV_TEXT matches {*}
+						}
+					}
+					CLUSTER[at0118] occurrences matches {0..1} matches {    -- Content
+						items cardinality matches {1..*; unordered} matches {
+							CLUSTER[at0119] occurrences matches {0..1} matches {    -- Content
+								items cardinality matches {1..*; unordered} matches {
+									CLUSTER[at0120] occurrences matches {0..1} matches {*}    -- Content
+								}
+							}
 						}
 					}
 					ELEMENT[at0117] occurrences matches {0..*} matches {    -- Method of delivery
@@ -83,6 +92,18 @@ ontology
 				>
 				["at0117"] = <
 					text = <"Method of delivery">
+					description = <"">
+				>
+				["at0118"] = <
+					text = <"Content">
+					description = <"">
+				>
+				["at0119"] = <
+					text = <"Content">
+					description = <"">
+				>
+				["at0120"] = <
+					text = <"Content">
 					description = <"">
 				>
 			>
