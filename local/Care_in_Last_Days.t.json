@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "50.0.0",
+      "sem_ver" : "51.0.0",
       "PARENT:MD5-CAM-1.0.1" : "22426c971a985d28cc183aeb1a79f8fd",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "57ab07595ee5d254485c21d969c40684"
+      "MD5-CAM-1.0.1" : "3361f95292f49ad4cb0d3b0f4748f24b"
     },
     "details" : {
       "en" : {
@@ -1176,6 +1176,12 @@
             "code" : "at0000.1",
             "text" : "Communication has not been possible because of patient's condition",
             "description" : "Information_Delivery"
+          },
+          "at0116.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0116.1",
+            "text" : "Communication has not been possible because of patient's condition",
+            "description" : ""
           }
         }
       },
@@ -1292,6 +1298,12 @@
             "code" : "at0000.1",
             "text" : "Patient did not want to discuss any aspects of their condition",
             "description" : "Information_Delivery"
+          },
+          "at0116.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0116.1",
+            "text" : "Patient did not want to discuss any aspects of their condition",
+            "description" : ""
           }
         }
       },
@@ -1350,6 +1362,13 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0115.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "nodeId" : "at0116.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -1401,6 +1420,12 @@
             "code" : "at0000.1",
             "text" : "No new topics since last review",
             "description" : "Information_Delivery"
+          },
+          "at0116.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0116.1",
+            "text" : "No new topics since last review",
+            "description" : ""
           }
         }
       },
