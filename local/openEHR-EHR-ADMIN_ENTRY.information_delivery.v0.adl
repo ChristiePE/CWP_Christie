@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"94c2a9a71ac9879757cef36bf386d72a">
+		["MD5-CAM-1.0.1"] = <"5927629fc3302bdbf4d040e82117ba23">
 		["build_uid"] = <"3ac2f129-7015-3a6e-ae64-01f9a3fe48b9">
 	>
 
@@ -40,33 +40,6 @@ definition
 					ELEMENT[at0116] occurrences matches {0..*} matches {    -- Content
 						value matches {
 							DV_TEXT matches {*}
-						}
-					}
-					CLUSTER[at0118] occurrences matches {0..1} matches {    -- Content
-						items cardinality matches {1..*; unordered} matches {
-							ELEMENT[at0126] occurrences matches {0..*} matches {    -- Content
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-							CLUSTER[at0119] occurrences matches {0..1} matches {    -- Content
-								items cardinality matches {1..*; unordered} matches {
-									ELEMENT[at0129] occurrences matches {0..*} matches {    -- Content
-										value matches {
-											DV_TEXT matches {*}
-										}
-									}
-									CLUSTER[at0120] occurrences matches {0..1} matches {    -- Content
-										items cardinality matches {1..*; unordered} matches {
-											ELEMENT[at0125] occurrences matches {0..*} matches {    -- Content
-												value matches {
-													DV_TEXT matches {*}
-												}
-											}
-										}
-									}
-								}
-							}
 						}
 					}
 					ELEMENT[at0117] occurrences matches {0..*} matches {    -- Method of delivery
@@ -110,30 +83,6 @@ ontology
 				>
 				["at0117"] = <
 					text = <"Method of delivery">
-					description = <"">
-				>
-				["at0118"] = <
-					text = <"Content">
-					description = <"">
-				>
-				["at0119"] = <
-					text = <"Content">
-					description = <"">
-				>
-				["at0120"] = <
-					text = <"Content">
-					description = <"">
-				>
-				["at0125"] = <
-					text = <"Content">
-					description = <"">
-				>
-				["at0126"] = <
-					text = <"Content">
-					description = <"">
-				>
-				["at0129"] = <
-					text = <"Content">
 					description = <"">
 				>
 			>
