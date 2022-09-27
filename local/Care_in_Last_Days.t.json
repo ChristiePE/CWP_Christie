@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "47.1.0",
+      "sem_ver" : "48.0.0",
       "PARENT:MD5-CAM-1.0.1" : "22426c971a985d28cc183aeb1a79f8fd",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "bb7f5bba68ed6417d182cb272e601b84"
+      "MD5-CAM-1.0.1" : "eedbbadff54178584a25038ff56334ce"
     },
     "details" : {
       "en" : {
@@ -90,25 +90,7 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "ADMIN_ENTRY",
         "occurrences" : "0..1",
-        "nodeId" : "at0.18",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-information_delivery-002.v0",
-        "referenceType" : "archetypeOverlay"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "ADMIN_ENTRY",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.20",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-information_delivery-003.v0",
-        "referenceType" : "archetypeOverlay"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "ADMIN_ENTRY",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.22",
+        "nodeId" : "at0.28",
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-information_delivery-001.v0",
@@ -117,7 +99,25 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "ADMIN_ENTRY",
         "occurrences" : "0..1",
-        "nodeId" : "at0.24",
+        "nodeId" : "at0.30",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-information_delivery-002.v0",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "ADMIN_ENTRY",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.32",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-information_delivery-003.v0",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "ADMIN_ENTRY",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.34",
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-information_delivery-004.v0",
@@ -126,10 +126,19 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "ADMIN_ENTRY",
         "occurrences" : "0..1",
-        "nodeId" : "at0.26",
+        "nodeId" : "at0.36",
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-information_delivery-005.v0",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "ADMIN_ENTRY",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.38",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-information_delivery-006.v0",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
@@ -593,7 +602,14 @@
           "attributeTuples" : [ ]
         } ]
       } ],
-      "attributeTuples" : [ ]
+      "attributeTuples" : [ ],
+      "attributeCustomizations" : {
+        "data" : {
+          "aliases" : {
+            "en" : "General tpoics"
+          }
+        }
+      }
     },
     "terminology" : {
       "@type" : "ARCHETYPE_TERMINOLOGY",
@@ -627,7 +643,7 @@
     "translations" : [ ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "4ad31d19-619c-4ed2-bc49-d5bb672f989e",
+    "uid" : "037ba87c-f9d0-44ba-83b7-290a8b29cdfe",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -638,285 +654,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "5927629fc3302bdbf4d040e82117ba23"
       },
-      "details" : { }
-    },
-    "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.information_delivery.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-ADMIN_ENTRY.ovl-information_delivery-002.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "ADMIN_ENTRY",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "data",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ITEM_TREE",
-          "nodeId" : "at0001",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0115.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0116.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0117.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
+      "details" : {
         "en" : {
-          "at0118" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0118",
-            "text" : "Content",
-            "description" : ""
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
           },
-          "at0119" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0119",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0120" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0120",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0125" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0125",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0126" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0126",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0129" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0129",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Communication has not been possible because of patient's condition",
-            "description" : "Information_Delivery"
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "3ac2f129-7015-3a6e-ae64-01f9a3fe48b9",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "c9bfa8d7-990a-48f2-aac7-57fb849215c3",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "5927629fc3302bdbf4d040e82117ba23"
-      },
-      "details" : { }
-    },
-    "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.information_delivery.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-ADMIN_ENTRY.ovl-information_delivery-003.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "ADMIN_ENTRY",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "data",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ITEM_TREE",
-          "nodeId" : "at0001",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0115.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0116.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0117.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0005.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ],
-      "attributeCustomizations" : {
-        "data" : {
-          "aliases" : {
-            "en" : "Patient did not want to discuss any aspects of their condition"
-          }
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : {
-          "at0118" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0118",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0119" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0119",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0120" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0120",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0125" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0125",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0126" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0126",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0129" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0129",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Patient did not want to discuss any aspects of their condition",
-            "description" : "Information_Delivery"
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "Further information",
-            "description" : ""
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "3ac2f129-7015-3a6e-ae64-01f9a3fe48b9",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "bb55c7b5-2bb4-4c10-aed9-c5ed73d0b138",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "5927629fc3302bdbf4d040e82117ba23"
-      },
-      "details" : { }
     },
     "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.information_delivery.v0",
     "differential" : true,
@@ -941,16 +692,52 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
               "nodeId" : "at0115.1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "defaultValue" : {
+                    "value" : "Patient",
+                    "@type" : "DV_TEXT"
+                  },
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Patient" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
               "nodeId" : "at0116.1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "AaND", "Making a will", "Marriage", "Recognition of dying" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -959,72 +746,22 @@
               "nodeId" : "at0117.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0005.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
             } ]
           } ],
           "attributeTuples" : [ ]
         } ]
       } ],
-      "attributeTuples" : [ ],
-      "attributeCustomizations" : {
-        "data" : {
-          "aliases" : {
-            "en" : "No new topics since last review"
-          }
-        }
-      }
+      "attributeTuples" : [ ]
     },
     "terminology" : {
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "at0118" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0118",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0119" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0119",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0120" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0120",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0125" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0125",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0126" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0126",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0129" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0129",
-            "text" : "Content",
-            "description" : ""
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "No new topics since last review",
+            "text" : "Topics discussed with the patient since last review",
             "description" : "Information_Delivery"
           }
         }
@@ -1048,7 +785,7 @@
     "translations" : [ ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "cb2c5c79-61a2-4d1c-afcf-e8152b77a6de",
+    "uid" : "08f04021-ba8c-49d1-9977-9152aedbbc03",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -1059,7 +796,203 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "5927629fc3302bdbf4d040e82117ba23"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.information_delivery.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-ADMIN_ENTRY.ovl-information_delivery-002.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "ADMIN_ENTRY",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0115.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "defaultValue" : {
+                    "value" : "Patient",
+                    "@type" : "DV_TEXT"
+                  },
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Patient" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Information_Delivery (2)",
+            "description" : "Information_Delivery"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "3ac2f129-7015-3a6e-ae64-01f9a3fe48b9",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "375f0c6c-2462-47b8-89d6-6727bec86ef7",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "5927629fc3302bdbf4d040e82117ba23"
+      },
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.information_delivery.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-ADMIN_ENTRY.ovl-information_delivery-003.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "ADMIN_ENTRY",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Information_Delivery (3)",
+            "description" : "Information_Delivery"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "3ac2f129-7015-3a6e-ae64-01f9a3fe48b9",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "e7fc2c8b-2624-464b-925f-eaba07dc7b66",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "5927629fc3302bdbf4d040e82117ba23"
+      },
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.information_delivery.v0",
     "differential" : true,
@@ -1071,128 +1004,18 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "ADMIN_ENTRY",
       "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "data",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ITEM_TREE",
-          "nodeId" : "at0001",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0115.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_STRING",
-                      "rmTypeName" : "STRING",
-                      "constraint" : [ "Family", "Next of kin", "Significant others", "District Nurse", "MacMillan Nurse", "GP" ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0116.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_STRING",
-                      "rmTypeName" : "STRING",
-                      "constraint" : [ "Recognition of dying", "AaND", "Making a will", "Marriage" ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0117.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ],
-      "attributeCustomizations" : {
-        "data" : {
-          "aliases" : {
-            "en" : "General topics"
-          }
-        }
-      }
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
     },
     "terminology" : {
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "at0118" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0118",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0119" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0119",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0120" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0120",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0125" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0125",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0126" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0126",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0129" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0129",
-            "text" : "Content",
-            "description" : ""
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "General topics",
+            "text" : "Information_Delivery (4)",
             "description" : "Information_Delivery"
           }
         }
@@ -1216,7 +1039,7 @@
     "translations" : [ ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "c7d7ade9-ca94-46dc-ae19-874f9bb83afd",
+    "uid" : "56f18def-6b7d-4da9-8ccc-ffc7bc82eced",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -1227,7 +1050,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "5927629fc3302bdbf4d040e82117ba23"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.information_delivery.v0",
     "differential" : true,
@@ -1239,112 +1075,89 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "ADMIN_ENTRY",
       "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "data",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ITEM_TREE",
-          "nodeId" : "at0001",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0115.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0116.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_STRING",
-                      "rmTypeName" : "STRING",
-                      "constraint" : [ "Preferences for care", "Changes to analgesia", "Changes to sedation", "Changes to medication", "Changes to active measures", "Changes to nutrition", "Changes to IV fluids" ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0117.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ],
-      "attributeCustomizations" : {
-        "data" : {
-          "aliases" : {
-            "en" : "Patient care and wishes"
-          }
-        }
-      }
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
     },
     "terminology" : {
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "at0118" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0118",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0119" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0119",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0120" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0120",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0125" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0125",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0126" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0126",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0129" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0129",
-            "text" : "Content",
-            "description" : ""
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Patient care and wishes",
+            "text" : "Information_Delivery (5)",
+            "description" : "Information_Delivery"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "3ac2f129-7015-3a6e-ae64-01f9a3fe48b9",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "9ff7e5db-f479-435b-9c97-5030d74f4f08",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "5927629fc3302bdbf4d040e82117ba23"
+      },
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.information_delivery.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-ADMIN_ENTRY.ovl-information_delivery-006.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "ADMIN_ENTRY",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Information_Delivery (6)",
             "description" : "Information_Delivery"
           }
         }
