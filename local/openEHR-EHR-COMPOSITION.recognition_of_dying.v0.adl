@@ -1,0 +1,62 @@
+archetype (adl_version=1.4; uid=45ab62a1-c94b-421c-b567-4f5c1eb91621)
+	openEHR-EHR-COMPOSITION.recognition_of_dying.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2022-09-28">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"895c287be7c9c59405a8406a202710aa">
+		["build_uid"] = <"b0623ac5-bbc4-36a2-928d-df71130f0c8a">
+	>
+
+definition
+	COMPOSITION[at0000] matches {    -- Recognition_of_dying
+		category matches {
+			DV_CODED_TEXT[at0001] matches {    -- Coded text
+				defining_code matches {
+					[openehr::433]
+				}
+			}
+		}
+		context matches {
+			EVENT_CONTEXT[at0002] matches {*}    -- Event Context
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Recognition_of_dying">
+					description = <"Recognition_of_dying">
+				>
+				["at0001"] = <
+					text = <"Coded text">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Event Context">
+					description = <"">
+				>
+			>
+		>
+	>
