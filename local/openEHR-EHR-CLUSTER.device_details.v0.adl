@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3382ea919b52e657f6324ce4b78752d1">
+		["MD5-CAM-1.0.1"] = <"53dbe154559588fe270259918d43c3e9">
 		["build_uid"] = <"f55e5cb0-c59f-3402-8091-d8a7d0274b6d">
 	>
 
@@ -51,7 +51,6 @@ definition
 						include
 							archetype_id/value matches {/.*/}
 					}
-					ELEMENT[at0013] occurrences matches {0..1} matches {*}    -- Referral requested
 				}
 			}
 		}
@@ -85,10 +84,6 @@ ontology
 				["at0008"] = <
 					text = <"Support offered">
 					description = <"Has psychological and/or spiritual support been offered to the family or significant others?">
-				>
-				["at0013"] = <
-					text = <"Referral requested">
-					description = <"">
 				>
 			>
 		>
