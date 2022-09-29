@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2d7664256e945d889f22fe89216c487e">
+		["MD5-CAM-1.0.1"] = <"31482d51afd4b30a41780e6c69e67f52">
 		["build_uid"] = <"f55e5cb0-c59f-3402-8091-d8a7d0274b6d">
 	>
 
@@ -32,12 +32,7 @@ definition
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Recipient
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0003] occurrences matches {0..1} matches {    -- DV_TEXT
+					ELEMENT[at0002] occurrences matches {0..*} matches {    -- Recipient
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -45,6 +40,11 @@ definition
 					allow_archetype CLUSTER[at0005] occurrences matches {0..*} matches {    -- Details
 						include
 							archetype_id/value matches {/.*/}
+					}
+					ELEMENT[at0006] occurrences matches {0..*} matches {    -- Further information
+						value matches {
+							DV_TEXT matches {*}
+						}
 					}
 				}
 			}
@@ -67,14 +67,14 @@ ontology
 					text = <"Recipient">
 					description = <"State who the support has been given to: patient, family, friends, significant others">
 				>
-				["at0003"] = <
-					text = <"DV_TEXT">
-					description = <"">
-				>
 				["at0005"] = <
 					text = <"Details">
 					description = <"Additional details about the individual's Psychological or Spiritual affiliation.">
 					comment = <"For example: religious/spiritual organisation or contact person.">
+				>
+				["at0006"] = <
+					text = <"Further information">
+					description = <"">
 				>
 			>
 		>
