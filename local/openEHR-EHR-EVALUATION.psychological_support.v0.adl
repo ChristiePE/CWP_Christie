@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"153937baeaa498177d93ee0751b36b7b">
+		["MD5-CAM-1.0.1"] = <"987d43e12ca1a2487d6ec40010ae25e2">
 		["build_uid"] = <"caaab48e-9181-3213-b8d0-1c1502cd0c13">
 	>
 
@@ -41,6 +41,10 @@ definition
 						value matches {
 							DV_TEXT matches {*}
 						}
+					}
+					allow_archetype CLUSTER[at0005] occurrences matches {0..*} matches {    -- Additional Data
+						include
+							archetype_id/value matches {/.*/}
 					}
 				}
 			}
@@ -73,6 +77,10 @@ ontology
 				["at0004"] = <
 					text = <"Item tree">
 					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Additional Data">
+					description = <"">
 				>
 			>
 		>
