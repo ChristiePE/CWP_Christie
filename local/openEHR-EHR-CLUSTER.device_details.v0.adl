@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c426c95507cbdd2e3277c3c36f97bb7c">
+		["MD5-CAM-1.0.1"] = <"4139dbed35eb80e016b75534f3eea23e">
 		["build_uid"] = <"f55e5cb0-c59f-3402-8091-d8a7d0274b6d">
 	>
 
@@ -58,7 +58,6 @@ definition
 						include
 							archetype_id/value matches {/.*/}
 					}
-					ELEMENT[at0013] occurrences matches {0..1} matches {*}    -- Referral requested
 				}
 			}
 		}
@@ -103,10 +102,6 @@ ontology
 				>
 				["at0011"] = <
 					text = <"Not offered">
-					description = <"">
-				>
-				["at0013"] = <
-					text = <"Referral requested">
 					description = <"">
 				>
 			>
