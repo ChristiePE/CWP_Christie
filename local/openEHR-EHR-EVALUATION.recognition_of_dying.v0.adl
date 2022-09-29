@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3162543e2a9a5ce058e1945e81ffab76">
+		["MD5-CAM-1.0.1"] = <"a6feaa3a63dd3199d48fd050d7e62402">
 		["build_uid"] = <"e246209d-1ae0-3986-b5a0-208637957018">
 	>
 
@@ -67,6 +67,28 @@ definition
 					ELEMENT[at0036] occurrences matches {0..1} matches {    -- Reviewer
 						value matches {
 							DV_CODED_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0048] occurrences matches {0..1} matches {    -- Is patient aware they are dying
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0049,    -- Yes
+									at0050]    -- No
+								}
+							}
+						}
+					}
+					ELEMENT[at0052] occurrences matches {0..1} matches {    -- Reason patient is unaware of their diagnosis
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0053,    -- Patient choice
+									at0054]    -- Other
+								}
+							}
 						}
 					}
 					ELEMENT[at0011] occurrences matches {0..1} matches {    -- Recognition_of_dying_agreed_with
@@ -161,6 +183,30 @@ ontology
 				>
 				["at0043"] = <
 					text = <"Condition improved, so a last days of life diagnosis is now inappropriate">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"Is patient aware they are dying">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0050"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"Reason patient is unaware of their diagnosis">
+					description = <"">
+				>
+				["at0053"] = <
+					text = <"Patient choice">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"Other">
 					description = <"">
 				>
 			>
