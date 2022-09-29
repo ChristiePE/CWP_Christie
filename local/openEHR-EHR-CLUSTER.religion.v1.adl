@@ -65,7 +65,7 @@ Religion, Draft Archetype [Internet]. Australian Digital Health Agency, Australi
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"51835D3E2EEFFCA0AEF6953E6314BDF6">
+		["MD5-CAM-1.0.1"] = <"e64c49190f08c166aa3da953e82ef4da">
 		["build_uid"] = <"7c3871ac-c0ff-46f2-8b28-389c69b72814">
 		["revision"] = <"1.0.0">
 	>
@@ -75,7 +75,49 @@ definition
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..*} matches {    -- Religious affiliation
 				value matches {
-					DV_TEXT matches {*}
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0005,    -- Declined to answer
+							at0006,    -- Agnostic
+							at0007,    -- Anglican
+							at0008,    -- Atheist
+							at0009,    -- Bahai
+							at0010,    -- Baptist
+							at0011,    -- Buddhist
+							at0012,    -- Christian
+							at0013,    -- Christian Science
+							at0014,    -- Church Of England
+							at0015,    -- Church of Scotland
+							at0016,    -- Church Of Wales
+							at0017,    -- Congregational
+							at0018,    -- Evangelist
+							at0019,    -- Greek Orthodox
+							at0020,    -- Hindu
+							at0021,    -- Islamic
+							at0022,    -- Jehovah's Witness
+							at0023,    -- Jewish
+							at0024,    -- Latter Day Saint
+							at0025,    -- Methodist
+							at0026,    -- Mormon
+							at0027,    -- Muslim
+							at0028,    -- Non-conformist
+							at0029,    -- Pentecostal
+							at0030,    -- Presbyterian
+							at0031,    -- Protestant
+							at0032,    -- Quaker
+							at0033,    -- Rastafarian
+							at0034,    -- Roman Catholic
+							at0035,    -- Salvation Army
+							at0036,    -- Seventh Day Adv
+							at0037,    -- Sikh
+							at0038,    -- Spiritualist
+							at0039,    -- Unitarian
+							at0040,    -- United Reformed
+							at0041,    -- Unknown
+							at0042]    -- Other
+						}
+					}
 				}
 			}
 			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Impact on care
@@ -123,6 +165,158 @@ ontology
 					description = <"Additional details about the individual's religious affiliation.">
 					comment = <"For example: religious organisation or contact person.">
 				>
+				["at0005"] = <
+					text = <"Declined to answer">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Agnostic">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Anglican">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Atheist">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Bahai">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Baptist">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Buddhist">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Christian">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Christian Science">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Church Of England">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Church of Scotland">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Church Of Wales">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Congregational">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Evangelist">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Greek Orthodox">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Hindu">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Islamic">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Jehovah's Witness">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Jewish">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Latter Day Saint">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Methodist">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Mormon">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Muslim">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Non-conformist">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"Pentecostal">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Presbyterian">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Protestant">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Quaker">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Rastafarian">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Roman Catholic">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"Salvation Army">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"Seventh Day Adv">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"Sikh">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"Spiritualist">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"Unitarian">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"United Reformed">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"Unknown">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"Other">
+					description = <"">
+				>
 			>
 		>
 		["nb"] = <
@@ -150,6 +344,158 @@ ontology
 					text = <"Detaljer">
 					description = <"Ytterligere detaljer om individets livssyn.">
 					comment = <"For eksempel: Religiøs organisasjon eller kontaktperson.">
+				>
+				["at0005"] = <
+					text = <"*Declined to answer (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Agnostic (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Anglican (en)">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"*Atheist (en)">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"*Bahai (en)">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"*Baptist (en)">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"*Buddhist (en)">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"*Christian (en)">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"*Christian Science (en)">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"*Church Of England (en)">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"*Church of Scotland (en)">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"*Church Of Wales (en)">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"*Congregational (en)">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"*Evangelist (en)">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"*Greek Orthodox (en)">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"*Hindu (en)">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"*Islamic (en)">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"*Jehovah's Witness (en)">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"*Jewish (en)">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"*Latter Day Saint (en)">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"*Methodist (en)">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"*Mormon (en)">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"*Muslim (en)">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"*Non-conformist (en)">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"*Pentecostal (en)">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"*Presbyterian (en)">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"*Protestant (en)">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"*Quaker (en)">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"*Rastafarian (en)">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"*Roman Catholic (en)">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"*Salvation Army (en)">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"*Seventh Day Adv (en)">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"*Sikh (en)">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"*Spiritualist (en)">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"*Unitarian (en)">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"*United Reformed (en)">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"*Unknown (en)">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"*Other (en)">
+					description = <"">
 				>
 			>
 		>
