@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8ff168cd85149df35073b2ce5a17ed77">
+		["MD5-CAM-1.0.1"] = <"3382ea919b52e657f6324ce4b78752d1">
 		["build_uid"] = <"f55e5cb0-c59f-3402-8091-d8a7d0274b6d">
 	>
 
@@ -39,15 +39,7 @@ definition
 					}
 					ELEMENT[at0008] occurrences matches {0..1} matches {    -- Support offered
 						value matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::
-									at0014,    -- Offered, support given
-									at0015,    -- Offered, support declined
-									at0016,    -- Not offered, patient unconscious or too unwell
-									at0017]    -- Not offered, other reason
-								}
-							}
+							DV_CODED_TEXT matches {*}
 						}
 					}
 					ELEMENT[at0006] occurrences matches {0..*} matches {    -- Further information
@@ -96,22 +88,6 @@ ontology
 				>
 				["at0013"] = <
 					text = <"Referral requested">
-					description = <"">
-				>
-				["at0014"] = <
-					text = <"Offered, support given">
-					description = <"">
-				>
-				["at0015"] = <
-					text = <"Offered, support declined">
-					description = <"">
-				>
-				["at0016"] = <
-					text = <"Not offered, patient unconscious or too unwell">
-					description = <"">
-				>
-				["at0017"] = <
-					text = <"Not offered, other reason">
 					description = <"">
 				>
 			>
