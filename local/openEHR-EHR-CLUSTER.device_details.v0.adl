@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"31482d51afd4b30a41780e6c69e67f52">
+		["MD5-CAM-1.0.1"] = <"c426c95507cbdd2e3277c3c36f97bb7c">
 		["build_uid"] = <"f55e5cb0-c59f-3402-8091-d8a7d0274b6d">
 	>
 
@@ -37,15 +37,28 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					allow_archetype CLUSTER[at0005] occurrences matches {0..*} matches {    -- Details
-						include
-							archetype_id/value matches {/.*/}
+					ELEMENT[at0008] occurrences matches {0..1} matches {    -- Support offered
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0009,    -- Offered - support given
+									at0010,    -- Offered - support declined
+									at0011]    -- Not offered
+								}
+							}
+						}
 					}
 					ELEMENT[at0006] occurrences matches {0..*} matches {    -- Further information
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
+					allow_archetype CLUSTER[at0005] occurrences matches {0..*} matches {    -- Details
+						include
+							archetype_id/value matches {/.*/}
+					}
+					ELEMENT[at0013] occurrences matches {0..1} matches {*}    -- Referral requested
 				}
 			}
 		}
@@ -74,6 +87,26 @@ ontology
 				>
 				["at0006"] = <
 					text = <"Further information">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Support offered">
+					description = <"Has psychological and/or spiritual support been offered to the family or significant others?">
+				>
+				["at0009"] = <
+					text = <"Offered - support given">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Offered - support declined">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Not offered">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Referral requested">
 					description = <"">
 				>
 			>
