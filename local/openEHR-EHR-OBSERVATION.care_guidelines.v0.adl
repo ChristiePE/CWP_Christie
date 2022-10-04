@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"f0d268b68020bdecfcd083eb72f6376c">
+		["MD5-CAM-1.0.1"] = <"3cf554dc63a216a5e0095a517b0edcc5">
 		["build_uid"] = <"5e21e2ad-540f-3cf7-8225-c9c266d05e38">
 	>
 
@@ -46,7 +46,7 @@ definition
 											DV_TEXT matches {*}
 										}
 									}
-									ELEMENT[at0006] occurrences matches {0..1} matches {    -- Adherence
+									ELEMENT[at0006] occurrences matches {0..1} matches {    -- Compliance
 										value matches {
 											DV_CODED_TEXT matches {
 												defining_code matches {
@@ -100,7 +100,7 @@ ontology
 					description = <"">
 				>
 				["at0006"] = <
-					text = <"Adherence">
+					text = <"Compliance">
 					description = <"">
 				>
 				["at0009"] = <
