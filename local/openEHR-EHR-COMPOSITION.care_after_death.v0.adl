@@ -1,0 +1,62 @@
+archetype (adl_version=1.4; uid=beb341a8-6e1d-4bd6-8108-1331d057d5dc)
+	openEHR-EHR-COMPOSITION.care_after_death.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2022-10-04">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"eee585127d7b1ad9d4042c149d77364b">
+		["build_uid"] = <"34071c50-d9a4-3ba1-bb37-077d51d670bb">
+	>
+
+definition
+	COMPOSITION[at0000] matches {    -- Care_After_Death
+		category matches {
+			DV_CODED_TEXT[at0001] matches {    -- Coded text
+				defining_code matches {
+					[openehr::433]
+				}
+			}
+		}
+		context matches {
+			EVENT_CONTEXT[at0002] matches {*}    -- Event Context
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Care_After_Death">
+					description = <"Care_After_Death">
+				>
+				["at0001"] = <
+					text = <"Coded text">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Event Context">
+					description = <"">
+				>
+			>
+		>
+	>
