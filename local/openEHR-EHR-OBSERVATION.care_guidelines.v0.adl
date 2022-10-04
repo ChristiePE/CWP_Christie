@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"43b27dd461868a28f6f3d729c631945d">
+		["MD5-CAM-1.0.1"] = <"f0d268b68020bdecfcd083eb72f6376c">
 		["build_uid"] = <"5e21e2ad-540f-3cf7-8225-c9c266d05e38">
 	>
 
@@ -57,7 +57,7 @@ definition
 											}
 										}
 									}
-									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Reasons_for_non-adherence
+									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Reasons_unable_to_comply_with_guidelines
 										value matches {
 											DV_TEXT matches {*}
 										}
@@ -104,7 +104,7 @@ ontology
 					description = <"">
 				>
 				["at0009"] = <
-					text = <"Reasons_for_non-adherence">
+					text = <"Reasons_unable_to_comply_with_guidelines">
 					description = <"">
 				>
 				["at0010"] = <
