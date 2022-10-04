@@ -1,0 +1,96 @@
+archetype (adl_version=1.4; uid=a96766f1-0592-4fb2-aff4-d4083231148b)
+	openEHR-EHR-ADMIN_ENTRY.patient_inventory.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2022-10-04">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"0b5d889077e12947003d5695093b3830">
+		["build_uid"] = <"e87b5843-57af-399c-ac85-12d2ad532376">
+	>
+
+definition
+	ADMIN_ENTRY[at0000] matches {    -- Patient_inventory
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Category
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0003,    -- Jewellery
+									at0004,    -- Prosthetic
+									at0005,    -- Luggage
+									at0007]    -- Other
+								}
+							}
+						}
+					}
+					ELEMENT[at0006] occurrences matches {0..1} matches {    -- Details
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Patient_inventory">
+					description = <"Patient_inventory">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Category">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Jewellery">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Prosthetic">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Luggage">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Details">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Other">
+					description = <"">
+				>
+			>
+		>
+	>
