@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"fc80a0dce2517d30d48a424312b0cde0">
+		["MD5-CAM-1.0.1"] = <"43b27dd461868a28f6f3d729c631945d">
 		["build_uid"] = <"5e21e2ad-540f-3cf7-8225-c9c266d05e38">
 	>
 
@@ -51,8 +51,8 @@ definition
 											DV_CODED_TEXT matches {
 												defining_code matches {
 													[local::
-													at0007,    -- Yes
-													at0008]    -- No
+													at0010,    -- Care performed as per guidelines
+													at0011]    -- Not possible to adhere to guidelines
 												}
 											}
 										}
@@ -103,16 +103,16 @@ ontology
 					text = <"Adherence">
 					description = <"">
 				>
-				["at0007"] = <
-					text = <"Yes">
-					description = <"">
-				>
-				["at0008"] = <
-					text = <"No">
-					description = <"">
-				>
 				["at0009"] = <
 					text = <"Reasons_for_non-adherence">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Care performed as per guidelines">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Not possible to adhere to guidelines">
 					description = <"">
 				>
 			>
