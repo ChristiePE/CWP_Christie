@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a8484e3a4025ecf95810be6a15635282">
+		["MD5-CAM-1.0.1"] = <"be43d77a05611f8f6d1f8c2d9aecff36">
 		["build_uid"] = <"e87b5843-57af-399c-ac85-12d2ad532376">
 	>
 
@@ -39,10 +39,10 @@ definition
 									[local::
 									at0003,    -- Jewellery
 									at0004,    -- Prosthetic
-									at0005,    -- Luggage
-									at0007]    -- Other
+									at0005]    -- Luggage
 								}
 							}
+							DV_TEXT matches {*}
 						}
 					}
 					ELEMENT[at0006] occurrences matches {0..*} matches {    -- Details
@@ -85,10 +85,6 @@ ontology
 				>
 				["at0006"] = <
 					text = <"Details">
-					description = <"">
-				>
-				["at0007"] = <
-					text = <"Other">
 					description = <"">
 				>
 			>
