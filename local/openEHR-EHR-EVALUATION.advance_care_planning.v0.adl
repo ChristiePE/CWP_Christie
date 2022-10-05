@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7c0868fe197d7ddef422d63a2bef0130">
+		["MD5-CAM-1.0.1"] = <"6feda4e73699a8a34b45ca99350ac1d9">
 		["build_uid"] = <"7db29795-463e-360a-a526-5cb746904a76">
 	>
 
@@ -52,6 +52,44 @@ definition
 									at0013]    -- ACP in place for care but does not decline CPR
 								}
 							}
+						}
+					}
+					ELEMENT[at0014] occurrences matches {0..1} matches {    -- Preferred_place_of_care
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0016,    -- Home
+									at0017,    -- Hospice
+									at0018,    -- The Christie
+									at0019,    -- Community hospital
+									at0020,    -- District hospital
+									at0021,    -- Learning disability unit
+									at0022,    -- Mental health unit
+									at0023,    -- Nursing home
+									at0024]    -- Residential home
+								}
+							}
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Preferred_place_of_death
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0025,    -- Home
+									at0026,    -- Hospice
+									at0027,    -- The Christie
+									at0028,    -- Community hospital
+									at0029,    -- District hospital
+									at0030,    -- Learning disability unit
+									at0031,    -- Mental health unit
+									at0032,    -- Nursing home
+									at0033]    -- Residential home
+								}
+							}
+							DV_TEXT matches {*}
 						}
 					}
 				}
@@ -100,6 +138,86 @@ ontology
 				>
 				["at0013"] = <
 					text = <"ACP in place for care but does not decline CPR">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Preferred_place_of_care">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Preferred_place_of_death">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Home">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Hospice">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"The Christie">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Community hospital">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"District hospital">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Learning disability unit">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Mental health unit">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Nursing home">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Residential home">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Home">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Hospice">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"The Christie">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Community hospital">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"District hospital">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Learning disability unit">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Mental health unit">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Nursing home">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Residential home">
 					description = <"">
 				>
 			>
