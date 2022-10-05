@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"629201755b0d137535d00e52389c20e7">
+		["MD5-CAM-1.0.1"] = <"ab1847e65a9bb886d41aff6bb7c64bb0">
 		["build_uid"] = <"9ac3a9d9-1381-3ede-bd31-56cb8e6a6c5b">
 	>
 
@@ -56,7 +56,7 @@ ontology
 				>
 				["at0007"] = <
 					text = <"Likely_prognosis">
-					description = <"">
+					description = <"From Advance care planning">
 				>
 			>
 		>
