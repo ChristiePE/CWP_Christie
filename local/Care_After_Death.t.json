@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.1.0",
+      "sem_ver" : "2.2.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "7cbce4742bfcaf2840da0ba431da62ae",
-      "MD5-CAM-1.0.1" : "7104cfcaefa642db7d88dfb70cc186e3"
+      "MD5-CAM-1.0.1" : "7711d17d9cca475c2401054bc51b6b85"
     },
     "details" : {
       "en" : {
@@ -50,39 +50,6 @@
     "rmTypeName" : "COMPOSITION",
     "nodeId" : "at0000.1",
     "attributes" : [ {
-      "@type" : "C_ATTRIBUTE",
-      "rmAttributeName" : "context",
-      "children" : [ {
-        "@type" : "C_COMPLEX_OBJECT",
-        "rmTypeName" : "EVENT_CONTEXT",
-        "nodeId" : "at0002",
-        "attributes" : [ {
-          "@type" : "C_ATTRIBUTE",
-          "rmAttributeName" : "other_context",
-          "children" : [ {
-            "@type" : "C_COMPLEX_OBJECT",
-            "rmTypeName" : "ITEM_TREE",
-            "nodeId" : "at0003",
-            "attributes" : [ {
-              "@type" : "C_ATTRIBUTE",
-              "rmAttributeName" : "items",
-              "children" : [ {
-                "@type" : "C_ARCHETYPE_ROOT",
-                "rmTypeName" : "CLUSTER",
-                "occurrences" : "0..*",
-                "nodeId" : "at0004.1",
-                "attributes" : [ ],
-                "attributeTuples" : [ ],
-                "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-patient_inventory-001.v0",
-                "referenceType" : "archetypeOverlay"
-              } ]
-            } ],
-            "attributeTuples" : [ ]
-          } ]
-        } ],
-        "attributeTuples" : [ ]
-      } ]
-    }, {
       "@type" : "C_ATTRIBUTE",
       "rmAttributeName" : "content",
       "existence" : "0..1",
@@ -901,57 +868,6 @@
     },
     "adlVersion" : "1.4",
     "buildUid" : "e87b5843-57af-399c-ac85-12d2ad532376",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "4eafc3e5-8f1e-4001-8565-b0ec00f24ab6",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "75609159e818482c5222120ab07a921e"
-      },
-      "details" : { }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.patient_inventory.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-patient_inventory-001.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : { }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "68ebe669-6634-3054-b128-bb387d836597",
     "rmName" : "openehr",
     "rmRelease" : "1.1.0",
     "generated" : true,
