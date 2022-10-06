@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "5.0.0",
+      "sem_ver" : "6.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "3ef6d31cb9a6d68aefc4274e394f7287",
+      "MD5-CAM-1.0.1" : "168d09654c61311a32339cc6f4523337",
       "PARENT:MD5-CAM-1.0.1" : "c15c31efc4568edb04d487a7fb203744"
     },
     "details" : {
@@ -782,7 +782,7 @@
                     "children" : [ {
                       "@type" : "C_STRING",
                       "rmTypeName" : "STRING",
-                      "constraint" : [ "Patient" ]
+                      "constraint" : [ "Patient", "Closest Persons", "Patient and Closest persons" ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
