@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "4.1.0",
+      "sem_ver" : "4.2.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "7cbce4742bfcaf2840da0ba431da62ae",
-      "MD5-CAM-1.0.1" : "c82d1f59fe2ba2c2efc7eb98af346ecf"
+      "MD5-CAM-1.0.1" : "0c99137093724efa4d55b4d912089f1c"
     },
     "details" : {
       "en" : {
@@ -62,7 +62,7 @@
       "children" : [ {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "ADMIN_ENTRY",
-        "occurrences" : "0..1",
+        "occurrences" : "0..*",
         "nodeId" : "at0.2",
         "attributes" : [ ],
         "attributeTuples" : [ ],
@@ -394,12 +394,6 @@
             "code" : "at0115.1",
             "text" : "Bereavement information provided to",
             "description" : ""
-          },
-          "at0116.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0116",
-            "text" : "Content",
-            "description" : ""
           }
         }
       },
@@ -551,14 +545,7 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : {
-          "at0009.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009.1",
-            "text" : "Reasons unable to comply with guidelines",
-            "description" : ""
-          }
-        }
+        "en" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
