@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "10.0.0",
+      "sem_ver" : "11.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "7cbce4742bfcaf2840da0ba431da62ae",
-      "MD5-CAM-1.0.1" : "ce0ee658fda27803ea1019c7e5f3791e"
+      "MD5-CAM-1.0.1" : "faa0cbf7f69ce1abf44e0b20c1420809"
     },
     "details" : {
       "en" : {
@@ -559,25 +559,9 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
                       "nodeId" : "at0005.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_TEXT",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_STRING",
-                              "rmTypeName" : "STRING",
-                              "constraint" : [ "In all events, leave cannula and tubing in situ from the neck down.", "Wash the patient and lay them on their back.", "Clean the mouth and replace dentures where possible (if not possible, place dentures in a labelled pot).", "Support the jaw with a rolled-up towel. If unable to close mouth, please call the mortuary technician (3898/3350) for assistance Mon-Fri 08:30-16:30 only.", "Keep arms/hands by side of body.", "Close the eyes by applying light pressure to the eyelids for 30 seconds. If the eyes continue to remain open, place a small piece of damp gauze on the eyelids to hold them down (do not use tape).", "Ensure the patient has two ID tags, one on the wrist, one on the ankle.", "Label placed on nightwear/shroud (date & time of death, name, hospital number & ward.)" ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
+                      "attributes" : [ ],
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
