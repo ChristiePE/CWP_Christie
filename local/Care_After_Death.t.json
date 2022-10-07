@@ -22,7 +22,7 @@
       "sem_ver" : "9.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "7cbce4742bfcaf2840da0ba431da62ae",
-      "MD5-CAM-1.0.1" : "d5f64fbf4789dbcb7b6b77f4b4982b0d"
+      "MD5-CAM-1.0.1" : "db1d24c777e277db484186f9e100d043"
     },
     "details" : {
       "en" : {
@@ -539,6 +539,10 @@
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_TEXT",
+                          "defaultValue" : {
+                            "value" : "Care after death",
+                            "@type" : "DV_TEXT"
+                          },
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "value",
