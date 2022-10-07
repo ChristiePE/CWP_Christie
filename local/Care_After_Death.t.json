@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "9.0.0",
+      "sem_ver" : "10.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "7cbce4742bfcaf2840da0ba431da62ae",
-      "MD5-CAM-1.0.1" : "db1d24c777e277db484186f9e100d043"
+      "MD5-CAM-1.0.1" : "ce0ee658fda27803ea1019c7e5f3791e"
     },
     "details" : {
       "en" : {
@@ -602,7 +602,14 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { }
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Patient care guidelines",
+            "description" : "Guidelines"
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
