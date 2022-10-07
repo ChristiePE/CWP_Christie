@@ -22,7 +22,7 @@
       "sem_ver" : "8.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "7cbce4742bfcaf2840da0ba431da62ae",
-      "MD5-CAM-1.0.1" : "dcc703e961d5db2052a951ffdb0881a3"
+      "MD5-CAM-1.0.1" : "11afd3a06de381631879a988445ea253"
     },
     "details" : {
       "en" : {
@@ -354,10 +354,6 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
-                  "defaultValue" : {
-                    "value" : "Unable to provide information",
-                    "@type" : "DV_TEXT"
-                  },
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "value",
