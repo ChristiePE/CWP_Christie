@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"6342051990aeaac757a8096b79827761">
+		["MD5-CAM-1.0.1"] = <"4d50590144d6ea7c983d159216d77dcc">
 		["build_uid"] = <"7db29795-463e-360a-a526-5cb746904a76">
 	>
 
@@ -32,17 +32,17 @@ definition
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Date and time of ACP assessment
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Date_and_time_of_ACP_assessment
 						value matches {
 							DV_DATE_TIME matches {*}
 						}
 					}
-					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Advance care plan
+					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Advance_care_plan
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0010] occurrences matches {0..1} matches {    -- Advance care plan status
+					ELEMENT[at0010] occurrences matches {0..1} matches {    -- Advance_care_plan_status
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -54,7 +54,7 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0014] occurrences matches {0..1} matches {    -- Preferred place of care
+					ELEMENT[at0014] occurrences matches {0..1} matches {    -- Preferred_place_of_care
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -73,7 +73,7 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Preferred place of death
+					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Preferred_place_of_death
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -117,15 +117,15 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0003"] = <
-					text = <"Date and time of ACP assessment">
+					text = <"Date_and_time_of_ACP_assessment">
 					description = <"">
 				>
 				["at0004"] = <
-					text = <"Advance care plan">
+					text = <"Advance_care_plan">
 					description = <"">
 				>
 				["at0010"] = <
-					text = <"Advance care plan status">
+					text = <"Advance_care_plan_status">
 					description = <"">
 				>
 				["at0011"] = <
@@ -141,11 +141,11 @@ ontology
 					description = <"">
 				>
 				["at0014"] = <
-					text = <"Preferred place of care">
+					text = <"Preferred_place_of_care">
 					description = <"">
 				>
 				["at0015"] = <
-					text = <"Preferred place of death">
+					text = <"Preferred_place_of_death">
 					description = <"">
 				>
 				["at0016"] = <
