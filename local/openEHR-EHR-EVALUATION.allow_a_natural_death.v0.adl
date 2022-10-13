@@ -23,21 +23,21 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"08218c59d7752f37c6b1c75e0c17a509">
+		["MD5-CAM-1.0.1"] = <"3778f9daab9e5201ee4078386b96cdcd">
 		["build_uid"] = <"58e7ba76-f7e4-3e02-aa20-6370177f2ac8">
 	>
 
 definition
-	EVALUATION[at0000] matches {    -- Allow_a_Natural_Death
+	EVALUATION[at0000] matches {    -- Allow a Natural Death
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Assessment_date_and_time
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Assessment date and time
 						value matches {
 							DV_DATE_TIME matches {*}
 						}
 					}
-					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Confirmed_by
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Confirmed by
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -66,12 +66,7 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0028] occurrences matches {0..1} matches {    -- Decision_to_cancel
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Escalation_status
+					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Escalation status
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -96,7 +91,7 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Next_review
+					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Next review
 						value matches {
 							C_DV_QUANTITY <
 								property = <[openehr::128]>
@@ -108,17 +103,12 @@ definition
 							>
 						}
 					}
-					ELEMENT[at0016] occurrences matches {0..1} matches {    -- Decision_summary
+					ELEMENT[at0017] occurrences matches {0..1} matches {    -- Decision details
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0017] occurrences matches {0..1} matches {    -- Decision_details
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0018] occurrences matches {0..1} matches {    -- Professionals_informed
+					ELEMENT[at0018] occurrences matches {0..1} matches {    -- Professionals informed
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -140,7 +130,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Allow_a_Natural_Death">
+					text = <"Allow a Natural Death">
 					description = <"Allow a Natural Death">
 				>
 				["at0001"] = <
@@ -148,11 +138,11 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"Assessment_date_and_time">
+					text = <"Assessment date and time">
 					description = <"Please enter the date and time the patient was assessed (not the time of documentation)">
 				>
 				["at0003"] = <
-					text = <"Confirmed_by">
+					text = <"Confirmed by">
 					description = <"A senior doctor must be involved in making an AaND decision. The form can be completed by an ANP or a doctor below the level of an ST3, but the decision must have been discussed prior to form completion. Select the most senior doctor involved. (Discussion by phone is included).">
 				>
 				["at0004"] = <
@@ -200,19 +190,15 @@ ontology
 					description = <"">
 				>
 				["at0015"] = <
-					text = <"Next_review">
+					text = <"Next review">
 					description = <"Time until next review">
 				>
-				["at0016"] = <
-					text = <"Decision_summary">
-					description = <"Summary of the main clinical problems and reasons why the AaND decision has been made and why full resuscitation would be inappropriate, unsuccessful, or not in the patient's best interest">
-				>
 				["at0017"] = <
-					text = <"Decision_details">
+					text = <"Decision details">
 					description = <"Details of the AaND discussion">
 				>
 				["at0018"] = <
-					text = <"Professionals_informed">
+					text = <"Professionals informed">
 					description = <"This refers to a consultant directly responsible or nursing shift leader/coordinator for the patients overall cancer management">
 				>
 				["at0019"] = <
@@ -228,7 +214,7 @@ ontology
 					description = <"">
 				>
 				["at0022"] = <
-					text = <"Escalation_status">
+					text = <"Escalation status">
 					description = <"Care consists of allow a natural death">
 				>
 				["at0023"] = <
@@ -250,12 +236,6 @@ ontology
 				["at0027"] = <
 					text = <"Plan for discharge (fast track)">
 					description = <"">
-				>
-				["at0028"] = <
-					text = <"Decision_to_cancel">
-					description = <"Details of decision to cancel AaND decision
-
-Summary of the reasons why the AaND decision has been cancelled and details of discussions with patient and closest person(s)">
 				>
 			>
 		>
