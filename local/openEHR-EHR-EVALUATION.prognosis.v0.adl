@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ab1847e65a9bb886d41aff6bb7c64bb0">
+		["MD5-CAM-1.0.1"] = <"8818e4bb658f966a6e9b520e53990f5c">
 		["build_uid"] = <"9ac3a9d9-1381-3ede-bd31-56cb8e6a6c5b">
 	>
 
@@ -32,7 +32,7 @@ definition
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0007] occurrences matches {0..1} matches {    -- Likely_prognosis
+					ELEMENT[at0007] occurrences matches {0..1} matches {    -- Likely prognosis
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -55,7 +55,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0007"] = <
-					text = <"Likely_prognosis">
+					text = <"Likely prognosis">
 					description = <"From Advance care planning">
 				>
 			>
