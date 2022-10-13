@@ -23,12 +23,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"be43d77a05611f8f6d1f8c2d9aecff36">
+		["MD5-CAM-1.0.1"] = <"162fdcbf80e33be4b794bb023b29b3d8">
 		["build_uid"] = <"e87b5843-57af-399c-ac85-12d2ad532376">
 	>
 
 definition
-	ADMIN_ENTRY[at0000] occurrences matches {1..*} matches {    -- Patient_inventory
+	ADMIN_ENTRY[at0000] occurrences matches {1..*} matches {    -- Patient inventory
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
@@ -60,7 +60,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Patient_inventory">
+					text = <"Patient inventory">
 					description = <"Patient_inventory">
 				>
 				["at0001"] = <
