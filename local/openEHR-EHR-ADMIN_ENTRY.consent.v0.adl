@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"16839990e2daf772897ce24794eb3c18">
+		["MD5-CAM-1.0.1"] = <"71192c5466d11c732c08f6152edaaccb">
 		["build_uid"] = <"cfd89fc9-fa21-3674-9829-f492fa3317e1">
 	>
 
@@ -48,7 +48,7 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Reason_not_obtained
+					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Reason not obtained
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -78,7 +78,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0005"] = <
-					text = <"Reason_not_obtained">
+					text = <"Reason not obtained">
 					description = <"">
 				>
 				["at0006"] = <
