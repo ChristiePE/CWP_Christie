@@ -23,12 +23,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c0ad6832cb9b5ba9a6b0687b513d5ec2">
+		["MD5-CAM-1.0.1"] = <"3c13d3fa4befc7f1cc7951ce3489d34e">
 		["build_uid"] = <"5e21e2ad-540f-3cf7-8225-c9c266d05e38">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- Care_Guidelines
+	OBSERVATION[at0000] matches {    -- Care Guidelines
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {1..*; unordered} matches {
@@ -57,7 +57,7 @@ definition
 											}
 										}
 									}
-									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Reasons_unable_to_comply_with_guidelines
+									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Reasons unable to comply with guidelines
 										value matches {
 											DV_TEXT matches {*}
 										}
@@ -76,7 +76,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Care_Guidelines">
+					text = <"Care Guidelines">
 					description = <"Guidelines">
 				>
 				["at0001"] = <
@@ -105,7 +105,7 @@ ontology
 					description = <"">
 				>
 				["at0009"] = <
-					text = <"Reasons_unable_to_comply_with_guidelines">
+					text = <"Reasons unable to comply with guidelines">
 					description = <"">
 				>
 				["at0010"] = <
