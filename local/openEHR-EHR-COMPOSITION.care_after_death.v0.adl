@@ -23,12 +23,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7cbce4742bfcaf2840da0ba431da62ae">
+		["MD5-CAM-1.0.1"] = <"8b40b50be66e265ee7b841f1eed28cff">
 		["build_uid"] = <"34071c50-d9a4-3ba1-bb37-077d51d670bb">
 	>
 
 definition
-	COMPOSITION[at0000] matches {    -- Care_After_Death
+	COMPOSITION[at0000] matches {    -- Care After Death
 		category matches {
 			DV_CODED_TEXT[at0001] matches {    -- Coded text
 				defining_code matches {
@@ -57,7 +57,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Care_After_Death">
+					text = <"Care After Death">
 					description = <"Care_After_Death">
 				>
 				["at0001"] = <
