@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "16.0.0",
+      "sem_ver" : "17.0.0",
       "build_uid" : "",
-      "PARENT:MD5-CAM-1.0.1" : "7cbce4742bfcaf2840da0ba431da62ae",
-      "MD5-CAM-1.0.1" : "bdb5ec820b2f8c36306e924c74ef9ce7"
+      "PARENT:MD5-CAM-1.0.1" : "8b40b50be66e265ee7b841f1eed28cff",
+      "MD5-CAM-1.0.1" : "c981a10082e34bfd4e3d92c191b052b4"
     },
     "details" : {
       "en" : {
@@ -121,7 +121,14 @@
     "@type" : "ARCHETYPE_TERMINOLOGY",
     "conceptCode" : "at0000",
     "termDefinitions" : {
-      "en" : { }
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Care After Death",
+          "description" : "Care After Death"
+        }
+      }
     },
     "termBindings" : { },
     "terminologyExtracts" : { },
@@ -277,19 +284,19 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Notice_of_death",
+            "text" : "Notice of death",
             "description" : "Information_Delivery"
           },
           "at0115.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0115.1",
-            "text" : "People_notified_of_death",
+            "text" : "People notified of death",
             "description" : ""
           },
           "at0117.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0117.1",
-            "text" : "Method_of_delivery",
+            "text" : "Method of delivery",
             "description" : ""
           }
         }
@@ -454,19 +461,19 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Bereavement_information",
+            "text" : "Bereavement information",
             "description" : "Information_Delivery"
           },
           "at0115.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0115.1",
-            "text" : "Bereavement_information_provided_to",
+            "text" : "Bereavement information provided to",
             "description" : ""
           },
           "at0117.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0117.1",
-            "text" : "Method_of_delivery",
+            "text" : "Method of delivery",
             "description" : ""
           }
         }
@@ -499,7 +506,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "c0ad6832cb9b5ba9a6b0687b513d5ec2"
+        "PARENT:MD5-CAM-1.0.1" : "3c13d3fa4befc7f1cc7951ce3489d34e"
       },
       "details" : {
         "en" : {
@@ -611,7 +618,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Patient_care_guidelines",
+            "text" : "Patient care guidelines",
             "description" : "Guidelines"
           }
         }
@@ -893,29 +900,7 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Religious_affiliation",
-            "description" : "Identification of the individual's religious or non-religious beliefs and/or practices by which people order the conduct of their lives both practically and in a moral sense.",
-            "comment" : "For example: Christianity, Catholicism, Islam, Wiccan, Humanism, Animism, Atheism; Agnosticism; or none."
-          },
-          "at0001.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001.1",
-            "text" : "Religious_affiliation",
-            "description" : "Name of the belief and/or practice to which the individual is affiliated.",
-            "comment" : "For example: Christianity; Catholicism; Islam; Wiccan; Humanism; Animism; Atheism; Agnosticism; or none. Coding with a terminology is desirable, where possible."
-          },
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "Impact_on_care",
-            "description" : "Narrative description about how care needs to be modified to support the individual's religious practice.",
-            "comment" : "For example: Needs assistance to get out of bed to pray. Would like regular pastoral care."
-          }
-        },
+        "en" : { },
         "nb" : { }
       },
       "termBindings" : { },
@@ -959,7 +944,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "be43d77a05611f8f6d1f8c2d9aecff36"
+        "PARENT:MD5-CAM-1.0.1" : "162fdcbf80e33be4b794bb023b29b3d8"
       },
       "details" : {
         "en" : {
@@ -1037,7 +1022,14 @@
           "attributeTuples" : [ ]
         } ]
       } ],
-      "attributeTuples" : [ ]
+      "attributeTuples" : [ ],
+      "attributeCustomizations" : {
+        "data" : {
+          "aliases" : {
+            "en" : "data"
+          }
+        }
+      }
     },
     "terminology" : {
       "@type" : "ARCHETYPE_TERMINOLOGY",
@@ -1107,7 +1099,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "be43d77a05611f8f6d1f8c2d9aecff36"
+        "PARENT:MD5-CAM-1.0.1" : "162fdcbf80e33be4b794bb023b29b3d8"
       },
       "details" : {
         "en" : {
@@ -1194,7 +1186,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Artificial_prosthetic_on_body",
+            "text" : "Artificial prosthetic on body",
             "description" : "Patient_inventory"
           },
           "ac0.4" : {
