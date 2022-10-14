@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3778f9daab9e5201ee4078386b96cdcd">
+		["MD5-CAM-1.0.1"] = <"c2e4bbb8b1316b9b124d3cef6165f884">
 		["build_uid"] = <"58e7ba76-f7e4-3e02-aa20-6370177f2ac8">
 	>
 
@@ -114,8 +114,7 @@ definition
 								defining_code matches {
 									[local::
 									at0019,    -- Responsible consultant
-									at0020,    -- Nurse shift leader
-									at0021]    -- None
+									at0020]    -- Nurse shift leader
 								}
 							}
 						}
@@ -207,10 +206,6 @@ ontology
 				>
 				["at0020"] = <
 					text = <"Nurse shift leader">
-					description = <"">
-				>
-				["at0021"] = <
-					text = <"None">
 					description = <"">
 				>
 				["at0022"] = <
