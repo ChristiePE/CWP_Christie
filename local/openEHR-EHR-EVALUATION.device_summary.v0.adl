@@ -104,7 +104,7 @@ Not to be used to record the activities that occur in the planning and fitting o
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"A4B07F5C96E527E2834C1225877B312E">
+		["MD5-CAM-1.0.1"] = <"c5b794edac0c53ebbc9b51235c7c2f7d">
 		["build_uid"] = <"7a214d31-b6ba-4587-ba45-62bc8633c895">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -121,14 +121,7 @@ definition
 					}
 					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Status
 						value matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::
-									at0003,    -- Never
-									at0004,    -- Current
-									at0005]    -- Previous
-								}
-							}
+							DV_TEXT matches {*}
 						}
 					}
 					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Description
@@ -223,18 +216,6 @@ ontology
 					text = <"Status">
 					description = <"Assertion about the fitting or implanting of devices, as at the date 'Last updated'.">
 				>
-				["at0003"] = <
-					text = <"Never">
-					description = <"The device type has never been fitted or implanted.">
-				>
-				["at0004"] = <
-					text = <"Current">
-					description = <"The device type is currently fitted or implanted.">
-				>
-				["at0005"] = <
-					text = <"Previous">
-					description = <"The device type has been fitted or implanted in the past.">
-				>
 				["at0007"] = <
 					text = <"Device name">
 					description = <"Identification of the specific device, by name.">
@@ -317,18 +298,6 @@ ontology
 				["at0002"] = <
 					text = <"Status">
 					description = <"Aussage zur Ausstattung des Patienten mit oder zur Implantierung von Medizinprodukten, Stand: \"Letzte Aktualisierung\".">
-				>
-				["at0003"] = <
-					text = <"Niemals">
-					description = <"Der Gerätetyp wurde niemals angepasst oder implantiert.">
-				>
-				["at0004"] = <
-					text = <"Derzeit">
-					description = <"Der Gerätetyp wird derzeit angepasst oder implantiert.">
-				>
-				["at0005"] = <
-					text = <"Zurückliegend">
-					description = <"Der Gerätetyp wurde in der Vergangenheit angepasst oder implantiert.">
 				>
 				["at0007"] = <
 					text = <"Medizinproduktname">
@@ -413,18 +382,6 @@ ontology
 				["at0002"] = <
 					text = <"Status">
 					description = <"*Assertion about the fitting or implanting of devices, as at the date 'Last updated'.(en)">
-				>
-				["at0003"] = <
-					text = <"*Never(en)">
-					description = <"*The device type has never been fitted or implanted.(en)">
-				>
-				["at0004"] = <
-					text = <"*Current(en)">
-					description = <"*The device type is currently fitted or implanted.(en)">
-				>
-				["at0005"] = <
-					text = <"*Previous(en)">
-					description = <"*The device type has been fitted or implanted in the past.(en)">
 				>
 				["at0007"] = <
 					text = <"Navn på medisinsk utstyr">
