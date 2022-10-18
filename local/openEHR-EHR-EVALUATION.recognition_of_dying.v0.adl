@@ -23,12 +23,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a7c9ad24c6f1b53fc3951b8524efe0ee">
+		["MD5-CAM-1.0.1"] = <"97c7daab3e18e25c51f486f71a732b80">
 		["build_uid"] = <"e246209d-1ae0-3986-b5a0-208637957018">
 	>
 
 definition
-	EVALUATION[at0000] matches {    -- Recognition_of_dying
+	EVALUATION[at0000] matches {    -- Recognition of dying
 		protocol matches {
 			ITEM_TREE[at0001] matches {*}    -- Item tree
 		}
@@ -117,7 +117,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Recognition_of_dying">
+					text = <"Recognition of dying">
 					description = <"Recognition_of_dying">
 				>
 				["at0001"] = <
