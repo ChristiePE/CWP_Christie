@@ -23,12 +23,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c2e4bbb8b1316b9b124d3cef6165f884">
+		["MD5-CAM-1.0.1"] = <"1103b3f4697d9fe28c10af24ea553b51">
 		["build_uid"] = <"58e7ba76-f7e4-3e02-aa20-6370177f2ac8">
 	>
 
 definition
-	EVALUATION[at0000] matches {    -- Allow a Natural Death
+	EVALUATION[at0000] matches {    -- Allow a natural death
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
@@ -98,6 +98,7 @@ definition
 								list = <
 									["1"] = <
 										units = <"d">
+										precision = <|0|>
 									>
 								>
 							>
@@ -129,8 +130,8 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Allow a Natural Death">
-					description = <"Allow a Natural Death">
+					text = <"Allow a natural death">
+					description = <"Allow a natural death">
 				>
 				["at0001"] = <
 					text = <"Item tree">
