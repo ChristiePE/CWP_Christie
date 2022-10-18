@@ -23,12 +23,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"10f64485cd2d31cc63b7ffdb9b810bbc">
+		["MD5-CAM-1.0.1"] = <"9cdbb2cc837097ad3f19b0533300eb3e">
 		["build_uid"] = <"bea945ff-7864-3c85-9ebc-777fd56014b5">
 	>
 
 definition
-	COMPOSITION[at0000] matches {    -- Allow a Natural Death
+	COMPOSITION[at0000] matches {    -- Allow a natural death
 		category matches {
 			DV_CODED_TEXT[at0001] matches {    -- Coded text
 				defining_code matches {
@@ -46,8 +46,8 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Allow a Natural Death">
-					description = <"Allow_a_Natural_Death">
+					text = <"Allow a natural death">
+					description = <"Allow a natural_death">
 				>
 				["at0001"] = <
 					text = <"Coded text">
