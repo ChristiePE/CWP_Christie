@@ -104,7 +104,7 @@ Not to be used to record the activities that occur in the planning and fitting o
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"032ed2ca23e5c2e20d1e370e5ecfc272">
+		["MD5-CAM-1.0.1"] = <"4c7e33401fb12f05502186ab52ae612b">
 		["build_uid"] = <"7a214d31-b6ba-4587-ba45-62bc8633c895">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -140,6 +140,10 @@ definition
 						value matches {
 							DV_TEXT matches {*}
 						}
+					}
+					allow_archetype CLUSTER[at0025] occurrences matches {0..*} matches {    -- Medical device details
+						include
+							archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.medical_device_details\.v0/}
 					}
 				}
 			}
@@ -216,6 +220,10 @@ ontology
 					description = <"Assertion about the status of devices, as at the date 'Last updated'.">
 					comment = <"ie. Active, Deactive, Removed">
 				>
+				["at0025"] = <
+					text = <"Medical device details">
+					description = <"">
+				>
 			>
 		>
 		["de"] = <
@@ -271,6 +279,10 @@ ontology
 					description = <"*Assertion about the status of devices, as at the date 'Last updated'. (en)">
 					comment = <"*ie. Active, Deactive, Removed (en)">
 				>
+				["at0025"] = <
+					text = <"*Medical device details (en)">
+					description = <"">
+				>
 			>
 		>
 		["nb"] = <
@@ -325,6 +337,10 @@ ontology
 					text = <"*Status (en)">
 					description = <"*Assertion about the status of devices, as at the date 'Last updated'. (en)">
 					comment = <"*ie. Active, Deactive, Removed (en)">
+				>
+				["at0025"] = <
+					text = <"*Medical device details (en)">
+					description = <"">
 				>
 			>
 		>
