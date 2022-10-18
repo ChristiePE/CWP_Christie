@@ -104,7 +104,7 @@ Not to be used to record the activities that occur in the planning and fitting o
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"A4B07F5C96E527E2834C1225877B312E">
+		["MD5-CAM-1.0.1"] = <"032ed2ca23e5c2e20d1e370e5ecfc272">
 		["build_uid"] = <"7a214d31-b6ba-4587-ba45-62bc8633c895">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -119,7 +119,7 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Status
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Presence
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -131,60 +131,14 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Description
+					ELEMENT[at0024] occurrences matches {0..1} matches {    -- Status
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					CLUSTER[at0022] occurrences matches {0..*} matches {    -- Device details
-						items cardinality matches {1..*; unordered} matches {
-							ELEMENT[at0007] occurrences matches {0..1} matches {    -- Device name
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-							ELEMENT[at0008] occurrences matches {0..1} matches {    -- Start date
-								value matches {
-									DV_DATE_TIME matches {*}
-								}
-							}
-							ELEMENT[at0012] occurrences matches {0..1} matches {    -- Body site
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-							allow_archetype CLUSTER[at0013] occurrences matches {0..*} matches {    -- Structured body site
-								include
-									archetype_id/value matches {/openEHR-EHR-CLUSTER\.anatomical_location(-[a-zA-Z0-9_]+)*\.v1/}
-							}
-							ELEMENT[at0014] occurrences matches {0..1} matches {    -- Description
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-							allow_archetype CLUSTER[at0010] occurrences matches {0..*} matches {    -- Structured detail
-								include
-									archetype_id/value matches {/openEHR-EHR-CLUSTER\.device(-[a-zA-Z0-9_]+)*\.v1/}
-							}
-							allow_archetype CLUSTER[at0021] occurrences matches {0..*} matches {    -- Multimedia
-								include
-									archetype_id/value matches {/openEHR-EHR-CLUSTER\.multimedia(-[a-zA-Z0-9_]+)*\.v1/}
-							}
-							ELEMENT[at0009] occurrences matches {0..1} matches {    -- End date
-								value matches {
-									DV_DATE_TIME matches {*}
-								}
-							}
-							ELEMENT[at0023] occurrences matches {0..1} matches {    -- URI to original data
-								value matches {
-									DV_URI matches {*}
-								}
-							}
-							ELEMENT[at0019] occurrences matches {0..1} matches {    -- Next review due
-								value matches {
-									DV_DATE_TIME matches {*}
-								}
-							}
+					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Description
+						value matches {
+							DV_TEXT matches {*}
 						}
 					}
 				}
@@ -220,7 +174,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"Status">
+					text = <"Presence">
 					description = <"Assertion about the fitting or implanting of devices, as at the date 'Last updated'.">
 				>
 				["at0003"] = <
@@ -234,34 +188,6 @@ ontology
 				["at0005"] = <
 					text = <"Previous">
 					description = <"The device type has been fitted or implanted in the past.">
-				>
-				["at0007"] = <
-					text = <"Device name">
-					description = <"Identification of the specific device, by name.">
-				>
-				["at0008"] = <
-					text = <"Start date">
-					description = <"Date of fitting or implant of the device.">
-				>
-				["at0009"] = <
-					text = <"End date">
-					description = <"Date when the device stopped being used or was removed.">
-				>
-				["at0010"] = <
-					text = <"Structured detail">
-					description = <"Additional structured detail about the device.">
-				>
-				["at0012"] = <
-					text = <"Body site">
-					description = <"Identification of the body site where the device is fitted/implanted.">
-				>
-				["at0013"] = <
-					text = <"Structured body site">
-					description = <"A structured anatomical location of the body site where the device is fitted/implanted.">
-				>
-				["at0014"] = <
-					text = <"Description">
-					description = <"Narrative description about the device.">
 				>
 				["at0015"] = <
 					text = <"Description">
@@ -280,27 +206,15 @@ ontology
 					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
 					comment = <"For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
 				>
-				["at0019"] = <
-					text = <"Next review due">
-					description = <"Date on which this device should be reviewed.">
-				>
 				["at0020"] = <
 					text = <"Device type">
 					description = <"Name of the type of medical device.">
 					comment = <"For example: Assisted hearing devices, eyeglasses, contact lens, dental braces, dentures, orthotics or artificial limbs.">
 				>
-				["at0021"] = <
-					text = <"Multimedia">
-					description = <"Digital image, video or diagram about the device.">
-				>
-				["at0022"] = <
-					text = <"Device details">
-					description = <"Details about each device.">
-				>
-				["at0023"] = <
-					text = <"URI to original data">
-					description = <"Link to the original data about the fitting or insertion.">
-					comment = <"Commonly, this will be an ACTION archetype that contains the details about the fitting or insertion of the device.">
+				["at0024"] = <
+					text = <"Status">
+					description = <"Assertion about the status of devices, as at the date 'Last updated'.">
+					comment = <"ie. Active, Deactive, Removed">
 				>
 			>
 		>
@@ -315,7 +229,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"Status">
+					text = <"*Presence (en)">
 					description = <"Aussage zur Ausstattung des Patienten mit oder zur Implantierung von Medizinprodukten, Stand: \"Letzte Aktualisierung\".">
 				>
 				["at0003"] = <
@@ -329,35 +243,6 @@ ontology
 				["at0005"] = <
 					text = <"Zurückliegend">
 					description = <"Der Gerätetyp wurde in der Vergangenheit angepasst oder implantiert.">
-				>
-				["at0007"] = <
-					text = <"Medizinproduktname">
-					description = <"Namentliche Identifikation des Medizinproduktes.">
-				>
-				["at0008"] = <
-					text = <"Anfangsdatum">
-					description = <"Datum der Anpassung oder der Implantation.">
-				>
-				["at0009"] = <
-					text = <"Enddatum">
-					description = <"Datum, an dem das Medizinprodukt nicht mehr verwendet oder entnommen wurde.">
-				>
-				["at0010"] = <
-					text = <"Strukturierte Details">
-					description = <"Zusätzliche strukturierte Details über das Medizinprodukt.">
-				>
-				["at0012"] = <
-					text = <"Körperstelle">
-					description = <"Identifikation der anatomischen Lage bzw. Körperstelle, an der das Gerät angepasst bzw. implantiert wird.">
-				>
-				["at0013"] = <
-					text = <"Bestimmte anatomische Lagebezeichnung">
-					description = <"Eine bestimmte anatomische Lage der Körperstelle, an der das Gerät befestigt/implantiert wird.">
-					comment = <"Gewöhnlich wird dies ein ACTION Archetyp sein, der die Details über die Anpassung oder Implantation enthält.">
-				>
-				["at0014"] = <
-					text = <"Beschreibung">
-					description = <"Beschreibung des Medizinprodukts.">
 				>
 				["at0015"] = <
 					text = <"Beschreibung">
@@ -376,27 +261,15 @@ ontology
 					description = <"Zusätzliche Informationen zur Erfassung lokaler Inhalte oder Anpassung an andere Referenzmodelle/Formalismen.">
 					comment = <"Zum Beispiel: Lokaler Informationsbedarf oder zusätzliche Metadaten zur Anpassung an FHIR-Ressourcen oder CIMI-Modelle.">
 				>
-				["at0019"] = <
-					text = <"Fälligkeit der nächsten Überprüfung">
-					description = <"Datum, an dem das Medizinprodukt überprüft werden sollte.">
-				>
 				["at0020"] = <
 					text = <"Medizinprodukttyp">
 					description = <"Names des Medizinprodukttyps.">
 					comment = <"Zum Beispiel: Hörgeräte, Brillen, Kontaktlinsen, Zahnspangen, Zahnprothesen, Orthesen oder Prothesen.">
 				>
-				["at0021"] = <
-					text = <"Multimedia">
-					description = <"Digitales Bild, Video oder Diagramm über das Medizinprodukt.">
-				>
-				["at0022"] = <
-					text = <"Medizinproduktdetails">
-					description = <"Details über jedes Gerät.">
-				>
-				["at0023"] = <
-					text = <"URI der Originaldaten">
-					description = <"Verknüpfung zu den Originaldaten bzgl. des Anpassens oder der Implantation.">
-					comment = <"Gewöhnlich wird dies ein ACTION Archetyp sein, der die Details über das Einsetzen oder die Implantation enthält.">
+				["at0024"] = <
+					text = <"*Status (en)">
+					description = <"*Assertion about the status of devices, as at the date 'Last updated'. (en)">
+					comment = <"*ie. Active, Deactive, Removed (en)">
 				>
 			>
 		>
@@ -411,7 +284,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"Status">
+					text = <"*Presence (en)">
 					description = <"*Assertion about the fitting or implanting of devices, as at the date 'Last updated'.(en)">
 				>
 				["at0003"] = <
@@ -425,34 +298,6 @@ ontology
 				["at0005"] = <
 					text = <"*Previous(en)">
 					description = <"*The device type has been fitted or implanted in the past.(en)">
-				>
-				["at0007"] = <
-					text = <"Navn på medisinsk utstyr">
-					description = <"Identifisering av det medisinske utstyret ved navn.">
-				>
-				["at0008"] = <
-					text = <"Start dato">
-					description = <"Dato for tilpasning eller implantering av det medisinske utstyret.">
-				>
-				["at0009"] = <
-					text = <"Stopp dato">
-					description = <"Datoen da bruk av det medisinske utstyret opphørte eller ble fjernet.">
-				>
-				["at0010"] = <
-					text = <"Strukturerte detaljer">
-					description = <"Ytterligere strukturerte detaljer om det medisinske utstyret.">
-				>
-				["at0012"] = <
-					text = <"Anatomisk lokalisering">
-					description = <"Identifisering av kroppsstedet hvor det medisinske utstyret er tilpasset/ implantert.">
-				>
-				["at0013"] = <
-					text = <"Strukturert anatomisk lokalisering">
-					description = <"Strukturert anatomisk lokalisering av stedet på kroppen hvor det medisinske utstyret er tilpasset/implantert.">
-				>
-				["at0014"] = <
-					text = <"Beskrivelse">
-					description = <"Fritekstbeskrivelse om det medisinske utstyret.">
 				>
 				["at0015"] = <
 					text = <"Beskrivelse">
@@ -471,27 +316,15 @@ ontology
 					description = <"Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.">
 					comment = <"For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI.">
 				>
-				["at0019"] = <
-					text = <"Dato for neste gjennomgang">
-					description = <"Dato da det medisinske utstyret skal gjennomgås på nytt.">
-				>
 				["at0020"] = <
 					text = <"Type">
 					description = <"Kategori eller type medisinsk utstyr.">
 					comment = <"For eksempel: Høreapparat, briller, kontaktlinser, tannregulering, tannprotese, ortoser eller kunstige lemmer.">
 				>
-				["at0021"] = <
-					text = <"Multimedia">
-					description = <"Digitalt bilde, video eller diagram om det medisinske utstyret.">
-				>
-				["at0022"] = <
-					text = <"Detaljer">
-					description = <"Detaljer om hvert enkelt medisinsk utstyr.">
-				>
-				["at0023"] = <
-					text = <"URI til original data">
-					description = <"Lenke til opprinnelig data om tilpassing eller implantering.">
-					comment = <"Vanligvis vil en ACTION-arketype inneholde detaljer om tilpasning eller implantering av det medisinske utstyret.">
+				["at0024"] = <
+					text = <"*Status (en)">
+					description = <"*Assertion about the status of devices, as at the date 'Last updated'. (en)">
+					comment = <"*ie. Active, Deactive, Removed (en)">
 				>
 			>
 		>
