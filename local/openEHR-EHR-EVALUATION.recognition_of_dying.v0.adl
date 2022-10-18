@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a6feaa3a63dd3199d48fd050d7e62402">
+		["MD5-CAM-1.0.1"] = <"a7c9ad24c6f1b53fc3951b8524efe0ee">
 		["build_uid"] = <"e246209d-1ae0-3986-b5a0-208637957018">
 	>
 
@@ -35,12 +35,12 @@ definition
 		data matches {
 			ITEM_TREE[at0003] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0035] occurrences matches {0..1} matches {    -- Assesment_date_and_time
+					ELEMENT[at0035] occurrences matches {0..1} matches {    -- Assessment date and time
 						value matches {
 							DV_DATE_TIME matches {*}
 						}
 					}
-					ELEMENT[at0041] occurrences matches {0..1} matches {    -- Patient_condition
+					ELEMENT[at0041] occurrences matches {0..1} matches {    -- Patient condition
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -51,7 +51,7 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Confirmed_by
+					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Confirmed by
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -91,7 +91,7 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0011] occurrences matches {0..1} matches {    -- Recognition_of_dying_agreed_with
+					ELEMENT[at0011] occurrences matches {0..1} matches {    -- Recognition of dying agreed with
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -102,7 +102,7 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0014] occurrences matches {0..1} matches {    -- Decision_summary
+					ELEMENT[at0014] occurrences matches {0..1} matches {    -- Decision summary
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -129,7 +129,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"Confirmed_by">
+					text = <"Confirmed by">
 					description = <"">
 				>
 				["at0005"] = <
@@ -149,7 +149,7 @@ ontology
 					description = <"Doctors making an acute decision who are not usually responsible for the patient's care">
 				>
 				["at0011"] = <
-					text = <"Recognition_of_dying_agreed_with">
+					text = <"Recognition of dying agreed with">
 					description = <"Has_the_recognition_of_dying_been_agreed_with_the_ward_based_team?">
 				>
 				["at0012"] = <
@@ -161,12 +161,12 @@ ontology
 					description = <"">
 				>
 				["at0014"] = <
-					text = <"Decision_summary">
+					text = <"Decision summary">
 					description = <"Summary of the reasons why the recognition of dying has been made.">
 					comment = <"Max 1000 Characters">
 				>
 				["at0035"] = <
-					text = <"Assesment_date_and_time">
+					text = <"Assessment date and time">
 					description = <"">
 				>
 				["at0036"] = <
@@ -174,7 +174,7 @@ ontology
 					description = <"Consultant">
 				>
 				["at0041"] = <
-					text = <"Patient_condition">
+					text = <"Patient condition">
 					description = <"">
 				>
 				["at0042"] = <
