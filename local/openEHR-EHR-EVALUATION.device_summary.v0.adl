@@ -39,17 +39,17 @@ description
 		["de"] = <
 			language = <[ISO_639-1::de]>
 			purpose = <"Zur Darstellung einer fortlaufenden und dauerhaften Übersicht über Medizinprodukte, die angepasst oder implantiert wurden.">
-			use = <"Zur Darstellung einer Zusammenfassung der angepassten oder implantierten Medizinprodukte, einschließlich, aber nicht beschränkt auf:
-- Hörhilfen, wie Hörgeräte oder Hörimplantate;
-- Orthesen oder Prothesen; 
-- Zahnersatz oder Zahnimplantate; und
-- Brille oder Kontaktlinsen.
+			use = <"*Use to record a summary of medical devices that have been intended to treat, cure, prevent, mitigate, diagnose including, but not limited:
+- assisted hearing devices, such as hearing aids or auditory implants;
+- orthotics or artificial limbs; 
+- dentures or dental implants; and
+- eyeglasses or contact lenses.
 
-Dieser Archetyp wurde entwickelt, um eine Übersicht über den Einsatz von Medizinprodukten im Zeitverlauf darzustellen. Er kann als Zusammenfassung in Nachrichten oder zwischen klinischen Systemen verwendet werden, wenn die Details nicht erforderlich sind. Wenn in der Vergangenheit bestimmte Geräte verwendet wurden, können in diesem Archetyp so viele Details wie möglich hinzugefügt werden, um einen Kontext zu schaffen, der Entscheidungen über aktuelle oder zukünftige Geräte des gleichen Typs beeinflussen kann.
+This archetype has been specifically designed to assist in providing an overview of management of medical devices over time. It may be used to share as a summary within messages or between clinical systems, where the detail is not required. If specific devices have been used in the past, as much detail as is available can be added in this archetype to create a context which may influence decisions about current or future devices of the same type.
 
-In der Praxis werden einige klinische Systeme spezifische und detaillierte INSTRUCTION- und ACTION-Archetypen aufzeichnen müssen, um die Anforderung eines Medizinprodukts und nachfolgende Aktivitäten, die während der Ausführung dieser Anforderung aufgezeichnet werden müssen, widerzuspiegeln. Es ist unvermeidlich, dass es in dieser Zusammenfassung und diesen detaillierten Archetypen einige Überschneidungen geben wird. Alle werden in verschiedenen Situationen benötigt. 
+In practice, some clinical systems will need to record specific and detailed INSTRUCTION and ACTION archetypes to reflect the request for an medical device and subseqent activities that need to be recorded as that request is carried out. It is inevitable that there will be some overlap in this summary and these detailed archetypes. All are neccessary in various situations. 
 
-Wenn Kliniker den Prozess der Anforderung und Bereitstellung von Medizinprodukten aufzeichnen, sollte diese Zusammenfassung aus diesen Aufzeichnungen abgeleitet werden, um sicherzustellen, dass es keine Duplikate bei der klinischen Eingabe gibt.">
+If clinicians are recording the process of request and provision of medical devices, then this summary should be derived from those recordings, to ensure that there is no duplication of clinical input. (en)">
 			misuse = <"Nicht zur Anforderung eines Medizinproduktes verwenden - verwenden Sie dazu die INSTRUCTION.request Familie.
 
 Nicht zur Aufzeichnung von Aktivitäten, die bei der Planung und Ausstattung des Patienten mit diesem Gerät auftreten - verwenden Sie dazu den Archetyp ACTION.device_fitting.
@@ -59,17 +59,17 @@ Nicht zur Aufzeichnung von Aktivitäten, die bei der Planung und Anpassung eines
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"For å registrere en pågående og persistent oversikt over medisinsk utstyr som er tilpasset eller implantert.">
-			use = <"For å registrere en oversikt over medisinsk utstyr som er tilpasset eller implantert.
-For eksempel:
-- ortoser eller kunstige lemmer.
-- tannpoteser eller tannimplantater.
-- briller eller kontaktlinser.
+			use = <"*Use to record a summary of medical devices that have been intended to treat, cure, prevent, mitigate, diagnose including, but not limited:
+- assisted hearing devices, such as hearing aids or auditory implants;
+- orthotics or artificial limbs; 
+- dentures or dental implants; and
+- eyeglasses or contact lenses.
 
-Denne arketypen er spesifikt utviklet for å bidra til en administrert oversikt over medisinsk utstyr over tid. Den kan benyttes som et sammendrag i meldinger eller mellom ulike kliniske systemer hvor detaljer ikke er påkrevd. Har en benyttet høreapparat tidligere kan man registrere tilgjengelig informasjon om dette for å skape kontekst som kan ha betydning for valg av nåværende eller framtidig utstyr.
+This archetype has been specifically designed to assist in providing an overview of management of medical devices over time. It may be used to share as a summary within messages or between clinical systems, where the detail is not required. If specific devices have been used in the past, as much detail as is available can be added in this archetype to create a context which may influence decisions about current or future devices of the same type.
 
-I praksis vil noen kliniske systemer måtte registrere spesifikke og detaljerte INSTRUCTION og ACTION arketyper for å gjenspeile en forespørsel for et høreapparat og etterfølgende aktiviteter må registreres etter hvert som forespørselen er utført. Det er uunngåelig at det vil bli overlapp i dette sammendraget og i de detaljerte arketypene. Alle er nødvendige i ulike situasjoner.
+In practice, some clinical systems will need to record specific and detailed INSTRUCTION and ACTION archetypes to reflect the request for an medical device and subseqent activities that need to be recorded as that request is carried out. It is inevitable that there will be some overlap in this summary and these detailed archetypes. All are neccessary in various situations. 
 
-Om klinikere registrerer hele prosessen fra en forespørsel og fram til utstyret framskaffes, skal dette sammendraget avledes fra disse registreringene for å sikre at duplisering av kliniske registreringer ikke forekommer.">
+If clinicians are recording the process of request and provision of medical devices, then this summary should be derived from those recordings, to ensure that there is no duplication of clinical input. (en)">
 			misuse = <"Brukes ikke for å rekvirere høreapparat - Bruk INSTRUCTION.request arketypene for dette formålet.
 
 Brukes ikke for å rekvirere aktiviteter som forekommer under planlegging og tilbassing av medisinsk utstyr - bruk passende ACTION arketype for dette formålet.
@@ -80,7 +80,7 @@ Brukes ikke for å registrere aktiviteter som forekommer under planlegging og ti
 			language = <[ISO_639-1::en]>
 			purpose = <"To record an ongoing and persistent overview about medical devices that have been fitted or implanted.">
 			copyright = <"© Northern Territory Department of Health, Australia, openEHR Foundation">
-			use = <"Use to record a summary of medical devices that have been fitted or implanted including, but not limited to:
+			use = <"Use to record a summary of medical devices that have been intended to treat, cure, prevent, mitigate, diagnose including, but not limited:
 - assisted hearing devices, such as hearing aids or auditory implants;
 - orthotics or artificial limbs; 
 - dentures or dental implants; and
@@ -104,7 +104,7 @@ Not to be used to record the activities that occur in the planning and fitting o
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4c7e33401fb12f05502186ab52ae612b">
+		["MD5-CAM-1.0.1"] = <"addc1ab4f60e18d7283d4ff9070a4125">
 		["build_uid"] = <"7a214d31-b6ba-4587-ba45-62bc8633c895">
 		["revision"] = <"0.0.1-alpha">
 	>
