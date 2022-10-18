@@ -21,7 +21,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "3.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "4e63f1d3564d47f902a6695f47441b10",
+      "MD5-CAM-1.0.1" : "9a73aa741e5dd47b11eab5ea8e86d1ef",
       "PARENT:MD5-CAM-1.0.1" : "895c287be7c9c59405a8406a202710aa"
     },
     "details" : {
@@ -145,7 +145,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "a6feaa3a63dd3199d48fd050d7e62402"
+        "PARENT:MD5-CAM-1.0.1" : "a7c9ad24c6f1b53fc3951b8524efe0ee"
       },
       "details" : {
         "en" : {
@@ -252,12 +252,6 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "at0048.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0048.1",
-            "text" : "Is patient aware they are dying",
-            "description" : ""
-          },
           "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -458,7 +452,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "A4B07F5C96E527E2834C1225877B312E"
+        "PARENT:MD5-CAM-1.0.1" : "c5b794edac0c53ebbc9b51235c7c2f7d"
       },
       "details" : {
         "de" : {
@@ -545,6 +539,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
@@ -683,7 +678,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "6342051990aeaac757a8096b79827761"
+        "PARENT:MD5-CAM-1.0.1" : "5cac4379140bf1fb0cc23b80da65d285"
       },
       "details" : {
         "en" : {
@@ -860,7 +855,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "08218c59d7752f37c6b1c75e0c17a509"
+        "PARENT:MD5-CAM-1.0.1" : "c2e4bbb8b1316b9b124d3cef6165f884"
       },
       "details" : {
         "en" : {
@@ -968,13 +963,6 @@
                   "attributeTuples" : [ ]
                 } ]
               } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0028.1",
-              "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -1092,12 +1080,6 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0016.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
               "nodeId" : "at0017.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
@@ -1171,12 +1153,6 @@
             "text" : "(Synthesized)",
             "code" : "ac0.5",
             "description" : ""
-          },
-          "at0016.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0016.1",
-            "text" : "Decision to allow a natural death?",
-            "description" : "Summary of the main clinical problems and reasons why the AaND decision has been made and why full resuscitation would be inappropriate, unsuccessful, or not in the patient's best interest"
           },
           "at0017.1" : {
             "@type" : "ARCHETYPE_TERM",
