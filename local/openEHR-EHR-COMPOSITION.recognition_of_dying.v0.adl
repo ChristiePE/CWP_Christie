@@ -23,12 +23,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"895c287be7c9c59405a8406a202710aa">
+		["MD5-CAM-1.0.1"] = <"8788ed7ed8ee1eeb84cf9bd1904371e9">
 		["build_uid"] = <"b0623ac5-bbc4-36a2-928d-df71130f0c8a">
 	>
 
 definition
-	COMPOSITION[at0000] matches {    -- Recognition_of_dying
+	COMPOSITION[at0000] matches {    -- Recognition of dying
 		category matches {
 			DV_CODED_TEXT[at0001] matches {    -- Coded text
 				defining_code matches {
@@ -46,7 +46,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Recognition_of_dying">
+					text = <"Recognition of dying">
 					description = <"Recognition_of_dying">
 				>
 				["at0001"] = <
