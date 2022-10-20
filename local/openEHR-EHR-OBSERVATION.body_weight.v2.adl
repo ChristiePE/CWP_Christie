@@ -135,18 +135,20 @@ Zur Darstellung der Gewichtsänderung, d.h. entweder Gewichtsverlust oder Gewich
 
 Nicht zur Darstellung eines Objekts oder eines Teils des Körpers.">
 		>
-		["fi"] = <
-			language = <[ISO_639-1::fi]>
-			purpose = <"Yksilön painon kirjaamista varten - sekä mitatun että arvioidun.">
-			keywords = <"paino, massa, kasvu, arvio", ...>
-			use = <"Käytetään todellisen painon mittaamiseen, myös silloin, kun yksilöstä puuttuu kehonosa synnynnäisen syyn tai kirurgisen poiston jälkeen. Huomautus, joka identifioi kehon fyysisen epätäydellisyyden, voidaan tallentaa tarvittaessa \"Sekoittavat tekijätr\" -dataelementtiin. Tämä on tavanomainen arkkityyppi, jota käytetään tyypilliseen painon mittaamiseen, esimerkiksi yksilön itsensä mittaamana kotona tai kliinikon mittaus klinikalla / sairaalassa.
+		["ru"] = <
+			language = <[ISO_639-1::ru]>
+			purpose = <"Для записи массы тела человека: фактической или приблизительной.">
+			keywords = <"вес","масса тела","прибавка","потеря","увеличение","уменьшение","оценка","актуально">
+			copyright = <"© openEHR Foundation">
+			use = <"Использовать для записи фактического измерения массы тела, включая случаи отсутсвия части(-ей) тела, врожденное или после хирургического удаления. Отметка о физической неполноте тела может быть зарегистрирована в элементе данных \"стохастическая погрешность\", если требуется. Это - обычный архетип, используемый для типичного измерения веса, например самоизмеренного человеком дома, измерение клинициста в клинике/больнице, или фитнес-инструктором в гимнастическом зале. 
 
-Voidaan käyttää myös kehon painonmittauksen arvioimiseen kliinisessä skenaariossa, jossa ei ole mahdollista mitata tarkasti painoa - esimerkiksi yhteistyökyvyttömän lapsen painon mittaaminen tai arvioimalla syntymättömän sikiön painoa (sikiön painon tallennus tapahtuu äidin terveystietoihin). Tätä ei mallinneta nimenomaisesti arkkityypissä, koska openEHR-referenssimalli mahdollistaa likiarvot minkä tahansa määrällisen datatyypin määrittämiseksi määrittelemällä attribuutin Magnitude_status arvoon '~'. Sovelluksen käyttöliittymä voisi antaa lääkäreille mahdollisuuden valita asianmukaisesti merkitty valintaruutu Paino-datakentän viereen osoittaakseen, että tallennettu paino on likiarvio eikä todellinen.
+Может также использоваться для записи примерного измерения массы тела в клиническом сценарии, где не возможно взвешивание - например, сопротивляющийся ребёнок, или для оценики веса внутриутробного плода (где 'предметом данных' является плод, и регистрация происходит в пределах записи о состоянии здоровья матери). Это не оформлено явно в архетипе, поскольку модель openEHR позволяет атрибут «приблизительно» для любого типа данных «количество». При работе, например, прикладной пользовательский интерфейс позволяет клиницистам выбирать соответствующую отметку, смежную с полем данных «вес», чтобы указать, что зарегистрированный вес - приблизительный, а не фактический. 
 
-Käytetään painonmuutoksen tallentamiseen eli painonpudotukseen tai painonnousuun. Tätä voidaan nykyisin mallinnuttaa rajoittamalla \"mikä tahansa tapahtuma\" väliajoin, johon liittyy matemaattinen funktion lisäys tai pieneneminen.">
-			misuse = <"Ei saa käyttää säädetyn painotiedon tallentamiseen, esim. laskemalla raajan amputointia suorittavan henkilön koko kehon paino muiden kehon osien mittausten ja algoritmin perusteella - käytä OBSERVATION.body_weight-adjusted tähän tarkoitukseen.
-
-Ei saa käyttää ruumiinosan painon tallentamiseen.">
+Использовать для записи изменения веса, то есть, потери веса или увеличения веса.
+Это может в настоящее время моделироваться, привязывая 'каждый случай' к интервалу со связанной математической функцией увеличения или уменьшения, соответственно.">
+			misuse = <"Не использовать для записи первого веса младенца после рождение, которое обозначено как 'вес при рождении' - использовать специализацию этого архетипа OBSERVATION.body_weight-birth. 
+Не использовать для записи массы тела человека с протезами / приспособлениями для вычисление полной массы тела человека с ампутацией, основанной на других измерениях и алгоритме  - использовать архетип OBSERVATION.body_weight-adjusted.
+Не использовать, чтобы сделать запись веса части тела или объекта.">
 		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
@@ -164,20 +166,18 @@ Används för att registrera viktförändring, dvs. antingen viktförlust eller 
 Ska inte användas för att registrera vikten av ett objekt eller en kroppsdel. 
 ">
 		>
-		["ru"] = <
-			language = <[ISO_639-1::ru]>
-			purpose = <"Для записи массы тела человека: фактической или приблизительной.">
-			keywords = <"вес","масса тела","прибавка","потеря","увеличение","уменьшение","оценка","актуально">
-			copyright = <"© openEHR Foundation">
-			use = <"Использовать для записи фактического измерения массы тела, включая случаи отсутсвия части(-ей) тела, врожденное или после хирургического удаления. Отметка о физической неполноте тела может быть зарегистрирована в элементе данных \"стохастическая погрешность\", если требуется. Это - обычный архетип, используемый для типичного измерения веса, например самоизмеренного человеком дома, измерение клинициста в клинике/больнице, или фитнес-инструктором в гимнастическом зале. 
+		["fi"] = <
+			language = <[ISO_639-1::fi]>
+			purpose = <"Yksilön painon kirjaamista varten - sekä mitatun että arvioidun.">
+			keywords = <"paino, massa, kasvu, arvio", ...>
+			use = <"Käytetään todellisen painon mittaamiseen, myös silloin, kun yksilöstä puuttuu kehonosa synnynnäisen syyn tai kirurgisen poiston jälkeen. Huomautus, joka identifioi kehon fyysisen epätäydellisyyden, voidaan tallentaa tarvittaessa \"Sekoittavat tekijätr\" -dataelementtiin. Tämä on tavanomainen arkkityyppi, jota käytetään tyypilliseen painon mittaamiseen, esimerkiksi yksilön itsensä mittaamana kotona tai kliinikon mittaus klinikalla / sairaalassa.
 
-Может также использоваться для записи примерного измерения массы тела в клиническом сценарии, где не возможно взвешивание - например, сопротивляющийся ребёнок, или для оценики веса внутриутробного плода (где 'предметом данных' является плод, и регистрация происходит в пределах записи о состоянии здоровья матери). Это не оформлено явно в архетипе, поскольку модель openEHR позволяет атрибут «приблизительно» для любого типа данных «количество». При работе, например, прикладной пользовательский интерфейс позволяет клиницистам выбирать соответствующую отметку, смежную с полем данных «вес», чтобы указать, что зарегистрированный вес - приблизительный, а не фактический. 
+Voidaan käyttää myös kehon painonmittauksen arvioimiseen kliinisessä skenaariossa, jossa ei ole mahdollista mitata tarkasti painoa - esimerkiksi yhteistyökyvyttömän lapsen painon mittaaminen tai arvioimalla syntymättömän sikiön painoa (sikiön painon tallennus tapahtuu äidin terveystietoihin). Tätä ei mallinneta nimenomaisesti arkkityypissä, koska openEHR-referenssimalli mahdollistaa likiarvot minkä tahansa määrällisen datatyypin määrittämiseksi määrittelemällä attribuutin Magnitude_status arvoon '~'. Sovelluksen käyttöliittymä voisi antaa lääkäreille mahdollisuuden valita asianmukaisesti merkitty valintaruutu Paino-datakentän viereen osoittaakseen, että tallennettu paino on likiarvio eikä todellinen.
 
-Использовать для записи изменения веса, то есть, потери веса или увеличения веса.
-Это может в настоящее время моделироваться, привязывая 'каждый случай' к интервалу со связанной математической функцией увеличения или уменьшения, соответственно.">
-			misuse = <"Не использовать для записи первого веса младенца после рождение, которое обозначено как 'вес при рождении' - использовать специализацию этого архетипа OBSERVATION.body_weight-birth. 
-Не использовать для записи массы тела человека с протезами / приспособлениями для вычисление полной массы тела человека с ампутацией, основанной на других измерениях и алгоритме  - использовать архетип OBSERVATION.body_weight-adjusted.
-Не использовать, чтобы сделать запись веса части тела или объекта.">
+Käytetään painonmuutoksen tallentamiseen eli painonpudotukseen tai painonnousuun. Tätä voidaan nykyisin mallinnuttaa rajoittamalla \"mikä tahansa tapahtuma\" väliajoin, johon liittyy matemaattinen funktion lisäys tai pieneneminen.">
+			misuse = <"Ei saa käyttää säädetyn painotiedon tallentamiseen, esim. laskemalla raajan amputointia suorittavan henkilön koko kehon paino muiden kehon osien mittausten ja algoritmin perusteella - käytä OBSERVATION.body_weight-adjusted tähän tarkoitukseen.
+
+Ei saa käyttää ruumiinosan painon tallentamiseen.">
 		>
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
@@ -196,20 +196,6 @@ Usada para gravar a mudança de peso, ou seja, qualquer perda ou ganho de peso. 
 Não deve ser usado para registrar o peso do corpo ajustado por exemplo, um cálculo do peso de corpo inteiro de uma pessoa com amputação de membros, com base em medições de outro corpo e um algoritmo -OBSERVATION.body_weight-adjusted.
 
 Não deve ser usado para registrar o peso de um objeto ou parte do corpo.">
-		>
-		["en"] = <
-			language = <[ISO_639-1::en]>
-			purpose = <"To record the body weight of an individual - both actual and approximate.">
-			keywords = <"weight","gain","loss","increase","decrease","mass","estimate","actual">
-			copyright = <"© openEHR Foundation">
-			use = <"To be used for recording the actual measurement of body weight, including when the individual is missing a body part due to a congenital cause or after surgical removal.   A statement identifying the physical incompleteness of the body can be recorded in the 'Confounding factors' data element, if required. This is the usual archetype to be used for a typical measurement of weight, for example self-measured by the individual at home, a clinician measurement in a clinic/hospital, or a fitness instructor in a gymnasium.  
-
-Can also be used for recording an approximation of body weight measurement in a clinical scenario where it is not possible to measure accurately body weight - for example, weighing an uncooperative child, or estimating the weight of an unborn fetus (where the 'subject of data' is the Fetus and recording occurs within the mother's health record).  This is not modelled explicitly in the archetype as the openEHR Reference model allows approximations  for any Quantity data type by setting the attribute Magnitude_status to the value '~'.  At implementation, for example, an application user interface could allow clinicians to select an appropriately labelled check box adjacent to the Weight data field to indicate that the recorded weight is an approximation, rather than actual.
-
-To be used for recording weight change, that is, either weight loss or weight gain.  This can currently be modelled by constraining the 'any event' to an interval with associated mathematical function of increase or decrease, as appropriate.">
-			misuse = <"Not to be used to record a calculated body weight, such as an estimation of the body weight of a person with one or more limbs missing. A calculated body weight may be based on, some or all of, the measured body weight, other body measurements and an algorithm. Use other OBSERVATION archetypes for this purpose.
-
-Not to be used to record the weight of a body part or other object.">
 		>
 		["ar-sy"] = <
 			language = <[ISO_639-1::ar-sy]>
@@ -231,6 +217,20 @@ openEHR
 لا يستخدم لتسجيل وزن الجسم المُصحَّح مثل قياس الوزن الكلي للجسم لشخص يعاني من بتر في أحد الأطراف, بناءا على قياسات أخرى من الجسم باستخدام خُوارزمية - استخدم بدلا من ذلك نموذج ملاحظة.وزن الجسم المُصحَّح.
 
 لا يستخدم لتسجيل وزن شيئ أو جزء من أجزاء الجسم.">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record the body weight of an individual - both actual and approximate.">
+			keywords = <"weight","gain","loss","increase","decrease","mass","estimate","actual">
+			copyright = <"© openEHR Foundation">
+			use = <"To be used for recording the actual measurement of body weight, including when the individual is missing a body part due to a congenital cause or after surgical removal.   A statement identifying the physical incompleteness of the body can be recorded in the 'Confounding factors' data element, if required. This is the usual archetype to be used for a typical measurement of weight, for example self-measured by the individual at home, a clinician measurement in a clinic/hospital, or a fitness instructor in a gymnasium.  
+
+Can also be used for recording an approximation of body weight measurement in a clinical scenario where it is not possible to measure accurately body weight - for example, weighing an uncooperative child, or estimating the weight of an unborn fetus (where the 'subject of data' is the Fetus and recording occurs within the mother's health record).  This is not modelled explicitly in the archetype as the openEHR Reference model allows approximations  for any Quantity data type by setting the attribute Magnitude_status to the value '~'.  At implementation, for example, an application user interface could allow clinicians to select an appropriately labelled check box adjacent to the Weight data field to indicate that the recorded weight is an approximation, rather than actual.
+
+To be used for recording weight change, that is, either weight loss or weight gain.  This can currently be modelled by constraining the 'any event' to an interval with associated mathematical function of increase or decrease, as appropriate.">
+			misuse = <"Not to be used to record a calculated body weight, such as an estimation of the body weight of a person with one or more limbs missing. A calculated body weight may be based on, some or all of, the measured body weight, other body measurements and an algorithm. Use other OBSERVATION archetypes for this purpose.
+
+Not to be used to record the weight of a body part or other object.">
 		>
 		["fr"] = <
 			language = <[ISO_639-1::fr]>
@@ -338,7 +338,7 @@ Dient niet te worden gebruikt voor het vastleggen van het gewicht van een object
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"B7CBE264803846DAA95A01EEF598BA3B">
+		["MD5-CAM-1.0.1"] = <"158eb47eb1306ae84990b6a0c70dc0f9">
 		["build_uid"] = <"7f486ee0-a285-4af0-bda6-32c007a95547">
 		["revision"] = <"2.1.6">
 	>
@@ -373,6 +373,18 @@ definition
 											>
 										}
 									}
+									ELEMENT[at0031] occurrences matches {0..1} matches {    -- Exact or estimated
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0032,    -- Exact
+													at0033,    -- Estimated
+													at0034]    -- Patient supplied
+												}
+											}
+										}
+									}
 									ELEMENT[at0024] occurrences matches {0..1} matches {    -- Comment
 										value matches {
 											DV_TEXT matches {*}
@@ -390,7 +402,6 @@ definition
 												defining_code matches {
 													[local::
 													at0013,    -- Naked
-													at0017,    -- Nappy/diaper
 													at0011,    -- Lightly clothed/underwear
 													at0028,    -- Fully clothed, without shoes
 													at0010]    -- Fully clothed, including shoes
@@ -405,14 +416,6 @@ definition
 									}
 								}
 							}
-						}
-					}
-					POINT_EVENT[at0026] occurrences matches {0..1} matches {    -- Birth
-						data matches {
-							use_node ITEM_TREE /data[at0002]/events[at0003]/data[at0001]
-						}
-						state matches {
-							use_node ITEM_TREE /data[at0002]/events[at0003]/state[at0008]
 						}
 					}
 				}
@@ -483,10 +486,6 @@ ontology
 					text = <"protocol structure">
 					description = <"@ internal @">
 				>
-				["at0017"] = <
-					text = <"حفاظة">
-					description = <"الشخص يرتدي حفاظة فقط - و قد يزيد ذلك من الوزن بشكل مؤثر">
-				>
 				["at0020"] = <
 					text = <"الجهيزة">
 					description = <"تفاصيل حول الجهيزة المستخدمة في القياس">
@@ -499,11 +498,6 @@ ontology
 					text = <"*Confounding factors(en)">
 					description = <"*Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.(en)">
 				>
-				["at0026"] = <
-					text = <"*Birth(en)">
-					description = <"*Usually the first weight, measured soon after birth. This event will only be used once per health record
-.(en)">
-				>
 				["at0027"] = <
 					text = <"*Extension(en)">
 					description = <"*Additional information required to capture local content or to align with other reference models/formalisms.(en)">
@@ -512,6 +506,22 @@ ontology
 				["at0028"] = <
 					text = <"*Fully clothed, without shoes (en)">
 					description = <"*Clothing which may add significantly to weight. (en)">
+				>
+				["at0031"] = <
+					text = <"*Exact or estimated (en)">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"*Exact (en)">
+					description = <"*Weighed in hospital at time of attendance (en)">
+				>
+				["at0033"] = <
+					text = <"*Estimated (en)">
+					description = <"*Estimated whilst in hospital (en)">
+				>
+				["at0034"] = <
+					text = <"*Patient supplied (en)">
+					description = <"*Patient weight themselves so weight not verified as exact (en)">
 				>
 			>
 		>
@@ -561,10 +571,6 @@ ontology
 					text = <"protocol structure">
 					description = <"@ internal @">
 				>
-				["at0017"] = <
-					text = <"В памперсе">
-					description = <"Одет(а) только в памперс - может добавить значительный вес.">
-				>
 				["at0020"] = <
 					text = <"Устройство">
 					description = <"Весы (устройство, на котором производилось взвешивание): информация.">
@@ -577,11 +583,6 @@ ontology
 					text = <"*Confounding factors(en)">
 					description = <"*Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.(en)">
 				>
-				["at0026"] = <
-					text = <"*Birth(en)">
-					description = <"*Usually the first weight, measured soon after birth. This event will only be used once per health record
-.(en)">
-				>
 				["at0027"] = <
 					text = <"*Extension(en)">
 					description = <"*Additional information required to capture local content or to align with other reference models/formalisms.(en)">
@@ -590,6 +591,22 @@ ontology
 				["at0028"] = <
 					text = <"*Fully clothed, without shoes (en)">
 					description = <"*Clothing which may add significantly to weight. (en)">
+				>
+				["at0031"] = <
+					text = <"*Exact or estimated (en)">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"*Exact (en)">
+					description = <"*Weighed in hospital at time of attendance (en)">
+				>
+				["at0033"] = <
+					text = <"*Estimated (en)">
+					description = <"*Estimated whilst in hospital (en)">
+				>
+				["at0034"] = <
+					text = <"*Patient supplied (en)">
+					description = <"*Patient weight themselves so weight not verified as exact (en)">
 				>
 			>
 		>
@@ -639,10 +656,6 @@ ontology
 					text = <"*protocol structure(en)">
 					description = <"*@ internal @(en)">
 				>
-				["at0017"] = <
-					text = <"おむつを付けている状態">
-					description = <"おむつだけをはいている状態。体重測定に関与しうる。">
-				>
 				["at0020"] = <
 					text = <"測定機器">
 					description = <"測定に使用された機器についての詳細な記録">
@@ -655,11 +668,6 @@ ontology
 					text = <"*Confounding factors(en)">
 					description = <"*Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.(en)">
 				>
-				["at0026"] = <
-					text = <"*Birth(en)">
-					description = <"*Usually the first weight, measured soon after birth. This event will only be used once per health record
-.(en)">
-				>
 				["at0027"] = <
 					text = <"*Extension(en)">
 					description = <"*Additional information required to capture local content or to align with other reference models/formalisms.(en)">
@@ -668,6 +676,22 @@ ontology
 				["at0028"] = <
 					text = <"*Fully clothed, without shoes (en)">
 					description = <"*Clothing which may add significantly to weight. (en)">
+				>
+				["at0031"] = <
+					text = <"*Exact or estimated (en)">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"*Exact (en)">
+					description = <"*Weighed in hospital at time of attendance (en)">
+				>
+				["at0033"] = <
+					text = <"*Estimated (en)">
+					description = <"*Estimated whilst in hospital (en)">
+				>
+				["at0034"] = <
+					text = <"*Patient supplied (en)">
+					description = <"*Patient weight themselves so weight not verified as exact (en)">
 				>
 			>
 		>
@@ -717,10 +741,6 @@ ontology
 					text = <"protocol structure">
 					description = <"@ internal @">
 				>
-				["at0017"] = <
-					text = <"کهنه بچه یا پوشک">
-					description = <"پوشیدن فقط یک پوشک که می تواند وزن را بطور قابل توجهی افزایش دهد">
-				>
 				["at0020"] = <
 					text = <"تجهیز">
 					description = <"توصیف تجهیز استفاده شده برای اندازه گیری وزن">
@@ -733,11 +753,6 @@ ontology
 					text = <"*Confounding factors(en)">
 					description = <"*Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.(en)">
 				>
-				["at0026"] = <
-					text = <"*Birth(en)">
-					description = <"*Usually the first weight, measured soon after birth. This event will only be used once per health record
-.(en)">
-				>
 				["at0027"] = <
 					text = <"*Extension(en)">
 					description = <"*Additional information required to capture local content or to align with other reference models/formalisms.(en)">
@@ -746,6 +761,22 @@ ontology
 				["at0028"] = <
 					text = <"*Fully clothed, without shoes (en)">
 					description = <"*Clothing which may add significantly to weight. (en)">
+				>
+				["at0031"] = <
+					text = <"*Exact or estimated (en)">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"*Exact (en)">
+					description = <"*Weighed in hospital at time of attendance (en)">
+				>
+				["at0033"] = <
+					text = <"*Estimated (en)">
+					description = <"*Estimated whilst in hospital (en)">
+				>
+				["at0034"] = <
+					text = <"*Patient supplied (en)">
+					description = <"*Patient weight themselves so weight not verified as exact (en)">
 				>
 			>
 		>
@@ -795,10 +826,6 @@ ontology
 					text = <"*protocol structure(en)">
 					description = <"*@ internal @(en)">
 				>
-				["at0017"] = <
-					text = <"尿布/尿不湿">
-					description = <"仅有尿布/尿不湿 - 有可能显著增加重量。">
-				>
 				["at0020"] = <
 					text = <"装置">
 					description = <"关于称重装置的详细信息。">
@@ -811,10 +838,6 @@ ontology
 					text = <"干扰因素">
 					description = <"用于记录任何可能对体重测量造成影响的问题或因素，如月经周期所处时间阶段、最近排便的时间安排情况或者截肢情况说明。">
 				>
-				["at0026"] = <
-					text = <"出生">
-					description = <"通常为出生之后短时间内所首次测量的体重。在每份健康档案当中将仅仅使用一次该事件。">
-				>
 				["at0027"] = <
 					text = <"扩展">
 					description = <"记录本地内容时或者是与其他的参考模型/形式化体系进行协调统一时所需的附加信息。">
@@ -824,6 +847,22 @@ ontology
 				["at0028"] = <
 					text = <"衣着整齐，不包括鞋子">
 					description = <"可能会显著增加重量的衣物。">
+				>
+				["at0031"] = <
+					text = <"*Exact or estimated (en)">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"*Exact (en)">
+					description = <"*Weighed in hospital at time of attendance (en)">
+				>
+				["at0033"] = <
+					text = <"*Estimated (en)">
+					description = <"*Estimated whilst in hospital (en)">
+				>
+				["at0034"] = <
+					text = <"*Patient supplied (en)">
+					description = <"*Patient weight themselves so weight not verified as exact (en)">
 				>
 			>
 		>
@@ -873,10 +912,6 @@ ontology
 					text = <"protocol structure">
 					description = <"@ internal @">
 				>
-				["at0017"] = <
-					text = <"Fralda">
-					description = <"Vestindo apenas uma fralda - pode adicionar peso significativo.">
-				>
 				["at0020"] = <
 					text = <"Dispositivo">
 					description = <"Detalhes sobre o dispositivo de pesagem.">
@@ -889,10 +924,6 @@ ontology
 					text = <"Fatores de confundimento">
 					description = <"Registra qualquer problemas ou fatores que impactam na medida do peso corporal pe período menstrual, período recente de movimento peristáltico e observação de amputação.">
 				>
-				["at0026"] = <
-					text = <"Nascimento">
-					description = <"Normalmente o primeiro peso, medido ao nascer.">
-				>
 				["at0027"] = <
 					text = <"Extensão">
 					description = <"Informação adicional requerida para capturar conteúdo local ou para alinhar a outros modelos de referência/formalismos.">
@@ -901,6 +932,22 @@ ontology
 				["at0028"] = <
 					text = <"Totalmente vestida, sem sapatos">
 					description = <"Roupas que podem aumentar significativamente o peso.">
+				>
+				["at0031"] = <
+					text = <"*Exact or estimated (en)">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"*Exact (en)">
+					description = <"*Weighed in hospital at time of attendance (en)">
+				>
+				["at0033"] = <
+					text = <"*Estimated (en)">
+					description = <"*Estimated whilst in hospital (en)">
+				>
+				["at0034"] = <
+					text = <"*Patient supplied (en)">
+					description = <"*Patient weight themselves so weight not verified as exact (en)">
 				>
 			>
 		>
@@ -950,10 +997,6 @@ ontology
 					text = <"protocol structure">
 					description = <"@ internal @">
 				>
-				["at0017"] = <
-					text = <"Nappy/diaper">
-					description = <"Wearing only a nappy - which may add significantly to weight.">
-				>
 				["at0020"] = <
 					text = <"Device">
 					description = <"Details about the weighing device.">
@@ -966,11 +1009,6 @@ ontology
 					text = <"Confounding factors">
 					description = <"Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.">
 				>
-				["at0026"] = <
-					text = <"Birth">
-					description = <"Usually the first weight, measured soon after birth. This event will only be used once per health record
-.">
-				>
 				["at0027"] = <
 					text = <"Extension">
 					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
@@ -979,6 +1017,22 @@ ontology
 				["at0028"] = <
 					text = <"Fully clothed, without shoes">
 					description = <"Clothing which may add significantly to weight.">
+				>
+				["at0031"] = <
+					text = <"Exact or estimated">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Exact">
+					description = <"Weighed in hospital at time of attendance">
+				>
+				["at0033"] = <
+					text = <"Estimated">
+					description = <"Estimated whilst in hospital">
+				>
+				["at0034"] = <
+					text = <"Patient supplied">
+					description = <"Patient weight themselves so weight not verified as exact">
 				>
 			>
 		>
@@ -1028,10 +1082,6 @@ ontology
 					text = <"Protocol structure">
 					description = <"@ internal @">
 				>
-				["at0017"] = <
-					text = <"Windel">
-					description = <"Trägt Windel; kann signifikant zum Gewicht beitragen.">
-				>
 				["at0020"] = <
 					text = <"Gerät">
 					description = <"Details über die benutzte Waage.">
@@ -1045,10 +1095,6 @@ ontology
 					text = <"Einflußfaktoren">
 					description = <"Beschreibung aller Probleme oder Faktoren, die sich auf die Messung des Körpergewichts auswirken können, z. B. das Timing im Menstruationszyklus, das Timing des letzten Stuhlgangs oder das Feststellen einer Amputation.">
 				>
-				["at0026"] = <
-					text = <"Geburt">
-					description = <"Normalerweise das erste Gewicht, gemessen kurz nach der Geburt. Dieses Ereignis wird nur einmal pro Gesundheitsakte verwendet.">
-				>
 				["at0027"] = <
 					text = <"Erweiterung">
 					description = <"Zusätzliche Informationen zur Erfassung lokaler Inhalte oder Anpassung an andere Referenzmodelle/Formalismen.">
@@ -1057,6 +1103,22 @@ ontology
 				["at0028"] = <
 					text = <"Voll bekleidet, ohne Schuhen">
 					description = <"Bekleidung, die signifikant zum Gewicht beiträgt.">
+				>
+				["at0031"] = <
+					text = <"*Exact or estimated (en)">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"*Exact (en)">
+					description = <"*Weighed in hospital at time of attendance (en)">
+				>
+				["at0033"] = <
+					text = <"*Estimated (en)">
+					description = <"*Estimated whilst in hospital (en)">
+				>
+				["at0034"] = <
+					text = <"*Patient supplied (en)">
+					description = <"*Patient weight themselves so weight not verified as exact (en)">
 				>
 			>
 		>
@@ -1106,10 +1168,6 @@ ontology
 					text = <"*protocol structure(en)">
 					description = <"*@ internal @(en)">
 				>
-				["at0017"] = <
-					text = <"Luier">
-					description = <"Individu draagt alleen een luier - die significant aan het gewicht kan bijdragen.">
-				>
 				["at0020"] = <
 					text = <"Apparaat">
 					description = <"Details over het apparaat waarmee gewogen is.">
@@ -1122,10 +1180,6 @@ ontology
 					text = <"Beïnvloedende factoren.">
 					description = <"Leg elke gegeven of factor vast die invloed heeft op de meting van het lichaamsgewicht, bijvoorbeeld moment in de menstruele cyclus, tijd sinds recente ontlasting of een amputatie.">
 				>
-				["at0026"] = <
-					text = <"Geboorte">
-					description = <"Normaal het eerste gewicht na geboorte. Deze waarde slechts eenmalig worden vastgelegd per elektronisch dossier.">
-				>
 				["at0027"] = <
 					text = <"Uitbreiding">
 					description = <"Extra informatie die nodig is om lokale informatie vast te leggen of om te verbinden met andere referentiemodulen.">
@@ -1134,6 +1188,22 @@ ontology
 				["at0028"] = <
 					text = <"Volledig gekleed maar, zonder schoenen.">
 					description = <"Kleding die het gewicht significant beïnvloedt.">
+				>
+				["at0031"] = <
+					text = <"*Exact or estimated (en)">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"*Exact (en)">
+					description = <"*Weighed in hospital at time of attendance (en)">
+				>
+				["at0033"] = <
+					text = <"*Estimated (en)">
+					description = <"*Estimated whilst in hospital (en)">
+				>
+				["at0034"] = <
+					text = <"*Patient supplied (en)">
+					description = <"*Patient weight themselves so weight not verified as exact (en)">
 				>
 			>
 		>
@@ -1183,10 +1253,6 @@ ontology
 					text = <"*protocol structure(en)">
 					description = <"*@ internal @(en)">
 				>
-				["at0017"] = <
-					text = <"Pañales">
-					description = <"Únicamente con un pañal. Puede incrementar el peso de forma significativa.">
-				>
 				["at0020"] = <
 					text = <"Dispositivo">
 					description = <"Detalles acerca del dispositivo de pesada.">
@@ -1199,11 +1265,6 @@ ontology
 					text = <"*Confounding factors(en)">
 					description = <"*Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.(en)">
 				>
-				["at0026"] = <
-					text = <"*Birth(en)">
-					description = <"*Usually the first weight, measured soon after birth. This event will only be used once per health record
-.(en)">
-				>
 				["at0027"] = <
 					text = <"*Extension(en)">
 					description = <"*Additional information required to capture local content or to align with other reference models/formalisms.(en)">
@@ -1212,6 +1273,22 @@ ontology
 				["at0028"] = <
 					text = <"*Fully clothed, without shoes (en)">
 					description = <"*Clothing which may add significantly to weight. (en)">
+				>
+				["at0031"] = <
+					text = <"*Exact or estimated (en)">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"*Exact (en)">
+					description = <"*Weighed in hospital at time of attendance (en)">
+				>
+				["at0033"] = <
+					text = <"*Estimated (en)">
+					description = <"*Estimated whilst in hospital (en)">
+				>
+				["at0034"] = <
+					text = <"*Patient supplied (en)">
+					description = <"*Patient weight themselves so weight not verified as exact (en)">
 				>
 			>
 		>
@@ -1261,10 +1338,6 @@ ontology
 					text = <"protocol structure">
 					description = <"@ internal @">
 				>
-				["at0017"] = <
-					text = <"Blöja">
-					description = <"Iklädd endast blöja, som kan addera vikt avsevärt.">
-				>
 				["at0020"] = <
 					text = <"Utrustning">
 					description = <"Detaljer om den utrustning som används för att mäta vikten.">
@@ -1277,10 +1350,6 @@ ontology
 					text = <"Möjliga felkällor">
 					description = <"Beskrivning av faktorer och felkällor som kan påverka mätningen av kroppsvikt, exempelvis tidpunkt i menstruationscykeln, tid sedan senaste tarmrörelse, eller amputation.">
 				>
-				["at0026"] = <
-					text = <"Födelse">
-					description = <"Vanligtvis den första vägningen, strax efter födseln. Den här händelsen registeras endast en gång per patientjournal.">
-				>
 				["at0027"] = <
 					text = <"Tilläggsinformation">
 					description = <"Plats för att infoga tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.">
@@ -1289,6 +1358,22 @@ ontology
 				["at0028"] = <
 					text = <"*Fully clothed, without shoes (en)">
 					description = <"*Clothing which may add significantly to weight. (en)">
+				>
+				["at0031"] = <
+					text = <"*Exact or estimated (en)">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"*Exact (en)">
+					description = <"*Weighed in hospital at time of attendance (en)">
+				>
+				["at0033"] = <
+					text = <"*Estimated (en)">
+					description = <"*Estimated whilst in hospital (en)">
+				>
+				["at0034"] = <
+					text = <"*Patient supplied (en)">
+					description = <"*Patient weight themselves so weight not verified as exact (en)">
 				>
 			>
 		>
@@ -1338,10 +1423,6 @@ ontology
 					text = <"protocol structure">
 					description = <"@ internal @">
 				>
-				["at0017"] = <
-					text = <"Vaippa">
-					description = <"Ainoastaan vaippa - voi lisätä merkittävästi painoa.">
-				>
 				["at0020"] = <
 					text = <"Laite">
 					description = <"Lisätietoja käytetystä mittalaitteesta.">
@@ -1354,10 +1435,6 @@ ontology
 					text = <"Sekoittavat tekijät">
 					description = <"Painon mittaamiseen vaikuttavia tekijöitä, jotka voivat vaikuttaa mittaustulokseen. Esimerkiksi kuukautiskierto, viimeaikainen suolen toiminta tai merkki amputaatiosta.">
 				>
-				["at0026"] = <
-					text = <"Syntymä">
-					description = <"Ensimmäinen painotieto, joka on mitattu pian syntymän jälkeen. Kyseinen tieto kirjataan vain yhden kerran henkilön terveystietoihin.">
-				>
 				["at0027"] = <
 					text = <"Laajennus">
 					description = <"Lisätietoja joita on tarvittu mittaustuloksen tallentamiseen tai yhdistämiseen toisiin referenssimalleihin.">
@@ -1366,6 +1443,22 @@ ontology
 				["at0028"] = <
 					text = <"*Fully clothed, without shoes (en)">
 					description = <"*Clothing which may add significantly to weight. (en)">
+				>
+				["at0031"] = <
+					text = <"*Exact or estimated (en)">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"*Exact (en)">
+					description = <"*Weighed in hospital at time of attendance (en)">
+				>
+				["at0033"] = <
+					text = <"*Estimated (en)">
+					description = <"*Estimated whilst in hospital (en)">
+				>
+				["at0034"] = <
+					text = <"*Patient supplied (en)">
+					description = <"*Patient weight themselves so weight not verified as exact (en)">
 				>
 			>
 		>
@@ -1415,10 +1508,6 @@ ontology
 					text = <"protocol structure">
 					description = <"@ internal @">
 				>
-				["at0017"] = <
-					text = <"Bleie">
-					description = <"Bare ikledt bleie - kan legge til signifikant vekt.">
-				>
 				["at0020"] = <
 					text = <"Måleapparat">
 					description = <"Detaljer om måleapparatet brukt til vektmålingen.">
@@ -1431,10 +1520,6 @@ ontology
 					text = <"Konfunderende faktorer">
 					description = <"Registering av emner eller faktorer som kan ha betydning for måling av kroppsvekten, f.eks. inntak av mat og drikke, stort saltinntak, menstruasjonssyklus, tidspunkt for avføring, ødem eller uke av graviditet.">
 				>
-				["at0026"] = <
-					text = <"Fødsel">
-					description = <"Den første vekten målt etter fødselen. Denne hendelsen skal kun benyttes én gang per journal.">
-				>
 				["at0027"] = <
 					text = <"Tilleggsinformasjon">
 					description = <"Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.">
@@ -1443,6 +1528,22 @@ ontology
 				["at0028"] = <
 					text = <"Fullt påkledt, uten sko">
 					description = <"Påkledning som kan øke vekten signifikant.">
+				>
+				["at0031"] = <
+					text = <"*Exact or estimated (en)">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"*Exact (en)">
+					description = <"*Weighed in hospital at time of attendance (en)">
+				>
+				["at0033"] = <
+					text = <"*Estimated (en)">
+					description = <"*Estimated whilst in hospital (en)">
+				>
+				["at0034"] = <
+					text = <"*Patient supplied (en)">
+					description = <"*Patient weight themselves so weight not verified as exact (en)">
 				>
 			>
 		>
@@ -1492,10 +1593,6 @@ ontology
 					text = <"protocol structure">
 					description = <"@ internal @">
 				>
-				["at0017"] = <
-					text = <"Couche-culotte">
-					description = <"Ne porter qu'une couche - ce qui peut augmenter considérablement le poids.">
-				>
 				["at0020"] = <
 					text = <"Dispositif">
 					description = <"Détails sur le dispositif de pesage.">
@@ -1508,10 +1605,6 @@ ontology
 					text = <"Facteurs de confusion">
 					description = <"Enregistrez toutes les questions ou facteurs qui peuvent avoir un impact sur la mesure du poids corporel, par exemple le moment du cycle menstruel, le moment de la défécation récente ou la constatation d'une amputation.">
 				>
-				["at0026"] = <
-					text = <"Naissance">
-					description = <"Habituellement, le premier poids, mesuré peu après la naissance. Cet événement ne sera utilisé qu'une seule fois par dossier de santé">
-				>
 				["at0027"] = <
 					text = <"Extension">
 					description = <"Informations supplémentaires requises pour saisir le contenu local ou pour s'aligner sur d'autres modèles/formalismes de référence.">
@@ -1520,6 +1613,22 @@ ontology
 				["at0028"] = <
 					text = <"Entièrement vêtu, sans chaussures">
 					description = <"Les vêtements qui peuvent augmenter considérablement le poids.">
+				>
+				["at0031"] = <
+					text = <"*Exact or estimated (en)">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"*Exact (en)">
+					description = <"*Weighed in hospital at time of attendance (en)">
+				>
+				["at0033"] = <
+					text = <"*Estimated (en)">
+					description = <"*Estimated whilst in hospital (en)">
+				>
+				["at0034"] = <
+					text = <"*Patient supplied (en)">
+					description = <"*Patient weight themselves so weight not verified as exact (en)">
 				>
 			>
 		>
