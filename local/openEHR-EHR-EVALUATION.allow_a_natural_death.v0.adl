@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"037daca29d8c001569ff3318d9145d3f">
+		["MD5-CAM-1.0.1"] = <"516d9998457165acfed8158d03c27b35">
 		["build_uid"] = <"58e7ba76-f7e4-3e02-aa20-6370177f2ac8">
 	>
 
@@ -32,11 +32,6 @@ definition
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Assessment date and time
-						value matches {
-							DV_DATE_TIME matches {*}
-						}
-					}
 					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Confirmed by
 						value matches {
 							DV_CODED_TEXT matches {
@@ -136,10 +131,6 @@ ontology
 				["at0001"] = <
 					text = <"Item tree">
 					description = <"@ internal @">
-				>
-				["at0002"] = <
-					text = <"Assessment date and time">
-					description = <"Please enter the date and time the patient was assessed (not the time of documentation)">
 				>
 				["at0003"] = <
 					text = <"Confirmed by">
