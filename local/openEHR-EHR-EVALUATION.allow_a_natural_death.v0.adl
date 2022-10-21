@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"516d9998457165acfed8158d03c27b35">
+		["MD5-CAM-1.0.1"] = <"1ad7a81cde1144642bd7615adc4e1df4">
 		["build_uid"] = <"58e7ba76-f7e4-3e02-aa20-6370177f2ac8">
 	>
 
@@ -32,7 +32,7 @@ definition
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Confirmed by
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Confirmation role
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -133,7 +133,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0003"] = <
-					text = <"Confirmed by">
+					text = <"Confirmation role">
 					description = <"A senior doctor must be involved in making an AaND decision. The form can be completed by an ANP or a doctor below the level of an ST3, but the decision must have been discussed prior to form completion. Select the most senior doctor involved. (Discussion by phone is included).">
 				>
 				["at0004"] = <
