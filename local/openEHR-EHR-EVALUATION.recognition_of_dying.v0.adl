@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"97c7daab3e18e25c51f486f71a732b80">
+		["MD5-CAM-1.0.1"] = <"bd02e10c1971e6c77eb674ec5f53123c">
 		["build_uid"] = <"e246209d-1ae0-3986-b5a0-208637957018">
 	>
 
@@ -35,12 +35,7 @@ definition
 		data matches {
 			ITEM_TREE[at0003] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0035] occurrences matches {0..1} matches {    -- Assessment date and time
-						value matches {
-							DV_DATE_TIME matches {*}
-						}
-					}
-					ELEMENT[at0041] occurrences matches {0..1} matches {    -- Patient condition
+					ELEMENT[at0041] occurrences matches {0..1} matches {    -- Validity
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -51,7 +46,7 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Confirmed by
+					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Confirmation role
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -129,7 +124,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"Confirmed by">
+					text = <"Confirmation role">
 					description = <"">
 				>
 				["at0005"] = <
@@ -165,16 +160,12 @@ ontology
 					description = <"Summary of the reasons why the recognition of dying has been made.">
 					comment = <"Max 1000 Characters">
 				>
-				["at0035"] = <
-					text = <"Assessment date and time">
-					description = <"">
-				>
 				["at0036"] = <
 					text = <"Reviewer">
 					description = <"Consultant">
 				>
 				["at0041"] = <
-					text = <"Patient condition">
+					text = <"Validity">
 					description = <"">
 				>
 				["at0042"] = <
