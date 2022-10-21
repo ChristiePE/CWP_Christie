@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0c81965d79d24792c67eb86ba7798fa7">
+		["MD5-CAM-1.0.1"] = <"3bea1cfb9fc5aa2329a785a0b0562b30">
 		["build_uid"] = <"e246209d-1ae0-3986-b5a0-208637957018">
 	>
 
@@ -136,7 +136,6 @@ ontology
 				["at0014"] = <
 					text = <"Decision summary">
 					description = <"Summary of the reasons why the recognition of dying has been made.">
-					comment = <"Max 1000 Characters">
 				>
 				["at0036"] = <
 					text = <"Reviewer">
