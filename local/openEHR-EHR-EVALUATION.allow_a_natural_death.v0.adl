@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"04155d4acb9f2576c0ddd960d7d27356">
+		["MD5-CAM-1.0.1"] = <"cbe0e30c5c6cd4d6ff29596a36336880">
 		["build_uid"] = <"58e7ba76-f7e4-3e02-aa20-6370177f2ac8">
 	>
 
@@ -80,20 +80,9 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0017] occurrences matches {0..1} matches {    -- Decision details
+					ELEMENT[at0017] occurrences matches {0..1} matches {    -- Decision summary
 						value matches {
 							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0018] occurrences matches {0..*} matches {    -- Professionals informed
-						value matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::
-									at0019,    -- Responsible consultant
-									at0020]    -- Nurse shift leader
-								}
-							}
 						}
 					}
 				}
@@ -150,20 +139,8 @@ ontology
 					description = <"">
 				>
 				["at0017"] = <
-					text = <"Decision details">
+					text = <"Decision summary">
 					description = <"Details of the AaND discussion">
-				>
-				["at0018"] = <
-					text = <"Professionals informed">
-					description = <"This refers to a consultant directly responsible or nursing shift leader/coordinator for the patients overall cancer management">
-				>
-				["at0019"] = <
-					text = <"Responsible consultant">
-					description = <"">
-				>
-				["at0020"] = <
-					text = <"Nurse shift leader">
-					description = <"">
 				>
 				["at0022"] = <
 					text = <"Escalation">
