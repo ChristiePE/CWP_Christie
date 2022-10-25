@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1ad7a81cde1144642bd7615adc4e1df4">
+		["MD5-CAM-1.0.1"] = <"04155d4acb9f2576c0ddd960d7d27356">
 		["build_uid"] = <"58e7ba76-f7e4-3e02-aa20-6370177f2ac8">
 	>
 
@@ -50,7 +50,7 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0009] occurrences matches {0..1} matches {    -- Review
+					ELEMENT[at0009] occurrences matches {0..1} matches {    -- Validity
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -61,7 +61,7 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Escalation status
+					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Escalation
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -75,28 +75,9 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0012] occurrences matches {0..1} matches {    -- Timescale
+					ELEMENT[at0028] occurrences matches {0..1} matches {    -- Duration
 						value matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::
-									at0013,    -- Indefinite, the decision does not require reviewing
-									at0014]    -- Finite, the decision will require reviewing
-								}
-							}
-						}
-					}
-					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Next review
-						value matches {
-							C_DV_QUANTITY <
-								property = <[openehr::128]>
-								list = <
-									["1"] = <
-										units = <"d">
-										precision = <|0|>
-									>
-								>
-							>
+							DV_TEXT matches {*}
 						}
 					}
 					ELEMENT[at0017] occurrences matches {0..1} matches {    -- Decision details
@@ -157,7 +138,7 @@ ontology
 					description = <"The consultant or senior doctor who has confirmed AaND">
 				>
 				["at0009"] = <
-					text = <"Review">
+					text = <"Validity">
 					description = <"A previous AaND form has been entered on this patient during this admission. Please change the status if required.">
 				>
 				["at0010"] = <
@@ -167,22 +148,6 @@ ontology
 				["at0011"] = <
 					text = <"I wish to cancel the AaND decision with the patient now for full resuscitation">
 					description = <"">
-				>
-				["at0012"] = <
-					text = <"Timescale">
-					description = <"Timescale for AaND decision">
-				>
-				["at0013"] = <
-					text = <"Indefinite, the decision does not require reviewing">
-					description = <"">
-				>
-				["at0014"] = <
-					text = <"Finite, the decision will require reviewing">
-					description = <"">
-				>
-				["at0015"] = <
-					text = <"Next review">
-					description = <"Time until next review">
 				>
 				["at0017"] = <
 					text = <"Decision details">
@@ -201,7 +166,7 @@ ontology
 					description = <"">
 				>
 				["at0022"] = <
-					text = <"Escalation status">
+					text = <"Escalation">
 					description = <"Care consists of allow a natural death">
 				>
 				["at0023"] = <
@@ -222,6 +187,10 @@ ontology
 				>
 				["at0027"] = <
 					text = <"Plan for discharge (fast track)">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Duration">
 					description = <"">
 				>
 			>
