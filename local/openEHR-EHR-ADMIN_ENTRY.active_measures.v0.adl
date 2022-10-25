@@ -23,21 +23,16 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a8d9f27e5b8bed754f49728bae166119">
+		["MD5-CAM-1.0.1"] = <"c32ef137153c2bb4e6b72c294aa35c4f">
 		["build_uid"] = <"c123d05a-7b93-3a28-9eb1-a4abeb7dbced">
 	>
 
 definition
-	ADMIN_ENTRY[at0000] matches {    -- Active_Measures
+	ADMIN_ENTRY[at0000] matches {    -- Active measures
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Description
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0004] occurrences matches {0..*} matches {    -- Active_Measures
+					ELEMENT[at0004] occurrences matches {0..*} matches {    -- Active measures
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -52,20 +47,16 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Active_Measures">
-					description = <"Active_Measures">
+					text = <"Active measures">
+					description = <"Active measures">
 				>
 				["at0001"] = <
 					text = <"Item tree">
 					description = <"@ internal @">
 				>
-				["at0002"] = <
-					text = <"Description">
-					description = <"What active measures is the patient receiving at this assessment, e.g. IV fluids, Antibiotics etc">
-				>
 				["at0004"] = <
-					text = <"Active_Measures">
-					description = <"">
+					text = <"Active measures">
+					description = <"What active measures is the patient receiving at this assessment, e.g. IV fluids, Antibiotics etc">
 				>
 			>
 		>
