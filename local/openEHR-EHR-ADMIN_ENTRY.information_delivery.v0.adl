@@ -23,12 +23,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5927629fc3302bdbf4d040e82117ba23">
+		["MD5-CAM-1.0.1"] = <"e6f27a36204caceebc3224a3c18678b6">
 		["build_uid"] = <"3ac2f129-7015-3a6e-ae64-01f9a3fe48b9">
 	>
 
 definition
-	ADMIN_ENTRY[at0000] matches {    -- Information_Delivery
+	ADMIN_ENTRY[at0000] matches {    -- Information delivery
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
@@ -62,8 +62,8 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Information_Delivery">
-					description = <"Information_Delivery">
+					text = <"Information delivery">
+					description = <"Information delivery - Used to document passage of information from source (e.g. Nurse, Consultant) to recipient. ">
 				>
 				["at0001"] = <
 					text = <"Item tree">
@@ -75,15 +75,15 @@ ontology
 				>
 				["at0115"] = <
 					text = <"Recipient">
-					description = <"">
+					description = <"Person(s) receiving information ">
 				>
 				["at0116"] = <
 					text = <"Content">
-					description = <"">
+					description = <"Topic/content of information">
 				>
 				["at0117"] = <
 					text = <"Method of delivery">
-					description = <"">
+					description = <"How the information was delivered ie. DVD, Leaflet, verbal">
 				>
 			>
 		>
