@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b9d0d3ffffaef593ba503959afde3c57">
+		["MD5-CAM-1.0.1"] = <"38c6be9fe51103449fc4240c64ddf8cb">
 		["build_uid"] = <"3de8bf04-dd0f-3374-b557-2987da9bc926">
 	>
 
@@ -39,34 +39,36 @@ definition
 					}
 					ELEMENT[at0002] occurrences matches {0..1} matches {    -- ID confirmed
 						value matches {
-							DV_BOOLEAN matches {*}
-						}
-					}
-					ELEMENT[at0036] occurrences matches {0..1} matches {    -- Signs of life
-						value matches {
 							DV_BOOLEAN matches {
-								value matches {false}
+								value matches {true}
 							}
 						}
 					}
-					ELEMENT[at0043] occurrences matches {0..1} matches {    -- Respiratory effort
-						value matches {
-							DV_BOOLEAN matches {
-								value matches {false}
-							}
-						}
-					}
-					ELEMENT[at0037] occurrences matches {0..1} matches {    -- Response (verbal stimuli)
+					ELEMENT[at0036] occurrences matches {0..1} matches {    -- No signs of life
 						value matches {
 							DV_BOOLEAN matches {
 								value matches {true}
 							}
 						}
 					}
-					ELEMENT[at0038] occurrences matches {0..1} matches {    -- Response (painful stimuli)
+					ELEMENT[at0043] occurrences matches {0..1} matches {    -- Absence of respiratory effort
 						value matches {
 							DV_BOOLEAN matches {
-								value matches {false}
+								value matches {true}
+							}
+						}
+					}
+					ELEMENT[at0037] occurrences matches {0..1} matches {    -- No response to verbal stimuli
+						value matches {
+							DV_BOOLEAN matches {
+								value matches {true}
+							}
+						}
+					}
+					ELEMENT[at0038] occurrences matches {0..1} matches {    -- No response to painful stimuli
+						value matches {
+							DV_BOOLEAN matches {
+								value matches {true}
 							}
 						}
 					}
@@ -77,24 +79,24 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0040] occurrences matches {0..1} matches {    -- Pulse check
+					ELEMENT[at0040] occurrences matches {0..1} matches {    -- Absence of pulse
 						value matches {
 							DV_BOOLEAN matches {
-								value matches {false}
+								value matches {true}
 							}
 						}
 					}
-					ELEMENT[at0041] occurrences matches {0..1} matches {    -- Heart sounds
+					ELEMENT[at0041] occurrences matches {0..1} matches {    -- Absence of heart sounds
 						value matches {
 							DV_BOOLEAN matches {
-								value matches {false}
+								value matches {true}
 							}
 						}
 					}
-					ELEMENT[at0042] occurrences matches {0..1} matches {    -- Respiratory sounds
+					ELEMENT[at0042] occurrences matches {0..1} matches {    -- Absence of respiratory sounds
 						value matches {
 							DV_BOOLEAN matches {
-								value matches {false}
+								value matches {true}
 							}
 						}
 					}
@@ -155,15 +157,15 @@ ontology
 					description = <"">
 				>
 				["at0036"] = <
-					text = <"Signs of life">
+					text = <"No signs of life">
 					description = <"">
 				>
 				["at0037"] = <
-					text = <"Response (verbal stimuli)">
+					text = <"No response to verbal stimuli">
 					description = <"">
 				>
 				["at0038"] = <
-					text = <"Response (painful stimuli)">
+					text = <"No response to painful stimuli">
 					description = <"">
 				>
 				["at0039"] = <
@@ -171,19 +173,19 @@ ontology
 					description = <"">
 				>
 				["at0040"] = <
-					text = <"Pulse check">
+					text = <"Absence of pulse">
 					description = <"">
 				>
 				["at0041"] = <
-					text = <"Heart sounds">
+					text = <"Absence of heart sounds">
 					description = <"">
 				>
 				["at0042"] = <
-					text = <"Respiratory sounds">
+					text = <"Absence of respiratory sounds">
 					description = <"">
 				>
 				["at0043"] = <
-					text = <"Respiratory effort">
+					text = <"Absence of respiratory effort">
 					description = <"">
 				>
 			>
