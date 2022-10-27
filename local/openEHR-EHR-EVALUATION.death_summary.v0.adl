@@ -64,7 +64,7 @@ US Standard Certificate of Death [Internet]. Atlanta; Centre for Disease Control
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8fb4c7ab92070d27a3f1686a8cb5ddf2">
+		["MD5-CAM-1.0.1"] = <"cd195345f9f84ff02e3b091405a853a3">
 		["build_uid"] = <"2929d0ad-3bc1-4f57-b417-1f1b825a39d5">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -74,34 +74,34 @@ definition
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0116] occurrences matches {0..1} matches {    -- D&T_death
+					ELEMENT[at0116] occurrences matches {0..1} matches {    -- Date and Time of death
 						value matches {
 							DV_DATE_TIME matches {*}
 						}
 					}
-					ELEMENT[at0093] occurrences matches {0..1} matches {    -- Circumstances_death
+					ELEMENT[at0093] occurrences matches {0..1} matches {    -- Circumstances
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0109] occurrences matches {0..*} matches {    -- Place_of_death
+					ELEMENT[at0109] occurrences matches {0..*} matches {    -- Place/Location
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0054] occurrences matches {0..1} matches {    -- Age_at_death
+					ELEMENT[at0054] occurrences matches {0..1} matches {    -- Age at death
 						value matches {
 							DV_DURATION matches {
 								value matches {PYMWDTHM/|>=PT0M|}
 							}
 						}
 					}
-					ELEMENT[at0117] occurrences matches {0..1} matches {    -- Person(s)_present
+					ELEMENT[at0117] occurrences matches {0..1} matches {    -- Person(s) present
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0105] occurrences matches {0..1} matches {    -- Comment
+					ELEMENT[at0105] occurrences matches {0..1} matches {    -- Comments
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -139,11 +139,11 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0054"] = <
-					text = <"Age_at_death">
+					text = <"Age at death">
 					description = <"The age of the individual at the time of death.">
 				>
 				["at0093"] = <
-					text = <"Circumstances_death">
+					text = <"Circumstances">
 					description = <"Narrative description about the context or setting of the death.">
 				>
 				["at0103"] = <
@@ -152,21 +152,21 @@ ontology
 					comment = <"For example: capturing information about one or more sources for this information, including their contribution. This may be useful if there is potentially conflicting sources of information and to enable consideration of their credibility/reliability.">
 				>
 				["at0105"] = <
-					text = <"Comment">
+					text = <"Comments">
 					description = <"Additional narrative about the death, not captured in other fields.">
 					comment = <"For example: Recording the degree of certainty for place of death.">
 				>
 				["at0109"] = <
-					text = <"Place_of_death">
+					text = <"Place/Location">
 					description = <"The simple name of, or description about, the place where the individual died.">
 					comment = <"For example: 'City Hospital'; 'Mother's house'; or 'Eiffel tower'. This data element has multiple occurrences to allow more than one level of detail about the place of death, such as recording both 'City Hospital' and 'Ward 6 North'.">
 				>
 				["at0116"] = <
-					text = <"D&T_death">
+					text = <"Date and Time of death">
 					description = <"">
 				>
 				["at0117"] = <
-					text = <"Person(s)_present">
+					text = <"Person(s) present">
 					description = <"">
 				>
 			>
@@ -186,11 +186,11 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0054"] = <
-					text = <"*Age_at_death (en)">
+					text = <"*Age at death (en)">
 					description = <"Individets alder ved dødstidspunktet.">
 				>
 				["at0093"] = <
-					text = <"*Circumstances_death (en)">
+					text = <"*Circumstances (en)">
 					description = <"Fritekstlig beskrivelse om konteksten eller settingen rundt dødsfallet.">
 				>
 				["at0103"] = <
@@ -199,21 +199,21 @@ ontology
 					comment = <"For eksempel: registrere informasjon om en eller flere informasjonskilder, inkludert bidragende informasjon. Dette kan være nyttig hvis det finnes potensielle motstridende informasjonskilder og for å kunne gjøre en vurdering av informasjonskildens kredibilitet/pålitelighet.">
 				>
 				["at0105"] = <
-					text = <"Kommentar">
+					text = <"*Comments (en)">
 					description = <"Ytterligere fritekst om død som ikke er fanget i andre felt.">
 					comment = <"For eksempel: Registrering av grad av visshet for dødssted.">
 				>
 				["at0109"] = <
-					text = <"*Place_of_death (en)">
+					text = <"*Place/Location (en)">
 					description = <"Navngitt sted eller beskrivelse av stedet hvor individet døde.">
 					comment = <"For eksempel: 'Lokalsykehus', 'Forelders hus'; eller 'Eiffeltårnet'. Dette dataelementet har multiple forekomster for å tillate mer enn ett detaljnivå om dødssted, som for eksempel å registrere både 'Lokalsykehus' og 'Kirurgisk sengepost nord'.">
 				>
 				["at0116"] = <
-					text = <"*D&T_death (en)">
+					text = <"*Date and Time of death (en)">
 					description = <"">
 				>
 				["at0117"] = <
-					text = <"*Person(s)_present (en)">
+					text = <"*Person(s) present (en)">
 					description = <"">
 				>
 			>
