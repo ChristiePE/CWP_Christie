@@ -104,7 +104,7 @@ Not to be used to record the activities that occur in the planning and fitting o
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"addc1ab4f60e18d7283d4ff9070a4125">
+		["MD5-CAM-1.0.1"] = <"f5adb929932ad9c36ca8fc3ef5ca6b1e">
 		["build_uid"] = <"7a214d31-b6ba-4587-ba45-62bc8633c895">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -155,11 +155,6 @@ definition
 						include
 							archetype_id/value matches {/.*/}
 					}
-					ELEMENT[at0017] occurrences matches {0..1} matches {    -- Last updated
-						value matches {
-							DV_DATE_TIME matches {*}
-						}
-					}
 				}
 			}
 		}
@@ -201,10 +196,6 @@ ontology
 					text = <"Tree">
 					description = <"@ internal @">
 				>
-				["at0017"] = <
-					text = <"Last updated">
-					description = <"The date this summary was last updated.">
-				>
 				["at0018"] = <
 					text = <"Extension">
 					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
@@ -217,8 +208,8 @@ ontology
 				>
 				["at0024"] = <
 					text = <"Status">
-					description = <"Assertion about the status of devices, as at the date 'Last updated'.">
-					comment = <"ie. Active, Deactive, Removed">
+					description = <"Assertion of the current known status of the device">
+					comment = <"ie. Active, Inactive, Removed">
 				>
 				["at0025"] = <
 					text = <"Medical device details">
@@ -260,10 +251,6 @@ ontology
 					text = <"Baum">
 					description = <"@ internal @">
 				>
-				["at0017"] = <
-					text = <"Zuletzt aktualisiert">
-					description = <"Datum der letzten Aktualisierung dieser Zusammenfassung.">
-				>
 				["at0018"] = <
 					text = <"Erweiterung">
 					description = <"Zusätzliche Informationen zur Erfassung lokaler Inhalte oder Anpassung an andere Referenzmodelle/Formalismen.">
@@ -276,8 +263,8 @@ ontology
 				>
 				["at0024"] = <
 					text = <"*Status (en)">
-					description = <"*Assertion about the status of devices, as at the date 'Last updated'. (en)">
-					comment = <"*ie. Active, Deactive, Removed (en)">
+					description = <"*Assertion of the current known status of the device (en)">
+					comment = <"*ie. Active, Inactive, Removed (en)">
 				>
 				["at0025"] = <
 					text = <"*Medical device details (en)">
@@ -319,10 +306,6 @@ ontology
 					text = <"Tree">
 					description = <"@ internal @">
 				>
-				["at0017"] = <
-					text = <"Sist oppdatert">
-					description = <"Dato da dette sammendraget sist ble oppdatert.">
-				>
 				["at0018"] = <
 					text = <"Utvidelse">
 					description = <"Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.">
@@ -335,8 +318,8 @@ ontology
 				>
 				["at0024"] = <
 					text = <"*Status (en)">
-					description = <"*Assertion about the status of devices, as at the date 'Last updated'. (en)">
-					comment = <"*ie. Active, Deactive, Removed (en)">
+					description = <"*Assertion of the current known status of the device (en)">
+					comment = <"*ie. Active, Inactive, Removed (en)">
 				>
 				["at0025"] = <
 					text = <"*Medical device details (en)">
