@@ -23,49 +23,47 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2e8f4bae4e31de2efa5cdecc331d9888">
+		["MD5-CAM-1.0.1"] = <"b9d0d3ffffaef593ba503959afde3c57">
 		["build_uid"] = <"3de8bf04-dd0f-3374-b557-2987da9bc926">
 	>
 
 definition
-	EVALUATION[at0000] matches {    -- Verification_of_Death
+	EVALUATION[at0000] matches {    -- Verification of death
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Date and Time of verification
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Date and time of verification
 						value matches {
 							DV_DATE_TIME matches {*}
 						}
 					}
 					ELEMENT[at0002] occurrences matches {0..1} matches {    -- ID confirmed
 						value matches {
+							DV_BOOLEAN matches {*}
+						}
+					}
+					ELEMENT[at0036] occurrences matches {0..1} matches {    -- Signs of life
+						value matches {
+							DV_BOOLEAN matches {
+								value matches {false}
+							}
+						}
+					}
+					ELEMENT[at0043] occurrences matches {0..1} matches {    -- Respiratory effort
+						value matches {
+							DV_BOOLEAN matches {
+								value matches {false}
+							}
+						}
+					}
+					ELEMENT[at0037] occurrences matches {0..1} matches {    -- Response (verbal stimuli)
+						value matches {
 							DV_BOOLEAN matches {
 								value matches {true}
 							}
 						}
 					}
-					ELEMENT[at0036] occurrences matches {0..1} matches {    -- signs of life
-						value matches {
-							DV_BOOLEAN matches {
-								value matches {false}
-							}
-						}
-					}
-					ELEMENT[at0043] occurrences matches {0..1} matches {    -- respiratory effort
-						value matches {
-							DV_BOOLEAN matches {
-								value matches {false}
-							}
-						}
-					}
-					ELEMENT[at0037] occurrences matches {0..1} matches {    -- response (verbal stimuli)
-						value matches {
-							DV_BOOLEAN matches {
-								value matches {false}
-							}
-						}
-					}
-					ELEMENT[at0038] occurrences matches {0..1} matches {    -- response (painful stimuli)
+					ELEMENT[at0038] occurrences matches {0..1} matches {    -- Response (painful stimuli)
 						value matches {
 							DV_BOOLEAN matches {
 								value matches {false}
@@ -125,7 +123,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Verification_of_Death">
+					text = <"Verification of death">
 					description = <"Verification_of_Death">
 				>
 				["at0001"] = <
@@ -137,7 +135,7 @@ ontology
 					description = <"">
 				>
 				["at0003"] = <
-					text = <"Date and Time of verification">
+					text = <"Date and time of verification">
 					description = <"">
 				>
 				["at0004"] = <
@@ -157,15 +155,15 @@ ontology
 					description = <"">
 				>
 				["at0036"] = <
-					text = <"signs of life">
+					text = <"Signs of life">
 					description = <"">
 				>
 				["at0037"] = <
-					text = <"response (verbal stimuli)">
+					text = <"Response (verbal stimuli)">
 					description = <"">
 				>
 				["at0038"] = <
-					text = <"response (painful stimuli)">
+					text = <"Response (painful stimuli)">
 					description = <"">
 				>
 				["at0039"] = <
@@ -185,7 +183,7 @@ ontology
 					description = <"">
 				>
 				["at0043"] = <
-					text = <"respiratory effort">
+					text = <"Respiratory effort">
 					description = <"">
 				>
 			>
