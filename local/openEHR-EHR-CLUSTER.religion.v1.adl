@@ -65,7 +65,7 @@ Religion, Draft Archetype [Internet]. Australian Digital Health Agency, Australi
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e64c49190f08c166aa3da953e82ef4da">
+		["MD5-CAM-1.0.1"] = <"21fee761d2480eb5e26d2cc5ab4878a9">
 		["build_uid"] = <"7c3871ac-c0ff-46f2-8b28-389c69b72814">
 		["revision"] = <"1.0.0">
 	>
@@ -114,10 +114,10 @@ definition
 							at0038,    -- Spiritualist
 							at0039,    -- Unitarian
 							at0040,    -- United Reformed
-							at0041,    -- Unknown
-							at0042]    -- Other
+							at0041]    -- Unknown
 						}
 					}
+					DV_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Impact on care
@@ -313,10 +313,6 @@ ontology
 					text = <"Unknown">
 					description = <"">
 				>
-				["at0042"] = <
-					text = <"Other">
-					description = <"">
-				>
 			>
 		>
 		["nb"] = <
@@ -491,10 +487,6 @@ ontology
 				>
 				["at0041"] = <
 					text = <"*Unknown (en)">
-					description = <"">
-				>
-				["at0042"] = <
-					text = <"*Other (en)">
 					description = <"">
 				>
 			>
