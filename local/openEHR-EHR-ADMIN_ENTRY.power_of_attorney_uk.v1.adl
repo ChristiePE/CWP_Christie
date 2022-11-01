@@ -28,7 +28,7 @@ description
 End of Life Care Co-ordination: Core Content Standard Specification Available at http://www.isb.nhs.uk/documents/isb-1580/amd-29-2012/index_html
 
 NHS Scotland Key Information Summary">
-		["MD5-CAM-1.0.1"] = <"9a65a6d08e59908fd954fa9af97f5e35">
+		["MD5-CAM-1.0.1"] = <"e6e08a454325ebea7b67aacad4373f96">
 		["build_uid"] = <"2bb6cfad-4388-33e9-8420-01e6b2a85a73">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -41,11 +41,6 @@ definition
 					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Date last updated
 						value matches {
 							DV_DATE_TIME matches {*}
-						}
-					}
-					ELEMENT[at0006] occurrences matches {0..1} matches {    -- Mental capacity status
-						value matches {
-							DV_TEXT matches {*}
 						}
 					}
 					CLUSTER[at0008] occurrences matches {0..1} matches {    -- Lasting power of attorney for personal welfare
@@ -104,7 +99,9 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Power of attorney (UK)">
-					description = <"Details of power of attorney arrangements specific to the UK.">
+					description = <"Details of power of attorney arrangements specific to the UK.
+
+Mental capacity removed and to be taken from the mental capcity archetype">
 				>
 				["at0001"] = <
 					text = <"Tree">
@@ -125,10 +122,6 @@ ontology
 				["at0005"] = <
 					text = <"Has appointed person with personal welfare lasting power of attorney with authority for life sustaining decisions (Mental Capacity Act 2005)">
 					description = <"The patient has appointed a person with personal welfare lasting power of attorney with authority for life sustaining decisions (Mental Capacity Act 2005).">
-				>
-				["at0006"] = <
-					text = <"Mental capacity status">
-					description = <"Patient's ability to make informed choices in terms of the Mental Capacity Act 2005.">
 				>
 				["at0007"] = <
 					text = <"Person holding power of attorney">
