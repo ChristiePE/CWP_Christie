@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "55.1.0",
+      "sem_ver" : "56.0.0",
       "PARENT:MD5-CAM-1.0.1" : "22426c971a985d28cc183aeb1a79f8fd",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "8c7fd9be95c139be6a1ee4d5f9c627d9"
+      "MD5-CAM-1.0.1" : "d8385c63305da656466121cdb59affd5"
     },
     "details" : {
       "en" : {
@@ -148,6 +148,15 @@
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-key_contacts-001.v1",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "ADMIN_ENTRY",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.54",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-transfer_of_care-001.v0",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
@@ -647,30 +656,6 @@
             "text" : "General topics",
             "description" : ""
           },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Information_Delivery",
-            "description" : "Information_Delivery"
-          },
-          "at0115" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0115",
-            "text" : "Recipient",
-            "description" : ""
-          },
-          "at0116" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0116",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0117" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0117",
-            "text" : "Method of delivery",
-            "description" : ""
-          },
           "at0117.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0117",
@@ -839,30 +824,6 @@
             "text" : "Patient care and wishes",
             "description" : ""
           },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Information_Delivery",
-            "description" : "Information_Delivery"
-          },
-          "at0115" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0115",
-            "text" : "Recipient",
-            "description" : ""
-          },
-          "at0116" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0116",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0117" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0117",
-            "text" : "Method of delivery",
-            "description" : ""
-          },
           "at0117.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0117",
@@ -1008,30 +969,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0116.1",
             "text" : "Wishes for after death",
-            "description" : ""
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Information_Delivery",
-            "description" : "Information_Delivery"
-          },
-          "at0115" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0115",
-            "text" : "Recipient",
-            "description" : ""
-          },
-          "at0116" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0116",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0117" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0117",
-            "text" : "Method of delivery",
             "description" : ""
           },
           "at0117.1" : {
@@ -1181,30 +1118,6 @@
             "text" : "Communication has not been possible because of patient's condition",
             "description" : ""
           },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Information_Delivery",
-            "description" : "Information_Delivery"
-          },
-          "at0115" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0115",
-            "text" : "Recipient",
-            "description" : ""
-          },
-          "at0116" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0116",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0117" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0117",
-            "text" : "Method of delivery",
-            "description" : ""
-          },
           "at0117.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0117",
@@ -1350,30 +1263,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0116.1",
             "text" : "Patient did not want to discuss any aspects of their condition",
-            "description" : ""
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Information_Delivery",
-            "description" : "Information_Delivery"
-          },
-          "at0115" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0115",
-            "text" : "Recipient",
-            "description" : ""
-          },
-          "at0116" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0116",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0117" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0117",
-            "text" : "Method of delivery",
             "description" : ""
           },
           "at0117.1" : {
@@ -1523,30 +1412,6 @@
             "text" : "No new topics since last review",
             "description" : ""
           },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Information_Delivery",
-            "description" : "Information_Delivery"
-          },
-          "at0115" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0115",
-            "text" : "Recipient",
-            "description" : ""
-          },
-          "at0116" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0116",
-            "text" : "Content",
-            "description" : ""
-          },
-          "at0117" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0117",
-            "text" : "Method of delivery",
-            "description" : ""
-          },
           "at0117.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0117",
@@ -1687,6 +1552,57 @@
     },
     "adlVersion" : "1.4",
     "buildUid" : "d3c3e580-6065-32be-9a33-88a58c3640cf",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "c367e4a5-05ca-4d16-93d5-4ff7e4e458d9",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "4e1cf5b40acdd48cc3d2429ff0340344"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.transfer_of_care.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-ADMIN_ENTRY.ovl-transfer_of_care-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "ADMIN_ENTRY",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "767a23dc-064e-3f3c-ada2-c73748604616",
     "rmName" : "openehr",
     "rmRelease" : "1.1.0",
     "generated" : true,
