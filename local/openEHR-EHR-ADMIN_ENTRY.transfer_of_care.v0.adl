@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d4ea73c3bc567ffcdf70e56659e1b43f">
+		["MD5-CAM-1.0.1"] = <"4e1cf5b40acdd48cc3d2429ff0340344">
 		["build_uid"] = <"767a23dc-064e-3f3c-ada2-c73748604616">
 	>
 
@@ -34,7 +34,17 @@ definition
 				items cardinality matches {0..*; unordered} matches {
 					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Transfer of care
 						value matches {
-							DV_CODED_TEXT matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0003,    -- Patient's home
+									at0004,    -- Other home
+									at0005,    -- Hospice
+									at0006,    -- Hospital
+									at0007,    -- Care home
+									at0008]    -- Other
+								}
+							}
 						}
 					}
 				}
@@ -56,6 +66,30 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Transfer of care">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Patient's home">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Other home">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Hospice">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Hospital">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Care home">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Other">
 					description = <"">
 				>
 			>
