@@ -29,7 +29,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"382EC1E715660816C05802A44C0EAE34">
+		["MD5-CAM-1.0.1"] = <"a9e75e8200341a405a4257065c861ac0">
 		["build_uid"] = <"772cf42b-d960-42c6-b6c8-86b7b67a7ad6">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -39,14 +39,19 @@ definition
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Discharge date
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Destination
 						value matches {
-							DV_DATE_TIME matches {*}
-						}
-					}
-					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Destination category
-						value matches {
-							DV_TEXT matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0004,    -- Patient's home
+									at0005,    -- Other home
+									at0006,    -- Hospice
+									at0007,    -- Hospital
+									at0008,    -- Care home
+									at0009]    -- Other
+								}
+							}
 						}
 					}
 				}
@@ -66,14 +71,34 @@ ontology
 					text = <"Item tree">
 					description = <"@ internal @">
 				>
-				["at0002"] = <
-					text = <"Discharge date">
-					description = <"The date of transfer of care to home or another instituion.">
-				>
 				["at0003"] = <
-					text = <"Destination category">
+					text = <"Destination">
 					description = <"The category of destination after discharge.">
 					comment = <"For example: home; hospital; nursing home; or rehabilitation hospital.">
+				>
+				["at0004"] = <
+					text = <"Patient's home">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Other home">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Hospice">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Hospital">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Care home">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Other">
+					description = <"">
 				>
 			>
 		>
