@@ -63,7 +63,7 @@ Not to be used to record details about an interpretation that was performed - us
 		["original_namespace"] = <"no.nasjonalikt">
 		["original_publisher"] = <"Nasjonal IKT">
 		["custodian_namespace"] = <"no.nasjonalikt">
-		["MD5-CAM-1.0.1"] = <"EC507FEB6429C45753F569D2269FA4C0">
+		["MD5-CAM-1.0.1"] = <"50217dbb43cc6c6369c1ab8ec70c78c9">
 		["build_uid"] = <"ed2bc015-0aae-4ec0-95ab-a0ed7404a697">
 		["revision"] = <"1.0.0">
 	>
@@ -102,6 +102,18 @@ definition
 									DV_TEXT matches {*}
 								}
 							}
+							ELEMENT[at0023] occurrences matches {0..1} matches {    -- Interpretation needs
+								value matches {
+									DV_TEXT matches {*}
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0024,    -- Interpreter not needed
+											at0025]    -- Interpreter needed
+										}
+									}
+								}
+							}
 						}
 					}
 					ELEMENT[at0022] occurrences matches {0..*} matches {    -- Communication aid
@@ -116,6 +128,18 @@ definition
 					ELEMENT[at0009] occurrences matches {0..1} matches {    -- Overall comment
 						value matches {
 							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0026] occurrences matches {0..1} matches {    -- Status
+						value matches {
+							DV_TEXT matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0027,    -- No communication difficulties
+									at0028]    -- Needs help with communication
+								}
+							}
 						}
 					}
 				}
@@ -206,6 +230,30 @@ ontology
 					description = <"Identification of an aid to assist communication.">
 					comment = <"For example: a hearing aid or tactile reading device. Coding of 'Communication aid' with a terminology is preferred, where possible. Details about the actual communication aid should preferably be recorded using the EVALUATION.device_summary archetype.">
 				>
+				["at0023"] = <
+					text = <"Interpretation needs">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Interpreter not needed">
+					description = <"The person does not normally need an interpreter.">
+				>
+				["at0025"] = <
+					text = <"Interpreter needed">
+					description = <"The person does normally need an interpreter.">
+				>
+				["at0026"] = <
+					text = <"Status">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"No communication difficulties">
+					description = <"The person has no difficulties with communication">
+				>
+				["at0028"] = <
+					text = <"Needs help with communication">
+					description = <"The person may need assistance with communication such as an interpreter or communication aids">
+				>
 			>
 		>
 		["nb"] = <
@@ -273,6 +321,30 @@ ontology
 					text = <"Kommunikasjonshjelpemidler">
 					description = <"Identifisert behov for et kommunikasjonshjelpemiddel.">
 					comment = <"For eksempel: Et høreapparat, lesebriller eller leselist. Koding av elementet \"Kommunikasjonshjelpemidler\" med en terminologi er ønskelig om mulig. Detaljer om det faktiske kommunikasjonshjelpemiddelet registreres i arketypen EVALUATION.device_summary.">
+				>
+				["at0023"] = <
+					text = <"*Interpretation needs (en)">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"*Interpreter not needed (en)">
+					description = <"*The person does not normally need an interpreter. (en)">
+				>
+				["at0025"] = <
+					text = <"*Interpreter needed (en)">
+					description = <"*The person does normally need an interpreter. (en)">
+				>
+				["at0026"] = <
+					text = <"*Status (en)">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"*No communication difficulties (en)">
+					description = <"*The person has no difficulties with communication (en)">
+				>
+				["at0028"] = <
+					text = <"*Needs help with communication (en)">
+					description = <"*The person may need assistance with communication such as an interpreter or communication aids (en)">
 				>
 			>
 		>
