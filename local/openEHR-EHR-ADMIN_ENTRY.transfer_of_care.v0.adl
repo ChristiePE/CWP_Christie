@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b73c2767c092ad08a61e5da866ccec14">
+		["MD5-CAM-1.0.1"] = <"bedb09264db8c047a9fdb17de0e2ccaa">
 		["build_uid"] = <"767a23dc-064e-3f3c-ada2-c73748604616">
 	>
 
@@ -58,7 +58,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Transfer">
-					description = <"Transfer of Care - giving details of where the patients care has been transferred to.">
+					description = <"Transfer  - giving details of where the patients care has been transferred to.">
 				>
 				["at0001"] = <
 					text = <"Item tree">
