@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"38c6be9fe51103449fc4240c64ddf8cb">
+		["MD5-CAM-1.0.1"] = <"3230feb063656753eaf98b94c0fef6c7">
 		["build_uid"] = <"3de8bf04-dd0f-3374-b557-2987da9bc926">
 	>
 
@@ -51,7 +51,7 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0043] occurrences matches {0..1} matches {    -- Absence of respiratory effort
+					ELEMENT[at0043] occurrences matches {0..1} matches {    -- No respiratory effort
 						value matches {
 							DV_BOOLEAN matches {
 								value matches {true}
@@ -79,21 +79,21 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0040] occurrences matches {0..1} matches {    -- Absence of pulse
+					ELEMENT[at0040] occurrences matches {0..1} matches {    -- No pulse
 						value matches {
 							DV_BOOLEAN matches {
 								value matches {true}
 							}
 						}
 					}
-					ELEMENT[at0041] occurrences matches {0..1} matches {    -- Absence of heart sounds
+					ELEMENT[at0041] occurrences matches {0..1} matches {    -- No heart sounds
 						value matches {
 							DV_BOOLEAN matches {
 								value matches {true}
 							}
 						}
 					}
-					ELEMENT[at0042] occurrences matches {0..1} matches {    -- Absence of respiratory sounds
+					ELEMENT[at0042] occurrences matches {0..1} matches {    -- No respiratory sounds
 						value matches {
 							DV_BOOLEAN matches {
 								value matches {true}
@@ -173,19 +173,19 @@ ontology
 					description = <"">
 				>
 				["at0040"] = <
-					text = <"Absence of pulse">
+					text = <"No pulse">
 					description = <"">
 				>
 				["at0041"] = <
-					text = <"Absence of heart sounds">
+					text = <"No heart sounds">
 					description = <"">
 				>
 				["at0042"] = <
-					text = <"Absence of respiratory sounds">
+					text = <"No respiratory sounds">
 					description = <"">
 				>
 				["at0043"] = <
-					text = <"Absence of respiratory effort">
+					text = <"No respiratory effort">
 					description = <"">
 				>
 			>
