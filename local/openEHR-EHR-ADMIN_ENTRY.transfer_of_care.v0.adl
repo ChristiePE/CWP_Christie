@@ -23,16 +23,16 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4e1cf5b40acdd48cc3d2429ff0340344">
+		["MD5-CAM-1.0.1"] = <"b73c2767c092ad08a61e5da866ccec14">
 		["build_uid"] = <"767a23dc-064e-3f3c-ada2-c73748604616">
 	>
 
 definition
-	ADMIN_ENTRY[at0000] matches {    -- Transfer of Care
+	ADMIN_ENTRY[at0000] matches {    -- Transfer
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Transfer of care
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Desi
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -57,7 +57,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Transfer of Care">
+					text = <"Transfer">
 					description = <"Transfer of Care - giving details of where the patients care has been transferred to.">
 				>
 				["at0001"] = <
@@ -65,7 +65,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"Transfer of care">
+					text = <"Desi">
 					description = <"">
 				>
 				["at0003"] = <
