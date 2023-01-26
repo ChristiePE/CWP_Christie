@@ -201,6 +201,17 @@ Onde 'testes de reflexo' são realizados pelo laboratório, eles podem ser reali
 
 Este arquétipo é adequado para representação de resultados de testes laboratoriais gerais, mas não se destina a cobrir relatórios sinópticos completos. Para representar estes dados, arquétipos especializados adicionais são necessários.">
 		>
+		["ar-sy"] = <
+			language = <[ISO_639-1::ar-sy]>
+			purpose = <"لتسجيل نتيجة اختبار المعمل, و التي قد يتم استخدامها لتسجيل اختبار ذي قيمة واحدة, و عادة ما يتم بعد ذلك المزيد من التخصيص أو الوضع في قالب لتمثيل اختبار متعدد القيم أو رتل من الاختبارات.
+و يمثل هذا النموذج كوالد (أب) للتخصيصات الأخرى لاختبارات معملية أكثر تحديدا مثل الميكروبيولوجيا و الهيستوباثولوجيا.">
+			keywords = <"المعمل - المختبر","الباثولوجيا - المرضية","الكيمياء الحيوية","الدمويات","الميكروبيولوجيا","المناعيات - علم المناعة">
+			copyright = <"© openEHR Foundation">
+			use = <"قد يستخدم لتسجيل نتيجة اختبار المعمل, و التي قد يتم استخدامها لتسجيل اختبار ذي قيمة واحدة, و عادة ما يتم بعد ذلك المزيد من التخصيص أو الوضع في قالب لتمثيل اختبار متعدد القيم أو رتل من الاختبارات.
+
+يتم بعد ذلك تقديم التقرير للطبيب السريري الذي قام بطلب الاختبار في سياق تقرير معملي متكامل.">
+			misuse = <"قد تكون التخصيصات أكثر مناسبة للتقارير المركبة مثل حالات الميكروبيولوجيا أو الهيستوباثولوجيا.">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record the result, including findings and the laboratory's interpretation, of an investigation performed on specimens collected from an individual or related to that individual.">
@@ -227,17 +238,6 @@ Where 'reflex tests' are performed by the laboratory, these may be handled as pe
 			misuse = <"Not to be used to record an Autopsy or a Forensic report, although tests on some specimens that are taken in such situations may be represented using this archetype. For these, additional or specialised archetypes will be required to represent the data.
 
 This archetype is suitable for representation of general laboratory test results, but not intended to cover full synoptic reports. For these, additional specialising archetypes are required to represent the data.">
-		>
-		["ar-sy"] = <
-			language = <[ISO_639-1::ar-sy]>
-			purpose = <"لتسجيل نتيجة اختبار المعمل, و التي قد يتم استخدامها لتسجيل اختبار ذي قيمة واحدة, و عادة ما يتم بعد ذلك المزيد من التخصيص أو الوضع في قالب لتمثيل اختبار متعدد القيم أو رتل من الاختبارات.
-و يمثل هذا النموذج كوالد (أب) للتخصيصات الأخرى لاختبارات معملية أكثر تحديدا مثل الميكروبيولوجيا و الهيستوباثولوجيا.">
-			keywords = <"المعمل - المختبر","الباثولوجيا - المرضية","الكيمياء الحيوية","الدمويات","الميكروبيولوجيا","المناعيات - علم المناعة">
-			copyright = <"© openEHR Foundation">
-			use = <"قد يستخدم لتسجيل نتيجة اختبار المعمل, و التي قد يتم استخدامها لتسجيل اختبار ذي قيمة واحدة, و عادة ما يتم بعد ذلك المزيد من التخصيص أو الوضع في قالب لتمثيل اختبار متعدد القيم أو رتل من الاختبارات.
-
-يتم بعد ذلك تقديم التقرير للطبيب السريري الذي قام بطلب الاختبار في سياق تقرير معملي متكامل.">
-			misuse = <"قد تكون التخصيصات أكثر مناسبة للتقارير المركبة مثل حالات الميكروبيولوجيا أو الهيستوباثولوجيا.">
 		>
 		["it"] = <
 			language = <[ISO_639-1::it]>
@@ -327,7 +327,7 @@ Hl7 FHIR Diagnostic Report resource: HL7 fhir; Available from http://www.hl7.org
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"D02DE57ACD4A04C1ADAE1F8B28197890">
+		["MD5-CAM-1.0.1"] = <"3a352fc28bc5875080e1e5e4742bf5d1">
 		["build_uid"] = <"7ed9a9d7-c2b7-47e7-8777-4afc3cff28a9">
 		["revision"] = <"1.2.4">
 	>
@@ -386,7 +386,7 @@ definition
 									}
 									allow_archetype CLUSTER[at0097] occurrences matches {0..*} matches {    -- Test result
 										include
-											archetype_id/value matches {/openEHR-EHR-CLUSTER\.laboratory_test_analyte(-[a-zA-Z0-9_]+)*\.v1|openEHR-EHR-CLUSTER\.laboratory_test_panel(-[a-zA-Z0-9_]+)*\.v0|openEHR-EHR-CLUSTER\.laboratory_test_panel(-[a-zA-Z0-9_]+)*\.v1/}
+											archetype_id/value matches {/openEHR-EHR-CLUSTER\.laboratory_test_analyte(-[a-zA-Z0-9_]+)*\.v1/}
 									}
 									ELEMENT[at0057] occurrences matches {0..1} matches {    -- Conclusion
 										value matches {
