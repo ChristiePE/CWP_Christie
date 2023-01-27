@@ -1,0 +1,91 @@
+archetype (adl_version=1.4; uid=3ff7fb41-81be-4d70-a6a5-d5fd3e29343b)
+	openEHR-EHR-COMPOSITION.software_dev_test.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2023-01-27">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"2807d35e9285bf5f68a7da9e80d397c1">
+		["build_uid"] = <"72ba5005-a91a-322b-b983-46e78b353e11">
+	>
+
+definition
+	COMPOSITION[at0000] matches {    -- SOFTWARE_DEV_TEST
+		category matches {
+			DV_CODED_TEXT[at0001] matches {    -- Coded text
+				defining_code matches {
+					[openehr::433]
+				}
+			}
+		}
+		context matches {
+			EVENT_CONTEXT[at0002] matches {    -- Event Context
+				other_context matches {
+					ITEM_TREE[at0003] matches {    -- Item tree
+						items cardinality matches {0..*; unordered} matches {
+							ELEMENT[at0005] occurrences matches {0..1} matches {    -- Lab_Test_Name_Coded_Text
+								value matches {
+									DV_CODED_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0004] occurrences matches {0..1} matches {    -- Lab_Test_Name_Text
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"SOFTWARE_DEV_TEST">
+					description = <"SOFTWARE_DEV_TEST">
+				>
+				["at0001"] = <
+					text = <"Coded text">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Event Context">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Lab_Test_Name_Text">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Lab_Test_Name_Coded_Text">
+					description = <"">
+				>
+			>
+		>
+	>
