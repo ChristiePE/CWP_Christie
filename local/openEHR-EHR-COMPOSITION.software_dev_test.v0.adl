@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2807d35e9285bf5f68a7da9e80d397c1">
+		["MD5-CAM-1.0.1"] = <"ffee19b6439846e069813f5c3a9727d0">
 		["build_uid"] = <"72ba5005-a91a-322b-b983-46e78b353e11">
 	>
 
@@ -47,6 +47,11 @@ definition
 								}
 							}
 							ELEMENT[at0004] occurrences matches {0..1} matches {    -- Lab_Test_Name_Text
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0006] occurrences matches {0..1} matches {    -- STRING_TEST_2
 								value matches {
 									DV_TEXT matches {*}
 								}
@@ -84,6 +89,10 @@ ontology
 				>
 				["at0005"] = <
 					text = <"Lab_Test_Name_Coded_Text">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"STRING_TEST_2">
 					description = <"">
 				>
 			>
