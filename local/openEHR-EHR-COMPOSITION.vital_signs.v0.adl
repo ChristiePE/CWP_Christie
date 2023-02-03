@@ -23,12 +23,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9c9a94e9e514863fbe1a043740801891">
+		["MD5-CAM-1.0.1"] = <"bcce3ab4875a497ee3d97c9e31bbafa2">
 		["build_uid"] = <"9f08414a-46fd-3adf-98a5-9f816cd3d02c">
 	>
 
 definition
-	COMPOSITION[at0000] matches {    -- vital_signs
+	COMPOSITION[at0000] matches {    -- Vital signs
 		category matches {
 			DV_CODED_TEXT[at0001] matches {    -- Coded text
 				defining_code matches {
@@ -57,7 +57,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"vital_signs">
+					text = <"Vital signs">
 					description = <"NEWS2">
 				>
 				["at0001"] = <
