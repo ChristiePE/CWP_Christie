@@ -23,12 +23,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d894e0d7a9d3bb47eef6edda358305a6">
+		["MD5-CAM-1.0.1"] = <"6021be9f9d7e8b1575658d808a428a5e">
 		["build_uid"] = <"3ac1894f-2dd2-3217-8f89-5f3155e1706c">
 	>
 
 definition
-	COMPOSITION[at0000] matches {    -- news2_score
+	COMPOSITION[at0000] matches {    -- NEWS2_score
 		category matches {
 			DV_CODED_TEXT[at0001] matches {    -- Coded text
 				defining_code matches {
@@ -57,7 +57,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"news2_score">
+					text = <"NEWS2_score">
 					description = <"NEWS2 composition">
 				>
 				["at0001"] = <
