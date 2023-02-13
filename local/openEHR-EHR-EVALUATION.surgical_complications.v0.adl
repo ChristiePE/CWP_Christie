@@ -1,0 +1,43 @@
+archetype (adl_version=1.4; uid=90c66edc-5a4e-4883-bdfb-d5b591e249e3)
+	openEHR-EHR-EVALUATION.surgical_complications.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2023-02-13">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"d41427c99e9634fc74459234c1f370d6">
+		["build_uid"] = <"10c48559-a08f-38f8-8746-6242b483e07b">
+	>
+
+definition
+	EVALUATION[at0000] matches {*}    -- Surgical complications
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Surgical complications">
+					description = <"Surgical complications">
+				>
+			>
+		>
+	>
