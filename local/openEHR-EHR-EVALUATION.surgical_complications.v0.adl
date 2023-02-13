@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e93c711cdf2c2c8f8001ec2379199654">
+		["MD5-CAM-1.0.1"] = <"ec0a973672af28f5d9e90608908fd89b">
 		["build_uid"] = <"10c48559-a08f-38f8-8746-6242b483e07b">
 	>
 
@@ -59,6 +59,22 @@ definition
 									at0018,    -- Retention urine
 									at0019,    -- UTI
 									at0020]    -- Wound dehiscence
+								}
+							}
+						}
+					}
+					ELEMENT[at0021] occurrences matches {0..1} matches {    -- Grade of complication
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0022,    -- Grade I
+									at0023,    -- Grade II
+									at0024,    -- Grade IIIa
+									at0025,    -- Grade IIIb
+									at0026,    -- Grade IVa
+									at0027,    -- Grade IVb
+									at0028]    -- Grade V
 								}
 							}
 						}
@@ -155,6 +171,38 @@ ontology
 				["at0020"] = <
 					text = <"Wound dehiscence">
 					description = <"">
+				>
+				["at0021"] = <
+					text = <"Grade of complication">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Grade I">
+					description = <"Any deviation from the normal post-operative course not requiring surgical, endoscopic or radiological intervention; this includes certain drugs (eg, antiemetics, antipyretics, analgesics, diuretics and electrolytes), treatment with physiotherapy and wound infections that are opened at the bedside">
+				>
+				["at0023"] = <
+					text = <"Grade II">
+					description = <"Complications requiring drug treatments other than those allowed for Grade I complications; this includes blood transfusion and total parenteral nutrition (TPN)">
+				>
+				["at0024"] = <
+					text = <"Grade IIIa">
+					description = <"Requiring surgical, endoscopic or radiological intervention">
+				>
+				["at0025"] = <
+					text = <"Grade IIIb">
+					description = <"Requiring surgical, endoscopic or radiological intervention">
+				>
+				["at0026"] = <
+					text = <"Grade IVa">
+					description = <"Life-threatening complications; this includes CNS complications (eg, brain haemorrhage, ischaemic stroke, subarachnoid haemorrhage) which require intensive care, but excludes transient ischaemic attacks (TIAs):">
+				>
+				["at0027"] = <
+					text = <"Grade IVb">
+					description = <"Life-threatening complications; this includes CNS complications (eg, brain haemorrhage, ischaemic stroke, subarachnoid haemorrhage) which require intensive care, but excludes transient ischaemic attacks (TIAs):">
+				>
+				["at0028"] = <
+					text = <"Grade V">
+					description = <"Patient death">
 				>
 			>
 		>
