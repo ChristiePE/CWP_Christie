@@ -23,12 +23,50 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d41427c99e9634fc74459234c1f370d6">
+		["MD5-CAM-1.0.1"] = <"e93c711cdf2c2c8f8001ec2379199654">
 		["build_uid"] = <"10c48559-a08f-38f8-8746-6242b483e07b">
 	>
 
 definition
-	EVALUATION[at0000] matches {*}    -- Surgical complications
+	EVALUATION[at0000] matches {    -- Surgical complications
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Date of complication
+						value matches {
+							DV_DATE matches {*}
+						}
+					}
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Type of complication
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0004,    -- Allergy
+									at0005,    -- Bleeding/haematoma
+									at0006,    -- Bowel obstruction
+									at0007,    -- Cardiac
+									at0008,    -- DVT/PE
+									at0009,    -- Fistula/leak
+									at0010,    -- Flap/graft complication
+									at0011,    -- Haematuria
+									at0012,    -- Infection wound
+									at0013,    -- Nausea and/or vomiting
+									at0014,    -- Neurological
+									at0015,    -- Peritonitis
+									at0016,    -- Renal obstruction or AKI
+									at0017,    -- Respiratory (including LRTI)
+									at0018,    -- Retention urine
+									at0019,    -- UTI
+									at0020]    -- Wound dehiscence
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 
 ontology
 	term_definitions = <
@@ -37,6 +75,86 @@ ontology
 				["at0000"] = <
 					text = <"Surgical complications">
 					description = <"Surgical complications">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Date of complication">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Type of complication">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Allergy">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Bleeding/haematoma">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Bowel obstruction">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Cardiac">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"DVT/PE">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Fistula/leak">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Flap/graft complication">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Haematuria">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Infection wound">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Nausea and/or vomiting">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Neurological">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Peritonitis">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Renal obstruction or AKI">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Respiratory (including LRTI)">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Retention urine">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"UTI">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Wound dehiscence">
+					description = <"">
 				>
 			>
 		>
