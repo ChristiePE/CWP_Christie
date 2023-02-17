@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"35382e7edc2388ee2e6aa9fc489f3c81">
+		["MD5-CAM-1.0.1"] = <"d4c738b39703c8f6060f644afc846aaf">
 		["build_uid"] = <"a1c52c29-192e-3fd4-a3e6-e01115212da1">
 	>
 
@@ -32,7 +32,7 @@ definition
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0002] occurrences matches {0..1} matches {    -- DV_CODED_TEXT
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Allergies
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -515,7 +515,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"DV_CODED_TEXT">
+					text = <"Allergies">
 					description = <"">
 				>
 				["at0003"] = <
