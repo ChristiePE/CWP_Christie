@@ -58,7 +58,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d12d80cc282f14579411c57de16501c1">
+		["MD5-CAM-1.0.1"] = <"85c047b6acc65c11267afa32e33aa36d">
 		["build_uid"] = <"0be2e8e9-72b0-39dd-a2a2-5c9a6b53d15d">
 	>
 
@@ -590,7 +590,7 @@ However, 'Refuted' may be useful for reconciliation of the adverse reaction list
 				>
 				["at0129"] = <
 					text = <"Allergies list">
-					description = <"">
+					description = <"Details of drug and environmental allergies added from SQL until we have a feed from the terminology server.">
 				>
 			>
 		>
@@ -861,7 +861,7 @@ Onde uma representação textual da data da última ocorrência é exigido por e
 				>
 				["at0129"] = <
 					text = <"*Allergies list (en)">
-					description = <"">
+					description = <"*Details of drug and environmental allergies added from SQL until we have a feed from the terminology server. (en)">
 				>
 			>
 		>
@@ -1126,7 +1126,7 @@ Når en tekstlig representasjon av datoen er påkrevd, f.eks. \"i barndommen\" e
 				>
 				["at0129"] = <
 					text = <"*Allergies list (en)">
-					description = <"">
+					description = <"*Details of drug and environmental allergies added from SQL until we have a feed from the terminology server. (en)">
 				>
 			>
 		>
