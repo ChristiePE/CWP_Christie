@@ -1,0 +1,2347 @@
+archetype (adl_version=1.4; uid=9be3094f-a2d5-4629-8956-cc3e4c91a034)
+	openEHR-EHR-EVALUATION.allergies.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2023-02-17">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"35382e7edc2388ee2e6aa9fc489f3c81">
+		["build_uid"] = <"a1c52c29-192e-3fd4-a3e6-e01115212da1">
+	>
+
+definition
+	EVALUATION[at0000] matches {    -- Allergies
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- DV_CODED_TEXT
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0003,    -- Citalopram
+									at0004,    -- ACE inhibitors (ACEI)
+									at0005,    -- Aciclovir
+									at0006,    -- Acrylic material (fibres)
+									at0007,    -- Adrenaline
+									at0008,    -- Alcohol wipes
+									at0009,    -- Alendronic acid
+									at0010,    -- Allopurinol
+									at0011,    -- Almotriptan
+									at0012,    -- Aloe vera
+									at0013,    -- Amitriptyline
+									at0014,    -- Amlodipine
+									at0015,    -- Amoxicillin
+									at0016,    -- Amphotericin B (Abelcet)
+									at0017,    -- Analgesic, patient unsure of name
+									at0018,    -- Angiotensin receptor blockers (ARBs)
+									at0019,    -- Antibiotic, patient unsure of name
+									at0020,    -- Antidepressant, patient unsure of name
+									at0021,    -- Antiepileptic, patient unsure of name
+									at0022,    -- Antihistamines
+									at0023,    -- Antihypertensive, patient unsure of name
+									at0024,    -- Anti-inflammatory, patient unsure of name
+									at0025,    -- Antimalarial, patient unsure of name
+									at0026,    -- Aprepitant
+									at0027,    -- Aspirin (Anadin)
+									at0028,    -- Aspirin (Disprin)
+									at0029,    -- Aspirin
+									at0030,    -- Atenolol
+									at0031,    -- Atorvastatin
+									at0032,    -- Atropine
+									at0033,    -- Atrovent inhaler
+									at0034,    -- Augmentin
+									at0035,    -- Avitriptan
+									at0036,    -- Azathioprine
+									at0037,    -- Azithromycin
+									at0038,    -- BCG vaccine
+									at0039,    -- Bee stings
+									at0040,    -- Bendamustine (Levact)
+									at0041,    -- Bendroflumethiazide
+									at0042,    -- Beta-blockers
+									at0043,    -- Betahistine
+									at0044,    -- Bisoprolol
+									at0045,    -- Bisphosphonates
+									at0046,    -- Bleomycin (Blenoxane)
+									at0047,    -- Brentuximab (Adcetis)
+									at0048,    -- Buprenorphine (BuTrans patch)
+									at0049,    -- Buscopan
+									at0050,    -- Calcium channel blockers
+									at0051,    -- Capecitabine (Xeloda)
+									at0052,    -- Carbamazepine
+									at0053,    -- Carbimazole (Neo-Mercazole)
+									at0054,    -- Carboplatin
+									at0055,    -- Cats
+									at0056,    -- Cephalexin
+									at0057,    -- Cephalosporin
+									at0058,    -- Cetuximab (Erbitux)
+									at0059,    -- Chemotherapy, patient unsure of name
+									at0060,    -- Chloramphenicol
+									at0061,    -- Chlorhexidine wipes
+									at0062,    -- Chloroquine
+									at0063,    -- Ciprofloxacin
+									at0064,    -- Clarithromycin
+									at0065,    -- Clindamycin
+									at0066,    -- Co-amoxiclav
+									at0067,    -- Co-codamol
+									at0068,    -- Codeine
+									at0069,    -- Colchicine
+									at0070,    -- Cortisone
+									at0071,    -- Co-trimoxazole (Septrin)
+									at0072,    -- Cyclizine
+									at0073,    -- Cyclosporine
+									at0074,    -- Cyproterone acetate
+									at0075,    -- Dalteparin (Fragmin)
+									at0076,    -- Dexamethasone
+									at0077,    -- Diazepam (Valium)
+									at0078,    -- Diclofenac (Voltarol)
+									at0079,    -- Difflam
+									at0080,    -- Digoxin
+									at0081,    -- Dihydrocodeine
+									at0082,    -- Dipyridamole (Persantine)
+									at0083,    -- Docetaxel (Taxotere)
+									at0084,    -- Dogs
+									at0085,    -- Domperidone
+									at0086,    -- Donitriptan
+									at0087,    -- Doxazosin
+									at0088,    -- Doxycycline
+									at0089,    -- Dressings (adhesive)
+									at0090,    -- Dressings (C-view)
+									at0091,    -- Dressings (Elastoplast)
+									at0092,    -- Dressings (gauze)
+									at0093,    -- Dressings (IV 3000)
+									at0094,    -- Dressings (Mefix)
+									at0095,    -- Dressings (Mepores)
+									at0096,    -- Dressings (Micropore)
+									at0097,    -- Dressings (Opsite)
+									at0098,    -- Dressings (plasters)
+									at0099,    -- Dressings (Tegaderm)
+									at0100,    -- Dressings (Transpore)
+									at0101,    -- Dressings (zinc oxide)
+									at0102,    -- Dressings
+									at0103,    -- Drug, patient unsure of name
+									at0104,    -- Duloxetine
+									at0105,    -- Eletriptan
+									at0106,    -- Entonox
+									at0107,    -- Erythromycin
+									at0108,    -- Eye drops, patient unsure of name
+									at0109,    -- Fentanyl (Duragesic patch)
+									at0110,    -- Ferrous sulphate
+									at0111,    -- Filgrastim (Neupogen, GCSF)
+									at0112,    -- Fish
+									at0113,    -- Flu vaccine
+									at0114,    -- Flucloxacillin
+									at0115,    -- Fluconazole
+									at0116,    -- Fluorouracil (5FU)
+									at0117,    -- Fluvoxamine
+									at0118,    -- Food colouring (E120 and E102)
+									at0119,    -- Food colouring
+									at0120,    -- Food, albumin
+									at0121,    -- Food, almonds
+									at0122,    -- Food, apples
+									at0123,    -- Food, apricots
+									at0124,    -- Food, asparagus
+									at0125,    -- Food, avocado
+									at0126,    -- Food, bananas
+									at0127,    -- Food, bread
+									at0128,    -- Food, cactus
+									at0129,    -- Food, caffeine
+									at0130,    -- Food, cheese
+									at0131,    -- Food, cherries
+									at0132,    -- Food, chickpeas
+									at0133,    -- Food, chilli
+									at0134,    -- Food, chocolate
+									at0135,    -- Food, citric acid
+									at0136,    -- Food, Coca-Cola
+									at0137,    -- Food, cockles
+									at0138,    -- Food, coconut
+									at0139,    -- Food, crab
+									at0140,    -- Food, cucumber
+									at0141,    -- Food, dried fruit
+									at0142,    -- Food, eggs
+									at0143,    -- Food, food dye
+									at0144,    -- Food, garlic
+									at0145,    -- Food, glucose
+									at0146,    -- Food, granary bread
+									at0147,    -- Food, hazelnuts
+									at0148,    -- Food, kiwifruit
+									at0149,    -- Food, lime
+									at0150,    -- Food, milk
+									at0151,    -- Food, mint
+									at0152,    -- Food, multiple
+									at0153,    -- Food, mushrooms
+									at0154,    -- Food, nuts
+									at0155,    -- Food, offal
+									at0156,    -- Food, onion
+									at0157,    -- Food, oysters
+									at0158,    -- Food, peanuts
+									at0159,    -- Food, pears
+									at0160,    -- Food, peppermint
+									at0161,    -- Food, pineapple
+									at0162,    -- Food, pork
+									at0163,    -- Food, potato
+									at0164,    -- Food, prawns
+									at0165,    -- Food, preservatives
+									at0166,    -- Food, raw mushrooms
+									at0167,    -- Food, raw tomatoes
+									at0168,    -- Food, red wine
+									at0169,    -- Food, sea bass
+									at0170,    -- Food, seafood
+									at0171,    -- Food, shellfish
+									at0172,    -- Food, sodium bicarbonate
+									at0173,    -- Food, spicey food
+									at0174,    -- Food, strawberry
+									at0175,    -- Food, tangerines
+									at0176,    -- Food, tea
+									at0177,    -- Food, tomatoes
+									at0178,    -- Food, tuna
+									at0179,    -- Food, vegetable oil
+									at0180,    -- Food, vinegar
+									at0181,    -- Food, wheat
+									at0182,    -- Food, whitefish
+									at0183,    -- Food, yeast
+									at0184,    -- Fragrance, scent, perfume
+									at0185,    -- Frovatriptan
+									at0186,    -- Furosemide
+									at0187,    -- Gabapentin
+									at0188,    -- Gaviscon
+									at0189,    -- G-CSF
+									at0190,    -- General anaesthetic, patient unsure of name
+									at0191,    -- Gentamicin
+									at0192,    -- Gluten
+									at0193,    -- Halothane
+									at0194,    -- Hay fever (allergic rhinitis), birds
+									at0195,    -- Hay fever (allergic rhinitis), dust
+									at0196,    -- Hay fever (allergic rhinitis), feathers
+									at0197,    -- Hay fever (allergic rhinitis), grass
+									at0198,    -- Hay fever (allergic rhinitis), horses
+									at0199,    -- Hay fever (allergic rhinitis), lilies
+									at0200,    -- Hay fever (allergic rhinitis), pets
+									at0201,    -- Hay fever (allergic rhinitis), pollen
+									at0202,    -- Hay fever (allergic rhinitis), sawdust
+									at0203,    -- Heparin
+									at0204,    -- Hibiscrub
+									at0205,    -- Hibitane
+									at0206,    -- Hydrocortisone
+									at0207,    -- Hydroxychloroquine sulphate
+									at0208,    -- Ibersartan
+									at0209,    -- Ibuprofen
+									at0210,    -- Indomethacin (Indocin)
+									at0211,    -- Iodine
+									at0212,    -- Irinotecan
+									at0213,    -- Iron tablets
+									at0214,    -- IV contrast
+									at0215,    -- Lactose
+									at0216,    -- Lansoprazole
+									at0217,    -- Latex
+									at0218,    -- Laxido
+									at0219,    -- Lenograstim (granocyte, GCSF)
+									at0220,    -- Levofloxacin
+									at0221,    -- Levomepromazine
+									at0222,    -- Lidocaine patch
+									at0223,    -- Lisinopril
+									at0224,    -- Local anaesthetic, patient unsure of name
+									at0225,    -- Losartan (Cozaar)
+									at0226,    -- Mebeverine (Colofac)
+									at0227,    -- Meropenem
+									at0228,    -- Metal, patient unsure of name
+									at0229,    -- Metformin
+									at0230,    -- Metoclopramide
+									at0231,    -- Metronidazole
+									at0232,    -- Midazolam
+									at0233,    -- Morphine
+									at0234,    -- Naproxen
+									at0235,    -- Nefazodone
+									at0236,    -- Nickel
+									at0237,    -- Nicorandil
+									at0238,    -- Nifedipine (Adalat retard)
+									at0239,    -- Nitrofurantoin
+									at0240,    -- Nortriptyline
+									at0241,    -- NSAIDS (eg, Voltarol, Ibuprofen)
+									at0242,    -- Omeprazole
+									at0243,    -- Ondansetron (Zofran)
+									at0244,    -- Opiates
+									at0245,    -- Oxaliplatin
+									at0246,    -- Oxycodone (Oxycontin)
+									at0247,    -- Oxytetracycline
+									at0248,    -- Pain patches, patient unsure of name
+									at0249,    -- Paracetamol
+									at0250,    -- Pegaspargase (Oncospar)
+									at0251,    -- Penicillin (eg, Ampicillin, Augmentin)
+									at0252,    -- Perindopril
+									at0253,    -- Pethidine
+									at0254,    -- Phenytoin
+									at0255,    -- Piriton
+									at0256,    -- Piroxicam
+									at0257,    -- Pravastatin
+									at0258,    -- Prednisolone
+									at0259,    -- Pregabalin
+									at0260,    -- Propanalol
+									at0261,    -- Propofol (Diprivan)
+									at0262,    -- Quetiapine
+									at0263,    -- Quinine
+									at0264,    -- Ramipril
+									at0265,    -- Ranitidine
+									at0266,    -- Rivaroxaban (Xarelto)
+									at0267,    -- Rizatriptan
+									at0268,    -- Rosuvastatin
+									at0269,    -- Salbutamol (Ventolin)
+									at0270,    -- Salicylates
+									at0271,    -- Sando-k
+									at0272,    -- Sertraline
+									at0273,    -- Simvastatin
+									at0274,    -- Skin, base metals
+									at0275,    -- Skin, cat gut sutures
+									at0276,    -- Skin, coloured toilet paper
+									at0277,    -- Skin, cotton wool
+									at0278,    -- Skin, E45 cream
+									at0279,    -- Skin, essential oil
+									at0280,    -- Skin, hair dye
+									at0281,    -- Skin, lanolin
+									at0282,    -- Skin, lipstick
+									at0283,    -- Skin, Methylisothiazolinone
+									at0284,    -- Skin, nickel
+									at0285,    -- Skin, plastic
+									at0286,    -- Skin, rubber
+									at0287,    -- Skin, soap powder
+									at0288,    -- Skin, soaps
+									at0289,    -- Skin, sunscreen
+									at0290,    -- Skin, synthetic fibres
+									at0291,    -- Skin, titanium
+									at0292,    -- Skin, Vaseline
+									at0293,    -- SSRIs
+									at0294,    -- Statin, patient unsure of name
+									at0295,    -- Statins
+									at0296,    -- Stemetil
+									at0297,    -- Steroids
+									at0298,    -- Streptomycin
+									at0299,    -- Sudafed
+									at0300,    -- Sulfonamide drugs (sulphates)
+									at0301,    -- Sumatriptan
+									at0302,    -- Suxamethonium
+									at0303,    -- Tamsulosin
+									at0304,    -- Tazocin
+									at0305,    -- Teicoplanin
+									at0306,    -- Temazepam
+									at0307,    -- Tetanus vaccine
+									at0308,    -- Tetracycline
+									at0309,    -- Thiazides
+									at0310,    -- Tramadol
+									at0311,    -- Tricyclic antidepressants
+									at0312,    -- Trimethoprim and Sulfamethoxazole (Bactrim)
+									at0313,    -- Trimethoprim
+									at0314,    -- Triptans
+									at0315,    -- Vancomycin
+									at0316,    -- Warfarin
+									at0317,    -- Wasp stings
+									at0318,    -- Zinc
+									at0319,    -- Zoledronic acid
+									at0320,    -- Zolmitriptan
+									at0321,    -- Zomorph
+									at0322,    -- Zopiclone
+									at0323,    -- Abiraterone (Zytiga)
+									at0324,    -- Afatinib c (Giotrif)
+									at0325,    -- Aflibercept (Zaltrap)
+									at0326,    -- Aldesleukin (Proleukin)
+									at0327,    -- Alemtuzumab (Lemtrada)
+									at0328,    -- Amsacrine (Amsidine)
+									at0329,    -- Anastrozole (Arimidex)
+									at0330,    -- Arsenic trioxide (Trisenox)
+									at0331,    -- Asparaginase (Erwinase, Crisantaspase)
+									at0332,    -- Axitinib (Inlyta)
+									at0333,    -- Azacitidine (Vidaza)
+									at0334,    -- Bevacizumab (Avastin)
+									at0335,    -- Bexarotene (Targretin)
+									at0336,    -- Bicalutamide (Casodex)
+									at0337,    -- Bortezomib (Velcade)
+									at0338,    -- Bosutinib (Bosulif)
+									at0339,    -- Brentuximab (Adcetris)
+									at0340,    -- Brostallicin
+									at0341,    -- Busulfan (Busilvex, Myleran)
+									at0342,    -- Cabazitaxel (Jevtana)
+									at0343,    -- Cabozantinib (Cometriq)
+									at0344,    -- Carmustine (BiCNU)
+									at0345,    -- Catumaxomab (Removab)
+									at0346,    -- Cedaranib (Recentin, AZD2171)
+									at0347,    -- Chlorambucil (Leukeran)
+									at0348,    -- Cisplatin
+									at0349,    -- Cladribine (Leustat, LITAK)
+									at0350,    -- Clofarabine (Evoltra)
+									at0351,    -- Crizotinib (Xalkori)
+									at0352,    -- Cyclophosphamide
+									at0353,    -- Cyproterone (Cyprostat)
+									at0354,    -- Cytarabine (Ara C, cytosine arabinoside)
+									at0355,    -- Dabrafenib (Tafinlar)
+									at0356,    -- Dacarbazine (DTIC)
+									at0357,    -- Dactinomycin (Cosmegen Lyovac)
+									at0358,    -- Dasatinib (Sprycel)
+									at0359,    -- Daunorubicin (Cerubidin)
+									at0360,    -- Decitabine (Dacogen)
+									at0361,    -- Degarelix (Firmagon)
+									at0362,    -- Denosumab (Prolia, Xgeva)
+									at0363,    -- Diethylstilbestrol (Stilboestrol)
+									at0364,    -- Doxorubicin (Adriamycin)
+									at0365,    -- Enzalutamide (Xtandi)
+									at0366,    -- Epirubicin (Pharmorubicin)
+									at0367,    -- Eribulin (Halaven)
+									at0368,    -- Erlotinib (Tarceva)
+									at0369,    -- Estramustine (Estracyt)
+									at0370,    -- Etoposide
+									at0371,    -- Everolimus (Afinitor)
+									at0372,    -- Exemestane (Aromasin)
+									at0373,    -- Fludarabine (Fludara)
+									at0374,    -- Flutamide (Drogenil)
+									at0375,    -- Folfirinox
+									at0376,    -- Fulvestrant (Faslodex)
+									at0377,    -- Gefitinib (Iressa)
+									at0378,    -- Gemcitabine (Gemzar)
+									at0379,    -- Goserelin (Zoladex)
+									at0380,    -- Histamine Dihydrochloride (Ceplene)
+									at0381,    -- Hydroxycarbamide (Hydrea, hydroxyurea)
+									at0382,    -- Ibrutinib (Imbruvica)
+									at0383,    -- Idarubicin (Zavedos)
+									at0384,    -- Idelalisib (Zydelig)
+									at0385,    -- Ifosfamide (Mitoxana)
+									at0386,    -- Imatinib (Glivec)
+									at0387,    -- Ipilimumab (Yervoy)
+									at0388,    -- Lanreotide (Somatuline Depot Injection)
+									at0389,    -- Lapatinib (Tyverb)
+									at0390,    -- Lenalidomide (Revlimid)
+									at0391,    -- Letrazole (Femara)
+									at0392,    -- Leuprorelin (Prostap, Lutrate)
+									at0393,    -- Liposomal doxorubicin (Caelyx, Myocet, Doxil)
+									at0394,    -- Lomustine (CCNU)
+									at0395,    -- Medroxyprogesterone (Provera)
+									at0396,    -- Megesterol acetate (Megace)
+									at0397,    -- Melphalan (Alkeran)
+									at0398,    -- Mercaptopurine (Xaluprine)
+									at0399,    -- Methotrexate (Maxtrex)
+									at0400,    -- Mifamurtide (Mepact)
+									at0401,    -- Mitomycin (Mitomycin C Kyowa)
+									at0402,    -- Mitotane (Lysodren)
+									at0403,    -- Mitoxantrone (Mitozantrone)
+									at0404,    -- Nelarabine (Atriance)
+									at0405,    -- Nilotinib (Tasigna)
+									at0406,    -- Nivolumab (Opdivo)
+									at0407,    -- Obinutuzumab (Gazyvaro)
+									at0408,    -- Octreotide (Sandostatin)
+									at0409,    -- Ofatumumab (Arzerra)
+									at0410,    -- Paclitaxel (Taxol)
+									at0411,    -- Paclitaxel albumin (Abraxane)
+									at0412,    -- Panitumumab (Vectibix)
+									at0413,    -- Pasireotide (Signifor)
+									at0414,    -- Pazopanib (Votrient)
+									at0415,    -- Pembrolizumab (Keytruda)
+									at0416,    -- Pemetrexed (Alimta)
+									at0417,    -- Pentostatin (Nipent)
+									at0418,    -- Pertuzumab (Perjeta)
+									at0419,    -- Pixantrone (Pixuvri)
+									at0420,    -- Platinum
+									at0421,    -- Pomalidomide (Imnovid)
+									at0422,    -- Ponatinib (Iclusig)
+									at0423,    -- Porfimer (Photofrin)
+									at0424,    -- Procarbazine (Matulane)
+									at0425,    -- Raltitrexed (Tomudex)
+									at0426,    -- Reorafenib (Stivarga)
+									at0427,    -- Rituximab
+									at0428,    -- Ruxolitinib (Jakavi)
+									at0429,    -- Siltuximab (Sylvant)
+									at0430,    -- Sorafenib (Nexavar)
+									at0431,    -- Streptozotocin (Zanosar)
+									at0432,    -- Sunitinib (Sutent)
+									at0433,    -- Tamoxifen
+									at0434,    -- Tegafur/uracil (Uftoral)
+									at0435,    -- Tegafur
+									at0436,    -- Temoporfin (Foscan)
+									at0437,    -- Temozolamide (Temodal)
+									at0438,    -- Temsirolimus (Torisel)
+									at0439,    -- Thalidomide (Thalidomid)
+									at0440,    -- Thiotepa (Tepadina)
+									at0441,    -- Tioguanine (Ianvis)
+									at0442,    -- Topotecan (Hycamtin)
+									at0443,    -- Toremifene (Fareston)
+									at0444,    -- Trabectedin (Yondelis)
+									at0445,    -- Trastuzumab (Herceptin)
+									at0446,    -- Trastuzumab emtansine (Kadcyla)
+									at0447,    -- Treosulfan
+									at0448,    -- Tretinoin (Vesanoid, ATRA)
+									at0449,    -- Triptorelin (Decapeptyl SR, Gonapeptyl Depot)
+									at0450,    -- Vandetanib (Caprelsa)
+									at0451,    -- Vemurafenib (Zelboraf)
+									at0452,    -- Vinblastine (Velbe)
+									at0453,    -- Vincristine (Oncovin)
+									at0454,    -- Vindesine (Eldisine)
+									at0455,    -- Vinflunine (Javlor)
+									at0456,    -- Vinorelbine (Navelbine)
+									at0457,    -- Vismodegib (Erivedge)
+									at0458]    -- Zoledronate (Zometa)
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Allergies">
+					description = <"Allergies">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"DV_CODED_TEXT">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Citalopram">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"ACE inhibitors (ACEI)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Aciclovir">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Acrylic material (fibres)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Adrenaline">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Alcohol wipes">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Alendronic acid">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Allopurinol">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Almotriptan">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Aloe vera">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Amitriptyline">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Amlodipine">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Amoxicillin">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Amphotericin B (Abelcet)">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Analgesic, patient unsure of name">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Angiotensin receptor blockers (ARBs)">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Antibiotic, patient unsure of name">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Antidepressant, patient unsure of name">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Antiepileptic, patient unsure of name">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Antihistamines">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Antihypertensive, patient unsure of name">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Anti-inflammatory, patient unsure of name">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Antimalarial, patient unsure of name">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Aprepitant">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Aspirin (Anadin)">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Aspirin (Disprin)">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"Aspirin">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Atenolol">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Atorvastatin">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Atropine">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Atrovent inhaler">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Augmentin">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"Avitriptan">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"Azathioprine">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"Azithromycin">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"BCG vaccine">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"Bee stings">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"Bendamustine (Levact)">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"Bendroflumethiazide">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"Beta-blockers">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"Betahistine">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"Bisoprolol">
+					description = <"">
+				>
+				["at0045"] = <
+					text = <"Bisphosphonates">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Bleomycin (Blenoxane)">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"Brentuximab (Adcetis)">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"Buprenorphine (BuTrans patch)">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"Buscopan">
+					description = <"">
+				>
+				["at0050"] = <
+					text = <"Calcium channel blockers">
+					description = <"">
+				>
+				["at0051"] = <
+					text = <"Capecitabine (Xeloda)">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"Carbamazepine">
+					description = <"">
+				>
+				["at0053"] = <
+					text = <"Carbimazole (Neo-Mercazole)">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"Carboplatin">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"Cats">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"Cephalexin">
+					description = <"">
+				>
+				["at0057"] = <
+					text = <"Cephalosporin">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"Cetuximab (Erbitux)">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"Chemotherapy, patient unsure of name">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"Chloramphenicol">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"Chlorhexidine wipes">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"Chloroquine">
+					description = <"">
+				>
+				["at0063"] = <
+					text = <"Ciprofloxacin">
+					description = <"">
+				>
+				["at0064"] = <
+					text = <"Clarithromycin">
+					description = <"">
+				>
+				["at0065"] = <
+					text = <"Clindamycin">
+					description = <"">
+				>
+				["at0066"] = <
+					text = <"Co-amoxiclav">
+					description = <"">
+				>
+				["at0067"] = <
+					text = <"Co-codamol">
+					description = <"">
+				>
+				["at0068"] = <
+					text = <"Codeine">
+					description = <"">
+				>
+				["at0069"] = <
+					text = <"Colchicine">
+					description = <"">
+				>
+				["at0070"] = <
+					text = <"Cortisone">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"Co-trimoxazole (Septrin)">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"Cyclizine">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"Cyclosporine">
+					description = <"">
+				>
+				["at0074"] = <
+					text = <"Cyproterone acetate">
+					description = <"">
+				>
+				["at0075"] = <
+					text = <"Dalteparin (Fragmin)">
+					description = <"">
+				>
+				["at0076"] = <
+					text = <"Dexamethasone">
+					description = <"">
+				>
+				["at0077"] = <
+					text = <"Diazepam (Valium)">
+					description = <"">
+				>
+				["at0078"] = <
+					text = <"Diclofenac (Voltarol)">
+					description = <"">
+				>
+				["at0079"] = <
+					text = <"Difflam">
+					description = <"">
+				>
+				["at0080"] = <
+					text = <"Digoxin">
+					description = <"">
+				>
+				["at0081"] = <
+					text = <"Dihydrocodeine">
+					description = <"">
+				>
+				["at0082"] = <
+					text = <"Dipyridamole (Persantine)">
+					description = <"">
+				>
+				["at0083"] = <
+					text = <"Docetaxel (Taxotere)">
+					description = <"">
+				>
+				["at0084"] = <
+					text = <"Dogs">
+					description = <"">
+				>
+				["at0085"] = <
+					text = <"Domperidone">
+					description = <"">
+				>
+				["at0086"] = <
+					text = <"Donitriptan">
+					description = <"">
+				>
+				["at0087"] = <
+					text = <"Doxazosin">
+					description = <"">
+				>
+				["at0088"] = <
+					text = <"Doxycycline">
+					description = <"">
+				>
+				["at0089"] = <
+					text = <"Dressings (adhesive)">
+					description = <"">
+				>
+				["at0090"] = <
+					text = <"Dressings (C-view)">
+					description = <"">
+				>
+				["at0091"] = <
+					text = <"Dressings (Elastoplast)">
+					description = <"">
+				>
+				["at0092"] = <
+					text = <"Dressings (gauze)">
+					description = <"">
+				>
+				["at0093"] = <
+					text = <"Dressings (IV 3000)">
+					description = <"">
+				>
+				["at0094"] = <
+					text = <"Dressings (Mefix)">
+					description = <"">
+				>
+				["at0095"] = <
+					text = <"Dressings (Mepores)">
+					description = <"">
+				>
+				["at0096"] = <
+					text = <"Dressings (Micropore)">
+					description = <"">
+				>
+				["at0097"] = <
+					text = <"Dressings (Opsite)">
+					description = <"">
+				>
+				["at0098"] = <
+					text = <"Dressings (plasters)">
+					description = <"">
+				>
+				["at0099"] = <
+					text = <"Dressings (Tegaderm)">
+					description = <"">
+				>
+				["at0100"] = <
+					text = <"Dressings (Transpore)">
+					description = <"">
+				>
+				["at0101"] = <
+					text = <"Dressings (zinc oxide)">
+					description = <"">
+				>
+				["at0102"] = <
+					text = <"Dressings">
+					description = <"">
+				>
+				["at0103"] = <
+					text = <"Drug, patient unsure of name">
+					description = <"">
+				>
+				["at0104"] = <
+					text = <"Duloxetine">
+					description = <"">
+				>
+				["at0105"] = <
+					text = <"Eletriptan">
+					description = <"">
+				>
+				["at0106"] = <
+					text = <"Entonox">
+					description = <"">
+				>
+				["at0107"] = <
+					text = <"Erythromycin">
+					description = <"">
+				>
+				["at0108"] = <
+					text = <"Eye drops, patient unsure of name">
+					description = <"">
+				>
+				["at0109"] = <
+					text = <"Fentanyl (Duragesic patch)">
+					description = <"">
+				>
+				["at0110"] = <
+					text = <"Ferrous sulphate">
+					description = <"">
+				>
+				["at0111"] = <
+					text = <"Filgrastim (Neupogen, GCSF)">
+					description = <"">
+				>
+				["at0112"] = <
+					text = <"Fish">
+					description = <"">
+				>
+				["at0113"] = <
+					text = <"Flu vaccine">
+					description = <"">
+				>
+				["at0114"] = <
+					text = <"Flucloxacillin">
+					description = <"">
+				>
+				["at0115"] = <
+					text = <"Fluconazole">
+					description = <"">
+				>
+				["at0116"] = <
+					text = <"Fluorouracil (5FU)">
+					description = <"">
+				>
+				["at0117"] = <
+					text = <"Fluvoxamine">
+					description = <"">
+				>
+				["at0118"] = <
+					text = <"Food colouring (E120 and E102)">
+					description = <"">
+				>
+				["at0119"] = <
+					text = <"Food colouring">
+					description = <"">
+				>
+				["at0120"] = <
+					text = <"Food, albumin">
+					description = <"">
+				>
+				["at0121"] = <
+					text = <"Food, almonds">
+					description = <"">
+				>
+				["at0122"] = <
+					text = <"Food, apples">
+					description = <"">
+				>
+				["at0123"] = <
+					text = <"Food, apricots">
+					description = <"">
+				>
+				["at0124"] = <
+					text = <"Food, asparagus">
+					description = <"">
+				>
+				["at0125"] = <
+					text = <"Food, avocado">
+					description = <"">
+				>
+				["at0126"] = <
+					text = <"Food, bananas">
+					description = <"">
+				>
+				["at0127"] = <
+					text = <"Food, bread">
+					description = <"">
+				>
+				["at0128"] = <
+					text = <"Food, cactus">
+					description = <"">
+				>
+				["at0129"] = <
+					text = <"Food, caffeine">
+					description = <"">
+				>
+				["at0130"] = <
+					text = <"Food, cheese">
+					description = <"">
+				>
+				["at0131"] = <
+					text = <"Food, cherries">
+					description = <"">
+				>
+				["at0132"] = <
+					text = <"Food, chickpeas">
+					description = <"">
+				>
+				["at0133"] = <
+					text = <"Food, chilli">
+					description = <"">
+				>
+				["at0134"] = <
+					text = <"Food, chocolate">
+					description = <"">
+				>
+				["at0135"] = <
+					text = <"Food, citric acid">
+					description = <"">
+				>
+				["at0136"] = <
+					text = <"Food, Coca-Cola">
+					description = <"">
+				>
+				["at0137"] = <
+					text = <"Food, cockles">
+					description = <"">
+				>
+				["at0138"] = <
+					text = <"Food, coconut">
+					description = <"">
+				>
+				["at0139"] = <
+					text = <"Food, crab">
+					description = <"">
+				>
+				["at0140"] = <
+					text = <"Food, cucumber">
+					description = <"">
+				>
+				["at0141"] = <
+					text = <"Food, dried fruit">
+					description = <"">
+				>
+				["at0142"] = <
+					text = <"Food, eggs">
+					description = <"">
+				>
+				["at0143"] = <
+					text = <"Food, food dye">
+					description = <"">
+				>
+				["at0144"] = <
+					text = <"Food, garlic">
+					description = <"">
+				>
+				["at0145"] = <
+					text = <"Food, glucose">
+					description = <"">
+				>
+				["at0146"] = <
+					text = <"Food, granary bread">
+					description = <"">
+				>
+				["at0147"] = <
+					text = <"Food, hazelnuts">
+					description = <"">
+				>
+				["at0148"] = <
+					text = <"Food, kiwifruit">
+					description = <"">
+				>
+				["at0149"] = <
+					text = <"Food, lime">
+					description = <"">
+				>
+				["at0150"] = <
+					text = <"Food, milk">
+					description = <"">
+				>
+				["at0151"] = <
+					text = <"Food, mint">
+					description = <"">
+				>
+				["at0152"] = <
+					text = <"Food, multiple">
+					description = <"">
+				>
+				["at0153"] = <
+					text = <"Food, mushrooms">
+					description = <"">
+				>
+				["at0154"] = <
+					text = <"Food, nuts">
+					description = <"">
+				>
+				["at0155"] = <
+					text = <"Food, offal">
+					description = <"">
+				>
+				["at0156"] = <
+					text = <"Food, onion">
+					description = <"">
+				>
+				["at0157"] = <
+					text = <"Food, oysters">
+					description = <"">
+				>
+				["at0158"] = <
+					text = <"Food, peanuts">
+					description = <"">
+				>
+				["at0159"] = <
+					text = <"Food, pears">
+					description = <"">
+				>
+				["at0160"] = <
+					text = <"Food, peppermint">
+					description = <"">
+				>
+				["at0161"] = <
+					text = <"Food, pineapple">
+					description = <"">
+				>
+				["at0162"] = <
+					text = <"Food, pork">
+					description = <"">
+				>
+				["at0163"] = <
+					text = <"Food, potato">
+					description = <"">
+				>
+				["at0164"] = <
+					text = <"Food, prawns">
+					description = <"">
+				>
+				["at0165"] = <
+					text = <"Food, preservatives">
+					description = <"">
+				>
+				["at0166"] = <
+					text = <"Food, raw mushrooms">
+					description = <"">
+				>
+				["at0167"] = <
+					text = <"Food, raw tomatoes">
+					description = <"">
+				>
+				["at0168"] = <
+					text = <"Food, red wine">
+					description = <"">
+				>
+				["at0169"] = <
+					text = <"Food, sea bass">
+					description = <"">
+				>
+				["at0170"] = <
+					text = <"Food, seafood">
+					description = <"">
+				>
+				["at0171"] = <
+					text = <"Food, shellfish">
+					description = <"">
+				>
+				["at0172"] = <
+					text = <"Food, sodium bicarbonate">
+					description = <"">
+				>
+				["at0173"] = <
+					text = <"Food, spicey food">
+					description = <"">
+				>
+				["at0174"] = <
+					text = <"Food, strawberry">
+					description = <"">
+				>
+				["at0175"] = <
+					text = <"Food, tangerines">
+					description = <"">
+				>
+				["at0176"] = <
+					text = <"Food, tea">
+					description = <"">
+				>
+				["at0177"] = <
+					text = <"Food, tomatoes">
+					description = <"">
+				>
+				["at0178"] = <
+					text = <"Food, tuna">
+					description = <"">
+				>
+				["at0179"] = <
+					text = <"Food, vegetable oil">
+					description = <"">
+				>
+				["at0180"] = <
+					text = <"Food, vinegar">
+					description = <"">
+				>
+				["at0181"] = <
+					text = <"Food, wheat">
+					description = <"">
+				>
+				["at0182"] = <
+					text = <"Food, whitefish">
+					description = <"">
+				>
+				["at0183"] = <
+					text = <"Food, yeast">
+					description = <"">
+				>
+				["at0184"] = <
+					text = <"Fragrance, scent, perfume">
+					description = <"">
+				>
+				["at0185"] = <
+					text = <"Frovatriptan">
+					description = <"">
+				>
+				["at0186"] = <
+					text = <"Furosemide">
+					description = <"">
+				>
+				["at0187"] = <
+					text = <"Gabapentin">
+					description = <"">
+				>
+				["at0188"] = <
+					text = <"Gaviscon">
+					description = <"">
+				>
+				["at0189"] = <
+					text = <"G-CSF">
+					description = <"">
+				>
+				["at0190"] = <
+					text = <"General anaesthetic, patient unsure of name">
+					description = <"">
+				>
+				["at0191"] = <
+					text = <"Gentamicin">
+					description = <"">
+				>
+				["at0192"] = <
+					text = <"Gluten">
+					description = <"">
+				>
+				["at0193"] = <
+					text = <"Halothane">
+					description = <"">
+				>
+				["at0194"] = <
+					text = <"Hay fever (allergic rhinitis), birds">
+					description = <"">
+				>
+				["at0195"] = <
+					text = <"Hay fever (allergic rhinitis), dust">
+					description = <"">
+				>
+				["at0196"] = <
+					text = <"Hay fever (allergic rhinitis), feathers">
+					description = <"">
+				>
+				["at0197"] = <
+					text = <"Hay fever (allergic rhinitis), grass">
+					description = <"">
+				>
+				["at0198"] = <
+					text = <"Hay fever (allergic rhinitis), horses">
+					description = <"">
+				>
+				["at0199"] = <
+					text = <"Hay fever (allergic rhinitis), lilies">
+					description = <"">
+				>
+				["at0200"] = <
+					text = <"Hay fever (allergic rhinitis), pets">
+					description = <"">
+				>
+				["at0201"] = <
+					text = <"Hay fever (allergic rhinitis), pollen">
+					description = <"">
+				>
+				["at0202"] = <
+					text = <"Hay fever (allergic rhinitis), sawdust">
+					description = <"">
+				>
+				["at0203"] = <
+					text = <"Heparin">
+					description = <"">
+				>
+				["at0204"] = <
+					text = <"Hibiscrub">
+					description = <"">
+				>
+				["at0205"] = <
+					text = <"Hibitane">
+					description = <"">
+				>
+				["at0206"] = <
+					text = <"Hydrocortisone">
+					description = <"">
+				>
+				["at0207"] = <
+					text = <"Hydroxychloroquine sulphate">
+					description = <"">
+				>
+				["at0208"] = <
+					text = <"Ibersartan">
+					description = <"">
+				>
+				["at0209"] = <
+					text = <"Ibuprofen">
+					description = <"">
+				>
+				["at0210"] = <
+					text = <"Indomethacin (Indocin)">
+					description = <"">
+				>
+				["at0211"] = <
+					text = <"Iodine">
+					description = <"">
+				>
+				["at0212"] = <
+					text = <"Irinotecan">
+					description = <"">
+				>
+				["at0213"] = <
+					text = <"Iron tablets">
+					description = <"">
+				>
+				["at0214"] = <
+					text = <"IV contrast">
+					description = <"">
+				>
+				["at0215"] = <
+					text = <"Lactose">
+					description = <"">
+				>
+				["at0216"] = <
+					text = <"Lansoprazole">
+					description = <"">
+				>
+				["at0217"] = <
+					text = <"Latex">
+					description = <"">
+				>
+				["at0218"] = <
+					text = <"Laxido">
+					description = <"">
+				>
+				["at0219"] = <
+					text = <"Lenograstim (granocyte, GCSF)">
+					description = <"">
+				>
+				["at0220"] = <
+					text = <"Levofloxacin">
+					description = <"">
+				>
+				["at0221"] = <
+					text = <"Levomepromazine">
+					description = <"">
+				>
+				["at0222"] = <
+					text = <"Lidocaine patch">
+					description = <"">
+				>
+				["at0223"] = <
+					text = <"Lisinopril">
+					description = <"">
+				>
+				["at0224"] = <
+					text = <"Local anaesthetic, patient unsure of name">
+					description = <"">
+				>
+				["at0225"] = <
+					text = <"Losartan (Cozaar)">
+					description = <"">
+				>
+				["at0226"] = <
+					text = <"Mebeverine (Colofac)">
+					description = <"">
+				>
+				["at0227"] = <
+					text = <"Meropenem">
+					description = <"">
+				>
+				["at0228"] = <
+					text = <"Metal, patient unsure of name">
+					description = <"">
+				>
+				["at0229"] = <
+					text = <"Metformin">
+					description = <"">
+				>
+				["at0230"] = <
+					text = <"Metoclopramide">
+					description = <"">
+				>
+				["at0231"] = <
+					text = <"Metronidazole">
+					description = <"">
+				>
+				["at0232"] = <
+					text = <"Midazolam">
+					description = <"">
+				>
+				["at0233"] = <
+					text = <"Morphine">
+					description = <"">
+				>
+				["at0234"] = <
+					text = <"Naproxen">
+					description = <"">
+				>
+				["at0235"] = <
+					text = <"Nefazodone">
+					description = <"">
+				>
+				["at0236"] = <
+					text = <"Nickel">
+					description = <"">
+				>
+				["at0237"] = <
+					text = <"Nicorandil">
+					description = <"">
+				>
+				["at0238"] = <
+					text = <"Nifedipine (Adalat retard)">
+					description = <"">
+				>
+				["at0239"] = <
+					text = <"Nitrofurantoin">
+					description = <"">
+				>
+				["at0240"] = <
+					text = <"Nortriptyline">
+					description = <"">
+				>
+				["at0241"] = <
+					text = <"NSAIDS (eg, Voltarol, Ibuprofen)">
+					description = <"">
+				>
+				["at0242"] = <
+					text = <"Omeprazole">
+					description = <"">
+				>
+				["at0243"] = <
+					text = <"Ondansetron (Zofran)">
+					description = <"">
+				>
+				["at0244"] = <
+					text = <"Opiates">
+					description = <"">
+				>
+				["at0245"] = <
+					text = <"Oxaliplatin">
+					description = <"">
+				>
+				["at0246"] = <
+					text = <"Oxycodone (Oxycontin)">
+					description = <"">
+				>
+				["at0247"] = <
+					text = <"Oxytetracycline">
+					description = <"">
+				>
+				["at0248"] = <
+					text = <"Pain patches, patient unsure of name">
+					description = <"">
+				>
+				["at0249"] = <
+					text = <"Paracetamol">
+					description = <"">
+				>
+				["at0250"] = <
+					text = <"Pegaspargase (Oncospar)">
+					description = <"">
+				>
+				["at0251"] = <
+					text = <"Penicillin (eg, Ampicillin, Augmentin)">
+					description = <"">
+				>
+				["at0252"] = <
+					text = <"Perindopril">
+					description = <"">
+				>
+				["at0253"] = <
+					text = <"Pethidine">
+					description = <"">
+				>
+				["at0254"] = <
+					text = <"Phenytoin">
+					description = <"">
+				>
+				["at0255"] = <
+					text = <"Piriton">
+					description = <"">
+				>
+				["at0256"] = <
+					text = <"Piroxicam">
+					description = <"">
+				>
+				["at0257"] = <
+					text = <"Pravastatin">
+					description = <"">
+				>
+				["at0258"] = <
+					text = <"Prednisolone">
+					description = <"">
+				>
+				["at0259"] = <
+					text = <"Pregabalin">
+					description = <"">
+				>
+				["at0260"] = <
+					text = <"Propanalol">
+					description = <"">
+				>
+				["at0261"] = <
+					text = <"Propofol (Diprivan)">
+					description = <"">
+				>
+				["at0262"] = <
+					text = <"Quetiapine">
+					description = <"">
+				>
+				["at0263"] = <
+					text = <"Quinine">
+					description = <"">
+				>
+				["at0264"] = <
+					text = <"Ramipril">
+					description = <"">
+				>
+				["at0265"] = <
+					text = <"Ranitidine">
+					description = <"">
+				>
+				["at0266"] = <
+					text = <"Rivaroxaban (Xarelto)">
+					description = <"">
+				>
+				["at0267"] = <
+					text = <"Rizatriptan">
+					description = <"">
+				>
+				["at0268"] = <
+					text = <"Rosuvastatin">
+					description = <"">
+				>
+				["at0269"] = <
+					text = <"Salbutamol (Ventolin)">
+					description = <"">
+				>
+				["at0270"] = <
+					text = <"Salicylates">
+					description = <"">
+				>
+				["at0271"] = <
+					text = <"Sando-k">
+					description = <"">
+				>
+				["at0272"] = <
+					text = <"Sertraline">
+					description = <"">
+				>
+				["at0273"] = <
+					text = <"Simvastatin">
+					description = <"">
+				>
+				["at0274"] = <
+					text = <"Skin, base metals">
+					description = <"">
+				>
+				["at0275"] = <
+					text = <"Skin, cat gut sutures">
+					description = <"">
+				>
+				["at0276"] = <
+					text = <"Skin, coloured toilet paper">
+					description = <"">
+				>
+				["at0277"] = <
+					text = <"Skin, cotton wool">
+					description = <"">
+				>
+				["at0278"] = <
+					text = <"Skin, E45 cream">
+					description = <"">
+				>
+				["at0279"] = <
+					text = <"Skin, essential oil">
+					description = <"">
+				>
+				["at0280"] = <
+					text = <"Skin, hair dye">
+					description = <"">
+				>
+				["at0281"] = <
+					text = <"Skin, lanolin">
+					description = <"">
+				>
+				["at0282"] = <
+					text = <"Skin, lipstick">
+					description = <"">
+				>
+				["at0283"] = <
+					text = <"Skin, Methylisothiazolinone">
+					description = <"">
+				>
+				["at0284"] = <
+					text = <"Skin, nickel">
+					description = <"">
+				>
+				["at0285"] = <
+					text = <"Skin, plastic">
+					description = <"">
+				>
+				["at0286"] = <
+					text = <"Skin, rubber">
+					description = <"">
+				>
+				["at0287"] = <
+					text = <"Skin, soap powder">
+					description = <"">
+				>
+				["at0288"] = <
+					text = <"Skin, soaps">
+					description = <"">
+				>
+				["at0289"] = <
+					text = <"Skin, sunscreen">
+					description = <"">
+				>
+				["at0290"] = <
+					text = <"Skin, synthetic fibres">
+					description = <"">
+				>
+				["at0291"] = <
+					text = <"Skin, titanium">
+					description = <"">
+				>
+				["at0292"] = <
+					text = <"Skin, Vaseline">
+					description = <"">
+				>
+				["at0293"] = <
+					text = <"SSRIs">
+					description = <"">
+				>
+				["at0294"] = <
+					text = <"Statin, patient unsure of name">
+					description = <"">
+				>
+				["at0295"] = <
+					text = <"Statins">
+					description = <"">
+				>
+				["at0296"] = <
+					text = <"Stemetil">
+					description = <"">
+				>
+				["at0297"] = <
+					text = <"Steroids">
+					description = <"">
+				>
+				["at0298"] = <
+					text = <"Streptomycin">
+					description = <"">
+				>
+				["at0299"] = <
+					text = <"Sudafed">
+					description = <"">
+				>
+				["at0300"] = <
+					text = <"Sulfonamide drugs (sulphates)">
+					description = <"">
+				>
+				["at0301"] = <
+					text = <"Sumatriptan">
+					description = <"">
+				>
+				["at0302"] = <
+					text = <"Suxamethonium">
+					description = <"">
+				>
+				["at0303"] = <
+					text = <"Tamsulosin">
+					description = <"">
+				>
+				["at0304"] = <
+					text = <"Tazocin">
+					description = <"">
+				>
+				["at0305"] = <
+					text = <"Teicoplanin">
+					description = <"">
+				>
+				["at0306"] = <
+					text = <"Temazepam">
+					description = <"">
+				>
+				["at0307"] = <
+					text = <"Tetanus vaccine">
+					description = <"">
+				>
+				["at0308"] = <
+					text = <"Tetracycline">
+					description = <"">
+				>
+				["at0309"] = <
+					text = <"Thiazides">
+					description = <"">
+				>
+				["at0310"] = <
+					text = <"Tramadol">
+					description = <"">
+				>
+				["at0311"] = <
+					text = <"Tricyclic antidepressants">
+					description = <"">
+				>
+				["at0312"] = <
+					text = <"Trimethoprim and Sulfamethoxazole (Bactrim)">
+					description = <"">
+				>
+				["at0313"] = <
+					text = <"Trimethoprim">
+					description = <"">
+				>
+				["at0314"] = <
+					text = <"Triptans">
+					description = <"">
+				>
+				["at0315"] = <
+					text = <"Vancomycin">
+					description = <"">
+				>
+				["at0316"] = <
+					text = <"Warfarin">
+					description = <"">
+				>
+				["at0317"] = <
+					text = <"Wasp stings">
+					description = <"">
+				>
+				["at0318"] = <
+					text = <"Zinc">
+					description = <"">
+				>
+				["at0319"] = <
+					text = <"Zoledronic acid">
+					description = <"">
+				>
+				["at0320"] = <
+					text = <"Zolmitriptan">
+					description = <"">
+				>
+				["at0321"] = <
+					text = <"Zomorph">
+					description = <"">
+				>
+				["at0322"] = <
+					text = <"Zopiclone">
+					description = <"">
+				>
+				["at0323"] = <
+					text = <"Abiraterone (Zytiga)">
+					description = <"">
+				>
+				["at0324"] = <
+					text = <"Afatinib c (Giotrif)">
+					description = <"">
+				>
+				["at0325"] = <
+					text = <"Aflibercept (Zaltrap)">
+					description = <"">
+				>
+				["at0326"] = <
+					text = <"Aldesleukin (Proleukin)">
+					description = <"">
+				>
+				["at0327"] = <
+					text = <"Alemtuzumab (Lemtrada)">
+					description = <"">
+				>
+				["at0328"] = <
+					text = <"Amsacrine (Amsidine)">
+					description = <"">
+				>
+				["at0329"] = <
+					text = <"Anastrozole (Arimidex)">
+					description = <"">
+				>
+				["at0330"] = <
+					text = <"Arsenic trioxide (Trisenox)">
+					description = <"">
+				>
+				["at0331"] = <
+					text = <"Asparaginase (Erwinase, Crisantaspase)">
+					description = <"">
+				>
+				["at0332"] = <
+					text = <"Axitinib (Inlyta)">
+					description = <"">
+				>
+				["at0333"] = <
+					text = <"Azacitidine (Vidaza)">
+					description = <"">
+				>
+				["at0334"] = <
+					text = <"Bevacizumab (Avastin)">
+					description = <"">
+				>
+				["at0335"] = <
+					text = <"Bexarotene (Targretin)">
+					description = <"">
+				>
+				["at0336"] = <
+					text = <"Bicalutamide (Casodex)">
+					description = <"">
+				>
+				["at0337"] = <
+					text = <"Bortezomib (Velcade)">
+					description = <"">
+				>
+				["at0338"] = <
+					text = <"Bosutinib (Bosulif)">
+					description = <"">
+				>
+				["at0339"] = <
+					text = <"Brentuximab (Adcetris)">
+					description = <"">
+				>
+				["at0340"] = <
+					text = <"Brostallicin">
+					description = <"">
+				>
+				["at0341"] = <
+					text = <"Busulfan (Busilvex, Myleran)">
+					description = <"">
+				>
+				["at0342"] = <
+					text = <"Cabazitaxel (Jevtana)">
+					description = <"">
+				>
+				["at0343"] = <
+					text = <"Cabozantinib (Cometriq)">
+					description = <"">
+				>
+				["at0344"] = <
+					text = <"Carmustine (BiCNU)">
+					description = <"">
+				>
+				["at0345"] = <
+					text = <"Catumaxomab (Removab)">
+					description = <"">
+				>
+				["at0346"] = <
+					text = <"Cedaranib (Recentin, AZD2171)">
+					description = <"">
+				>
+				["at0347"] = <
+					text = <"Chlorambucil (Leukeran)">
+					description = <"">
+				>
+				["at0348"] = <
+					text = <"Cisplatin">
+					description = <"">
+				>
+				["at0349"] = <
+					text = <"Cladribine (Leustat, LITAK)">
+					description = <"">
+				>
+				["at0350"] = <
+					text = <"Clofarabine (Evoltra)">
+					description = <"">
+				>
+				["at0351"] = <
+					text = <"Crizotinib (Xalkori)">
+					description = <"">
+				>
+				["at0352"] = <
+					text = <"Cyclophosphamide">
+					description = <"">
+				>
+				["at0353"] = <
+					text = <"Cyproterone (Cyprostat)">
+					description = <"">
+				>
+				["at0354"] = <
+					text = <"Cytarabine (Ara C, cytosine arabinoside)">
+					description = <"">
+				>
+				["at0355"] = <
+					text = <"Dabrafenib (Tafinlar)">
+					description = <"">
+				>
+				["at0356"] = <
+					text = <"Dacarbazine (DTIC)">
+					description = <"">
+				>
+				["at0357"] = <
+					text = <"Dactinomycin (Cosmegen Lyovac)">
+					description = <"">
+				>
+				["at0358"] = <
+					text = <"Dasatinib (Sprycel)">
+					description = <"">
+				>
+				["at0359"] = <
+					text = <"Daunorubicin (Cerubidin)">
+					description = <"">
+				>
+				["at0360"] = <
+					text = <"Decitabine (Dacogen)">
+					description = <"">
+				>
+				["at0361"] = <
+					text = <"Degarelix (Firmagon)">
+					description = <"">
+				>
+				["at0362"] = <
+					text = <"Denosumab (Prolia, Xgeva)">
+					description = <"">
+				>
+				["at0363"] = <
+					text = <"Diethylstilbestrol (Stilboestrol)">
+					description = <"">
+				>
+				["at0364"] = <
+					text = <"Doxorubicin (Adriamycin)">
+					description = <"">
+				>
+				["at0365"] = <
+					text = <"Enzalutamide (Xtandi)">
+					description = <"">
+				>
+				["at0366"] = <
+					text = <"Epirubicin (Pharmorubicin)">
+					description = <"">
+				>
+				["at0367"] = <
+					text = <"Eribulin (Halaven)">
+					description = <"">
+				>
+				["at0368"] = <
+					text = <"Erlotinib (Tarceva)">
+					description = <"">
+				>
+				["at0369"] = <
+					text = <"Estramustine (Estracyt)">
+					description = <"">
+				>
+				["at0370"] = <
+					text = <"Etoposide">
+					description = <"">
+				>
+				["at0371"] = <
+					text = <"Everolimus (Afinitor)">
+					description = <"">
+				>
+				["at0372"] = <
+					text = <"Exemestane (Aromasin)">
+					description = <"">
+				>
+				["at0373"] = <
+					text = <"Fludarabine (Fludara)">
+					description = <"">
+				>
+				["at0374"] = <
+					text = <"Flutamide (Drogenil)">
+					description = <"">
+				>
+				["at0375"] = <
+					text = <"Folfirinox">
+					description = <"">
+				>
+				["at0376"] = <
+					text = <"Fulvestrant (Faslodex)">
+					description = <"">
+				>
+				["at0377"] = <
+					text = <"Gefitinib (Iressa)">
+					description = <"">
+				>
+				["at0378"] = <
+					text = <"Gemcitabine (Gemzar)">
+					description = <"">
+				>
+				["at0379"] = <
+					text = <"Goserelin (Zoladex)">
+					description = <"">
+				>
+				["at0380"] = <
+					text = <"Histamine Dihydrochloride (Ceplene)">
+					description = <"">
+				>
+				["at0381"] = <
+					text = <"Hydroxycarbamide (Hydrea, hydroxyurea)">
+					description = <"">
+				>
+				["at0382"] = <
+					text = <"Ibrutinib (Imbruvica)">
+					description = <"">
+				>
+				["at0383"] = <
+					text = <"Idarubicin (Zavedos)">
+					description = <"">
+				>
+				["at0384"] = <
+					text = <"Idelalisib (Zydelig)">
+					description = <"">
+				>
+				["at0385"] = <
+					text = <"Ifosfamide (Mitoxana)">
+					description = <"">
+				>
+				["at0386"] = <
+					text = <"Imatinib (Glivec)">
+					description = <"">
+				>
+				["at0387"] = <
+					text = <"Ipilimumab (Yervoy)">
+					description = <"">
+				>
+				["at0388"] = <
+					text = <"Lanreotide (Somatuline Depot Injection)">
+					description = <"">
+				>
+				["at0389"] = <
+					text = <"Lapatinib (Tyverb)">
+					description = <"">
+				>
+				["at0390"] = <
+					text = <"Lenalidomide (Revlimid)">
+					description = <"">
+				>
+				["at0391"] = <
+					text = <"Letrazole (Femara)">
+					description = <"">
+				>
+				["at0392"] = <
+					text = <"Leuprorelin (Prostap, Lutrate)">
+					description = <"">
+				>
+				["at0393"] = <
+					text = <"Liposomal doxorubicin (Caelyx, Myocet, Doxil)">
+					description = <"">
+				>
+				["at0394"] = <
+					text = <"Lomustine (CCNU)">
+					description = <"">
+				>
+				["at0395"] = <
+					text = <"Medroxyprogesterone (Provera)">
+					description = <"">
+				>
+				["at0396"] = <
+					text = <"Megesterol acetate (Megace)">
+					description = <"">
+				>
+				["at0397"] = <
+					text = <"Melphalan (Alkeran)">
+					description = <"">
+				>
+				["at0398"] = <
+					text = <"Mercaptopurine (Xaluprine)">
+					description = <"">
+				>
+				["at0399"] = <
+					text = <"Methotrexate (Maxtrex)">
+					description = <"">
+				>
+				["at0400"] = <
+					text = <"Mifamurtide (Mepact)">
+					description = <"">
+				>
+				["at0401"] = <
+					text = <"Mitomycin (Mitomycin C Kyowa)">
+					description = <"">
+				>
+				["at0402"] = <
+					text = <"Mitotane (Lysodren)">
+					description = <"">
+				>
+				["at0403"] = <
+					text = <"Mitoxantrone (Mitozantrone)">
+					description = <"">
+				>
+				["at0404"] = <
+					text = <"Nelarabine (Atriance)">
+					description = <"">
+				>
+				["at0405"] = <
+					text = <"Nilotinib (Tasigna)">
+					description = <"">
+				>
+				["at0406"] = <
+					text = <"Nivolumab (Opdivo)">
+					description = <"">
+				>
+				["at0407"] = <
+					text = <"Obinutuzumab (Gazyvaro)">
+					description = <"">
+				>
+				["at0408"] = <
+					text = <"Octreotide (Sandostatin)">
+					description = <"">
+				>
+				["at0409"] = <
+					text = <"Ofatumumab (Arzerra)">
+					description = <"">
+				>
+				["at0410"] = <
+					text = <"Paclitaxel (Taxol)">
+					description = <"">
+				>
+				["at0411"] = <
+					text = <"Paclitaxel albumin (Abraxane)">
+					description = <"">
+				>
+				["at0412"] = <
+					text = <"Panitumumab (Vectibix)">
+					description = <"">
+				>
+				["at0413"] = <
+					text = <"Pasireotide (Signifor)">
+					description = <"">
+				>
+				["at0414"] = <
+					text = <"Pazopanib (Votrient)">
+					description = <"">
+				>
+				["at0415"] = <
+					text = <"Pembrolizumab (Keytruda)">
+					description = <"">
+				>
+				["at0416"] = <
+					text = <"Pemetrexed (Alimta)">
+					description = <"">
+				>
+				["at0417"] = <
+					text = <"Pentostatin (Nipent)">
+					description = <"">
+				>
+				["at0418"] = <
+					text = <"Pertuzumab (Perjeta)">
+					description = <"">
+				>
+				["at0419"] = <
+					text = <"Pixantrone (Pixuvri)">
+					description = <"">
+				>
+				["at0420"] = <
+					text = <"Platinum">
+					description = <"">
+				>
+				["at0421"] = <
+					text = <"Pomalidomide (Imnovid)">
+					description = <"">
+				>
+				["at0422"] = <
+					text = <"Ponatinib (Iclusig)">
+					description = <"">
+				>
+				["at0423"] = <
+					text = <"Porfimer (Photofrin)">
+					description = <"">
+				>
+				["at0424"] = <
+					text = <"Procarbazine (Matulane)">
+					description = <"">
+				>
+				["at0425"] = <
+					text = <"Raltitrexed (Tomudex)">
+					description = <"">
+				>
+				["at0426"] = <
+					text = <"Reorafenib (Stivarga)">
+					description = <"">
+				>
+				["at0427"] = <
+					text = <"Rituximab">
+					description = <"">
+				>
+				["at0428"] = <
+					text = <"Ruxolitinib (Jakavi)">
+					description = <"">
+				>
+				["at0429"] = <
+					text = <"Siltuximab (Sylvant)">
+					description = <"">
+				>
+				["at0430"] = <
+					text = <"Sorafenib (Nexavar)">
+					description = <"">
+				>
+				["at0431"] = <
+					text = <"Streptozotocin (Zanosar)">
+					description = <"">
+				>
+				["at0432"] = <
+					text = <"Sunitinib (Sutent)">
+					description = <"">
+				>
+				["at0433"] = <
+					text = <"Tamoxifen">
+					description = <"">
+				>
+				["at0434"] = <
+					text = <"Tegafur/uracil (Uftoral)">
+					description = <"">
+				>
+				["at0435"] = <
+					text = <"Tegafur">
+					description = <"">
+				>
+				["at0436"] = <
+					text = <"Temoporfin (Foscan)">
+					description = <"">
+				>
+				["at0437"] = <
+					text = <"Temozolamide (Temodal)">
+					description = <"">
+				>
+				["at0438"] = <
+					text = <"Temsirolimus (Torisel)">
+					description = <"">
+				>
+				["at0439"] = <
+					text = <"Thalidomide (Thalidomid)">
+					description = <"">
+				>
+				["at0440"] = <
+					text = <"Thiotepa (Tepadina)">
+					description = <"">
+				>
+				["at0441"] = <
+					text = <"Tioguanine (Ianvis)">
+					description = <"">
+				>
+				["at0442"] = <
+					text = <"Topotecan (Hycamtin)">
+					description = <"">
+				>
+				["at0443"] = <
+					text = <"Toremifene (Fareston)">
+					description = <"">
+				>
+				["at0444"] = <
+					text = <"Trabectedin (Yondelis)">
+					description = <"">
+				>
+				["at0445"] = <
+					text = <"Trastuzumab (Herceptin)">
+					description = <"">
+				>
+				["at0446"] = <
+					text = <"Trastuzumab emtansine (Kadcyla)">
+					description = <"">
+				>
+				["at0447"] = <
+					text = <"Treosulfan">
+					description = <"">
+				>
+				["at0448"] = <
+					text = <"Tretinoin (Vesanoid, ATRA)">
+					description = <"">
+				>
+				["at0449"] = <
+					text = <"Triptorelin (Decapeptyl SR, Gonapeptyl Depot)">
+					description = <"">
+				>
+				["at0450"] = <
+					text = <"Vandetanib (Caprelsa)">
+					description = <"">
+				>
+				["at0451"] = <
+					text = <"Vemurafenib (Zelboraf)">
+					description = <"">
+				>
+				["at0452"] = <
+					text = <"Vinblastine (Velbe)">
+					description = <"">
+				>
+				["at0453"] = <
+					text = <"Vincristine (Oncovin)">
+					description = <"">
+				>
+				["at0454"] = <
+					text = <"Vindesine (Eldisine)">
+					description = <"">
+				>
+				["at0455"] = <
+					text = <"Vinflunine (Javlor)">
+					description = <"">
+				>
+				["at0456"] = <
+					text = <"Vinorelbine (Navelbine)">
+					description = <"">
+				>
+				["at0457"] = <
+					text = <"Vismodegib (Erivedge)">
+					description = <"">
+				>
+				["at0458"] = <
+					text = <"Zoledronate (Zometa)">
+					description = <"">
+				>
+			>
+		>
+	>
