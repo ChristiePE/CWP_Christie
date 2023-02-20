@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.2.0",
+      "sem_ver" : "1.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "43ef2bcb47af4ac7e539d96e85defd51",
+      "MD5-CAM-1.0.1" : "a16bb20394cb9d669656d50f6bd9dfd3",
       "PARENT:MD5-CAM-1.0.1" : "2A1D6E9F20099A022F8E0473B6A3C598"
     },
     "details" : {
@@ -156,7 +156,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "B4483042E23D5CD00F74356FBF609CA1"
+        "PARENT:MD5-CAM-1.0.1" : "5e6c968fd83e23207ac55d9ff0e34b54"
       },
       "details" : {
         "nb" : {
@@ -232,9 +232,6 @@
           "/data[at0001]/items[at0009]" : {
             "source" : "openEHR,FHIR,DAM"
           },
-          "/data[at0001]/items[at0002]" : {
-            "source" : "openEHR,FHIR,DAM"
-          },
           "/data[at0001]/items[at0101]" : {
             "source" : "DAM, openEHR"
           },
@@ -294,14 +291,17 @@
           },
           "/data[at0001]/items[at0009]/items[at0010.1]" : {
             "source" : "FHIR, openEHR,DAM"
+          },
+          "/data[at0001]/items[at0002.1]" : {
+            "source" : "openEHR,FHIR,DAM"
           }
         },
         "pt-br" : {
-          "/data[at0001]/items[at0002]" : {
-            "source" : "*openEHR,FHIR,DAM(en)"
-          },
           "/data[at0001]/items[at0009]/items[at0010.1]" : {
             "source" : "*FHIR, openEHR,DAM(en)"
+          },
+          "/data[at0001]/items[at0002.1]" : {
+            "source" : "*openEHR,FHIR,DAM(en)"
           }
         },
         "nb" : { }
@@ -329,6 +329,12 @@
             "rmAttributeName" : "items",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
               "nodeId" : "at0009",
               "attributes" : [ {
@@ -337,7 +343,6 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
-                  "occurrences" : "1..1",
                   "nodeId" : "at0010.1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
