@@ -16,7 +16,7 @@
     "references" : { },
     "conversionDetails" : { },
     "otherDetails" : {
-      "MD5-CAM-1.0.1" : "fbef6f11a92e9c6cbf8ef1c609ffec7e",
+      "MD5-CAM-1.0.1" : "f499738f496948be02275dc2434a1b1a",
       "build_uid" : "a3cc714d-b817-4146-bf39-f0b8517efec1",
       "sem_ver" : "2.0.0",
       "PARENT:MD5-CAM-1.0.1" : "2A1D6E9F20099A022F8E0473B6A3C598"
@@ -294,18 +294,6 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "XDS Metadata",
-            "description" : "Additional composition metadata aligned with IHE-XDS which is not already available from the Reference Model COMPOSITION class."
-          },
-          "at0010" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0010",
-            "text" : "Document_media",
-            "description" : "Additional metadata about the document itself, including size, url."
-          },
           "at0010.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0010",
@@ -1174,6 +1162,12 @@
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
                 }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0032.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
                   "@type" : "C_ARCHETYPE_ROOT",
                   "rmTypeName" : "CLUSTER",
                   "occurrences" : "0..*",
@@ -1182,12 +1176,6 @@
                   "attributeTuples" : [ ],
                   "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-record_provenance-001.v1",
                   "referenceType" : "archetypeOverlay"
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "nodeId" : "at0032.1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -1206,15 +1194,6 @@
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
             "children" : [ {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..*",
-              "nodeId" : "at0128.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-record_provenance-002.v1",
-              "referenceType" : "archetypeOverlay"
-            }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0047.1",
@@ -1232,6 +1211,15 @@
               "nodeId" : "at0099.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..*",
+              "nodeId" : "at0128.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-record_provenance-002.v1",
+              "referenceType" : "archetypeOverlay"
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -1667,12 +1655,6 @@
             "code" : "at0000.1",
             "text" : "Empty list info",
             "description" : "A generic section header."
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Ad hoc heading",
-            "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
           }
         },
         "sl" : {
@@ -1684,12 +1666,6 @@
           }
         },
         "ru" : {
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "заготовка заголовка",
-            "description" : "Образец заголовка раздела"
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000",
@@ -1698,12 +1674,6 @@
           }
         },
         "es-ar" : {
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Encabezado ad hoc",
-            "description" : "Un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico."
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000",
@@ -1712,12 +1682,6 @@
           }
         },
         "nb" : {
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Templat-overskrift",
-            "description" : "En generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst."
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000",
@@ -1726,12 +1690,6 @@
           }
         },
         "pt-br" : {
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Cabeçalho Ad hoc",
-            "description" : "Um cabeçalho de sessão genérico que deve ser renomeado no template para adequar-se a um contexto clínico específico."
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000",
@@ -1740,12 +1698,6 @@
           }
         },
         "sv" : {
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Rubrik",
-            "description" : "En allmän avsnittsrubrik som döps om i en openEHR-mall för att passa in i en specifik klinisk kontext."
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000",
@@ -1754,12 +1706,6 @@
           }
         },
         "de" : {
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Ad hoc Überschrift",
-            "description" : "Eine generische Abschnittsüberschrift eines Templates, welche entsprechend dem spezifischen klinischen Kontext umbenannt werden sollte."
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000",
@@ -2889,7 +2835,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "85c047b6acc65c11267afa32e33aa36d"
+        "PARENT:MD5-CAM-1.0.1" : "dcafcd240776e4b2d9ed1aed6eff524a"
       },
       "details" : {
         "nb" : {
@@ -3087,60 +3033,6 @@
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "1..1",
-              "nodeId" : "at0129.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "existence" : "0..1",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "occurrences" : "1..1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "1..1",
-              "nodeId" : "at0130.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "existence" : "0..1",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "occurrences" : "1..1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "1..1",
-              "nodeId" : "at0131.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "existence" : "0..1",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "occurrences" : "1..1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
               "occurrences" : "0..1",
               "nodeId" : "at0009.1",
@@ -3215,24 +3107,6 @@
             "code" : "at0131",
             "text" : "Author of the removal",
             "description" : ""
-          },
-          "at0131.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0131",
-            "text" : "Author of the removal",
-            "description" : ""
-          },
-          "at0130.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0130",
-            "text" : "Date time of removal",
-            "description" : ""
-          },
-          "at0129.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0129",
-            "text" : "Reason of removal",
-            "description" : ""
           }
         },
         "pt-br" : {
@@ -3259,24 +3133,6 @@
             "code" : "at0131",
             "text" : "*Author of the removal (en)",
             "description" : ""
-          },
-          "at0131.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0131",
-            "text" : "*Author of the removal (en)",
-            "description" : ""
-          },
-          "at0130.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0130",
-            "text" : "*Date time of removal (en)",
-            "description" : ""
-          },
-          "at0129.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0129",
-            "text" : "*Reason of removal (en)",
-            "description" : ""
           }
         },
         "nb" : {
@@ -3302,24 +3158,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0131",
             "text" : "*Author of the removal (en)",
-            "description" : ""
-          },
-          "at0131.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0131",
-            "text" : "*Author of the removal (en)",
-            "description" : ""
-          },
-          "at0130.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0130",
-            "text" : "*Date time of removal (en)",
-            "description" : ""
-          },
-          "at0129.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0129",
-            "text" : "*Reason of removal (en)",
             "description" : ""
           }
         }
@@ -3658,7 +3496,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "329f7bd85c5c360afc2959db085122c5"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.allergies_list.v0",
     "differential" : true,
