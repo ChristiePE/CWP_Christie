@@ -1,0 +1,405 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "903097b4-5bf4-4185-a033-bd918cdf4745",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2023-02-20"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "",
+      "custodian_organisation" : "",
+      "original_namespace" : "",
+      "original_publisher" : "",
+      "custodian_namespace" : "",
+      "sem_ver" : "0.1.0",
+      "build_uid" : "",
+      "MD5-CAM-1.0.1" : "0d45ae903479e954acb0562f6f7b3a67",
+      "PARENT:MD5-CAM-1.0.1" : "2A1D6E9F20099A022F8E0473B6A3C598"
+    },
+    "details" : {
+      "es-ar" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es-ar"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "pt-br" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt-br"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-COMPOSITION.adverse_reaction_list.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-COMPOSITION.t_adverse_reaction_list.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "COMPOSITION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "context",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "EVENT_CONTEXT",
+        "attributes" : [ ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "content",
+      "existence" : "0..1",
+      "cardinality" : {
+        "@type" : "CARDINALITY",
+        "interval" : "1..*",
+        "ordered" : false,
+        "unique" : false
+      },
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.2",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-adverse_reaction_risk-001.v1",
+        "referenceType" : "archetypeOverlay"
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Adverse Reaction List",
+          "description" : "A persistent and managed list of adverse reactions experienced by the subject that may influence clinical decision-making and care provision."
+        }
+      },
+      "es-ar" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Adverse Reaction List",
+          "description" : "Una lista persistente y administrad de las reacciones adversas expermientadas por el sujeto y que puedan influenciar la toma de decisiones clínicas o la provisión de cuidados."
+        }
+      },
+      "pt-br" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Adverse Reaction List",
+          "description" : "Uma lista permanente e gerenciável de reações adversas experimentadas pelo indivíduo que podem influenciar a tomada de decisões clínicas e provisão de cuidado."
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "fc2fd2f4-caa5-3c1e-b00d-13abedf552bc",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "Adverse Reaction List",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "226af9d9-2468-4dd6-bb64-f880f38de637",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "B4483042E23D5CD00F74356FBF609CA1"
+      },
+      "details" : { }
+    },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : {
+          "" : {
+            "source" : "openEHR,FHIR"
+          },
+          "/data[at0001]/items[at0009]/items[at0032]" : {
+            "source" : "openEHR"
+          },
+          "/data[at0001]/items[at0009]/items[at0012]" : {
+            "source" : "FHIR, openEHR"
+          },
+          "/protocol[at0042]/items[at0047]" : {
+            "source" : "FHIR, openEHR, DAM"
+          },
+          "/data[at0001]/items[at0009]/items[at0028]" : {
+            "source" : "openEHR"
+          },
+          "/data[at0001]/items[at0009]/items[at0018]" : {
+            "source" : "openEHR"
+          },
+          "/data[at0001]/items[at0009]" : {
+            "source" : "openEHR,FHIR,DAM"
+          },
+          "/data[at0001]/items[at0002]" : {
+            "source" : "openEHR,FHIR,DAM"
+          },
+          "/data[at0001]/items[at0101]" : {
+            "source" : "DAM, openEHR"
+          },
+          "/data[at0001]/items[at0058]" : {
+            "source" : "FHIR, DAM"
+          },
+          "/data[at0001]/items[at0006]" : {
+            "source" : "openEHR"
+          },
+          "/data[at0001]/items[at0117]" : {
+            "source" : "IMH"
+          },
+          "/protocol[at0042]/items[at0099]/items[at0048]" : {
+            "source" : "openEHR"
+          },
+          "/data[at0001]/items[at0009]/items[at0041]" : {
+            "source" : "FHIR, openEHR"
+          },
+          "/data[at0001]/items[at0009]/items[at0011]" : {
+            "source" : "FHIR, openEHR,DAM"
+          },
+          "/data[at0001]/items[at0009]/items[at0021]" : {
+            "source" : "FHIR"
+          },
+          "/data[at0001]/items[at0009]/items[at0089]" : {
+            "source" : "DAM"
+          },
+          "/data[at0001]/items[at0009]/items[at0025]" : {
+            "source" : "openEHR"
+          },
+          "/data[at0001]/items[at0009]/items[at0027]" : {
+            "source" : "openEHR, FHIR, DAM"
+          },
+          "/data[at0001]/items[at0009]/items[at0029]" : {
+            "source" : "FHIR, openEHR"
+          },
+          "/data[at0001]/items[at0009]/items[at0106]" : {
+            "source" : "FHIR, DAM"
+          },
+          "/protocol[at0042]/items[at0062]" : {
+            "source" : "openEHR, FHIR, DAM"
+          },
+          "/protocol[at0042]/items[at0044]" : {
+            "source" : "openEHR"
+          },
+          "/protocol[at0042]/items[at0099]/items[at0045]" : {
+            "source" : "openEHR"
+          },
+          "/data[at0001]/items[at0009]/items[at0040]" : {
+            "source" : "openEHR"
+          },
+          "/data[at0001]/items[at0009]/items[at0020]" : {
+            "source" : "FHIR, openEHR,DAM"
+          },
+          "/data[at0001]/items[at0063]" : {
+            "source" : "FHIR, DAM"
+          },
+          "/data[at0001]/items[at0009]/items[at0010.1]" : {
+            "source" : "FHIR, openEHR,DAM"
+          }
+        },
+        "pt-br" : {
+          "/data[at0001]/items[at0002]" : {
+            "source" : "*openEHR,FHIR,DAM(en)"
+          },
+          "/data[at0001]/items[at0009]/items[at0010.1]" : {
+            "source" : "*FHIR, openEHR,DAM(en)"
+          }
+        },
+        "nb" : { }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.adverse_reaction_risk.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-adverse_reaction_risk-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "nodeId" : "at0009",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0010.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "rmTypeName" : "STRING",
+                          "constraint" : [ "Citalopram", "ACE inhibitors (ACEI)", "Aciclovir", "Acrylic material (fibres)", "Adrenaline", "Alcohol wipes", "Alendronic acid", "Allopurinol", "Almotriptan", "Aloe vera", "Amitriptyline", "Amlodipine", "Amoxicillin", "Amphotericin B (Abelcet)", "Analgesic, patient unsure of name", "Angiotensin receptor blockers (ARBs)", "Antibiotic, patient unsure of name", "Antidepressant, patient unsure of name", "Antiepileptic, patient unsure of name", "Antihistamines", "Antihypertensive, patient unsure of name", "Anti-inflammatory, patient unsure of name", "Antimalarial, patient unsure of name", "Aprepitant", "Aspirin (Anadin)", "Aspirin (Disprin)", "Aspirin", "Atenolol", "Atorvastatin", "Atropine", "Atrovent inhaler", "Augmentin", "Avitriptan", "Azathioprine", "Azithromycin", "BCG vaccine", "Bee stings", "Bendamustine (Levact)", "Bendroflumethiazide", "Beta-blockers", "Betahistine", "Bisoprolol", "Bisphosphonates", "Bleomycin (Blenoxane)", "Brentuximab (Adcetis)", "Buprenorphine (BuTrans patch)", "Buscopan", "Calcium channel blockers", "Capecitabine (Xeloda)", "Carbamazepine", "Carbimazole (Neo-Mercazole)", "Carboplatin", "Cats", "Cephalexin", "Cephalosporin", "Cetuximab (Erbitux)", "Chemotherapy, patient unsure of name", "Chloramphenicol", "Chlorhexidine wipes", "Chloroquine", "Ciprofloxacin", "Clarithromycin", "Clindamycin", "Co-amoxiclav", "Co-codamol", "Codeine", "Colchicine", "Cortisone", "Co-trimoxazole (Septrin)", "Cyclizine", "Cyclosporine", "Cyproterone acetate", "Dalteparin (Fragmin)", "Dexamethasone", "Diazepam (Valium)", "Diclofenac (Voltarol)", "Difflam", "Digoxin", "Dihydrocodeine", "Dipyridamole (Persantine)", "Docetaxel (Taxotere)", "Dogs", "Domperidone", "Donitriptan", "Doxazosin", "Doxycycline", "Dressings (adhesive)", "Dressings (C-view)", "Dressings (Elastoplast)", "Dressings (gauze)", "Dressings (IV 3000)", "Dressings (Mefix)", "Dressings (Mepores)", "Dressings (Micropore)", "Dressings (Opsite)", "Dressings (plasters)", "Dressings (Tegaderm)", "Dressings (Transpore)", "Dressings (zinc oxide)", "Dressings", "Drug, patient unsure of name", "Duloxetine", "Eletriptan", "Entonox", "Erythromycin", "Eye drops, patient unsure of name", "Fentanyl (Duragesic patch)", "Ferrous sulphate", "Filgrastim (Neupogen, GCSF)", "Fish", "Flu vaccine", "Flucloxacillin", "Fluconazole", "Fluorouracil (5FU)", "Fluvoxamine", "Food colouring (E120 and E102)", "Food colouring", "Food, albumin", "Food, almonds", "Food, apples", "Food, apricots", "Food, asparagus", "Food, avocado", "Food, bananas", "Food, bread", "Food, cactus", "Food, caffeine", "Food, cheese", "Food, cherries", "Food, chickpeas", "Food, chilli", "Food, chocolate", "Food, citric acid", "Food, Coca-Cola", "Food, cockles", "Food, coconut", "Food, crab", "Food, cucumber", "Food, dried fruit", "Food, eggs", "Food, food dye", "Food, garlic", "Food, glucose", "Food, granary bread", "Food, hazelnuts", "Food, kiwifruit", "Food, lime", "Food, milk", "Food, mint", "Food, multiple", "Food, mushrooms", "Food, nuts", "Food, offal", "Food, onion", "Food, oysters", "Food, peanuts", "Food, pears", "Food, peppermint", "Food, pineapple", "Food, pork", "Food, potato", "Food, prawns", "Food, preservatives", "Food, raw mushrooms", "Food, raw tomatoes", "Food, red wine", "Food, sea bass", "Food, seafood", "Food, shellfish", "Food, sodium bicarbonate", "Food, spicey food", "Food, strawberry", "Food, tangerines", "Food, tea", "Food, tomatoes", "Food, tuna", "Food, vegetable oil", "Food, vinegar", "Food, wheat", "Food, whitefish", "Food, yeast", "Fragrance, scent, perfume", "Frovatriptan", "Furosemide", "Gabapentin", "Gaviscon", "G-CSF", "General anaesthetic, patient unsure of name", "Gentamicin", "Gluten", "Halothane", "Hay fever (allergic rhinitis), birds", "Hay fever (allergic rhinitis), dust", "Hay fever (allergic rhinitis), feathers", "Hay fever (allergic rhinitis), grass", "Hay fever (allergic rhinitis), horses", "Hay fever (allergic rhinitis), lilies", "Hay fever (allergic rhinitis), pets", "Hay fever (allergic rhinitis), pollen", "Hay fever (allergic rhinitis), sawdust", "Heparin", "Hibiscrub", "Hibitane", "Hydrocortisone", "Hydroxychloroquine sulphate", "Ibersartan", "Ibuprofen", "Indomethacin (Indocin)", "Iodine", "Irinotecan", "Iron tablets", "IV contrast", "Lactose", "Lansoprazole", "Latex", "Laxido", "Lenograstim (granocyte, GCSF)", "Levofloxacin", "Levomepromazine", "Lidocaine patch", "Lisinopril", "Local anaesthetic, patient unsure of name", "Losartan (Cozaar)", "Mebeverine (Colofac)", "Meropenem", "Metal, patient unsure of name", "Metformin", "Metoclopramide", "Metronidazole", "Midazolam", "Morphine", "Naproxen", "Nefazodone", "Nickel", "Nicorandil", "Nifedipine (Adalat retard)", "Nitrofurantoin", "Nortriptyline", "NSAIDS (eg, Voltarol, Ibuprofen)", "Omeprazole", "Ondansetron (Zofran)", "Opiates", "Oxaliplatin", "Oxycodone (Oxycontin)", "Oxytetracycline", "Pain patches, patient unsure of name", "Paracetamol", "Pegaspargase (Oncospar)", "Penicillin (eg, Ampicillin, Augmentin)", "Perindopril", "Pethidine", "Phenytoin", "Piriton", "Piroxicam", "Pravastatin", "Prednisolone", "Pregabalin", "Propanalol", "Propofol (Diprivan)", "Quetiapine", "Quinine", "Ramipril", "Ranitidine", "Rivaroxaban (Xarelto)", "Rizatriptan", "Rosuvastatin", "Salbutamol (Ventolin)", "Salicylates", "Sando-k", "Sertraline", "Simvastatin", "Skin, base metals", "Skin, cat gut sutures", "Skin, coloured toilet paper", "Skin, cotton wool", "Skin, E45 cream", "Skin, essential oil", "Skin, hair dye", "Skin, lanolin", "Skin, lipstick", "Skin, Methylisothiazolinone", "Skin, nickel", "Skin, plastic", "Skin, rubber", "Skin, soap powder", "Skin, soaps", "Skin, sunscreen", "Skin, synthetic fibres", "Skin, titanium", "Skin, Vaseline", "SSRIs", "Statin, patient unsure of name", "Statins", "Stemetil", "Steroids", "Streptomycin", "Sudafed", "Sulfonamide drugs (sulphates)", "Sumatriptan", "Suxamethonium", "Tamsulosin", "Tazocin", "Teicoplanin", "Temazepam", "Tetanus vaccine", "Tetracycline", "Thiazides", "Tramadol", "Tricyclic antidepressants", "Trimethoprim and Sulfamethoxazole (Bactrim)", "Trimethoprim", "Triptans", "Vancomycin", "Warfarin", "Wasp stings", "Zinc", "Zoledronic acid", "Zolmitriptan", "Zomorph", "Zopiclone", "Abiraterone (Zytiga)", "Afatinib c (Giotrif)", "Aflibercept (Zaltrap)", "Aldesleukin (Proleukin)", "Alemtuzumab (Lemtrada)", "Amsacrine (Amsidine)", "Anastrozole (Arimidex)", "Arsenic trioxide (Trisenox)", "Asparaginase (Erwinase, Crisantaspase)", "Axitinib (Inlyta)", "Azacitidine (Vidaza)", "Bevacizumab (Avastin)", "Bexarotene (Targretin)", "Bicalutamide (Casodex)", "Bortezomib (Velcade)", "Bosutinib (Bosulif)", "Brentuximab (Adcetris)", "Brostallicin", "Busulfan (Busilvex, Myleran)", "Cabazitaxel (Jevtana)", "Cabozantinib (Cometriq)", "Carmustine (BiCNU)", "Catumaxomab (Removab)", "Cedaranib (Recentin, AZD2171)", "Chlorambucil (Leukeran)", "Cisplatin", "Cladribine (Leustat, LITAK)", "Clofarabine (Evoltra)", "Crizotinib (Xalkori)", "Cyclophosphamide", "Cyproterone (Cyprostat)", "Cytarabine (Ara C, cytosine arabinoside)", "Dabrafenib (Tafinlar)", "Dacarbazine (DTIC)", "Dactinomycin (Cosmegen Lyovac)", "Dasatinib (Sprycel)", "Daunorubicin (Cerubidin)", "Decitabine (Dacogen)", "Degarelix (Firmagon)", "Denosumab (Prolia, Xgeva)", "Diethylstilbestrol (Stilboestrol)", "Doxorubicin (Adriamycin)", "Enzalutamide (Xtandi)", "Epirubicin (Pharmorubicin)", "Eribulin (Halaven)", "Erlotinib (Tarceva)", "Estramustine (Estracyt)", "Etoposide", "Everolimus (Afinitor)", "Exemestane (Aromasin)", "Fludarabine (Fludara)", "Flutamide (Drogenil)", "Folfirinox", "Fulvestrant (Faslodex)", "Gefitinib (Iressa)", "Gemcitabine (Gemzar)", "Goserelin (Zoladex)", "Histamine Dihydrochloride (Ceplene)", "Hydroxycarbamide (Hydrea, hydroxyurea)", "Ibrutinib (Imbruvica)", "Idarubicin (Zavedos)", "Idelalisib (Zydelig)", "Ifosfamide (Mitoxana)", "Imatinib (Glivec)", "Ipilimumab (Yervoy)", "Lanreotide (Somatuline Depot Injection)", "Lapatinib (Tyverb)", "Lenalidomide (Revlimid)", "Letrazole (Femara)", "Leuprorelin (Prostap, Lutrate)", "Liposomal doxorubicin (Caelyx, Myocet, Doxil)", "Lomustine (CCNU)", "Medroxyprogesterone (Provera)", "Megesterol acetate (Megace)", "Melphalan (Alkeran)", "Mercaptopurine (Xaluprine)", "Methotrexate (Maxtrex)", "Mifamurtide (Mepact)", "Mitomycin (Mitomycin C Kyowa)", "Mitotane (Lysodren)", "Mitoxantrone (Mitozantrone)", "Nelarabine (Atriance)", "Nilotinib (Tasigna)", "Nivolumab (Opdivo)", "Obinutuzumab (Gazyvaro)", "Octreotide (Sandostatin)", "Ofatumumab (Arzerra)", "Paclitaxel (Taxol)", "Paclitaxel albumin (Abraxane)", "Panitumumab (Vectibix)", "Pasireotide (Signifor)", "Pazopanib (Votrient)", "Pembrolizumab (Keytruda)", "Pemetrexed (Alimta)", "Pentostatin (Nipent)", "Pertuzumab (Perjeta)", "Pixantrone (Pixuvri)", "Platinum", "Pomalidomide (Imnovid)", "Ponatinib (Iclusig)", "Porfimer (Photofrin)", "Procarbazine (Matulane)", "Raltitrexed (Tomudex)", "Reorafenib (Stivarga)", "Rituximab", "Ruxolitinib (Jakavi)", "Siltuximab (Sylvant)", "Sorafenib (Nexavar)", "Streptozotocin (Zanosar)", "Sunitinib (Sutent)", "Tamoxifen", "Tegafur/uracil (Uftoral)", "Tegafur", "Temoporfin (Foscan)", "Temozolamide (Temodal)", "Temsirolimus (Torisel)", "Thalidomide (Thalidomid)", "Thiotepa (Tepadina)", "Tioguanine (Ianvis)", "Topotecan (Hycamtin)", "Toremifene (Fareston)", "Trabectedin (Yondelis)", "Trastuzumab (Herceptin)", "Trastuzumab emtansine (Kadcyla)", "Treosulfan", "Tretinoin (Vesanoid, ATRA)", "Triptorelin (Decapeptyl SR, Gonapeptyl Depot)", "Vandetanib (Caprelsa)", "Vemurafenib (Zelboraf)", "Vinblastine (Velbe)", "Vincristine (Oncovin)", "Vindesine (Eldisine)", "Vinflunine (Javlor)", "Vinorelbine (Navelbine)", "Vismodegib (Erivedge)", "Zoledronate (Zometa)" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "pt-br" : { },
+        "nb" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "30061fb3-9a49-4874-bf4e-585808573ce3",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "lbla@helse-bergen.no" : "lbla@helse-bergen.no",
+        "name" : "Lars Bitsch-Larsen",
+        "organisation" : "Haukeland University Hospital, Bergen Norway"
+      },
+      "accreditation" : "MD DEAA MBA spec in anesthesia and intensive care, spec in tropical med.",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Osmeire Chamelette Sanzovo",
+        "organisation" : "Hospital Sírio Libanês",
+        "email" : "osmeire.acsanzovo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    } ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es-ar"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt-br"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  } ]
+}
