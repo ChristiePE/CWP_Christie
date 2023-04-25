@@ -1,0 +1,69 @@
+archetype (adl_version=1.4; uid=a9993f89-df15-4345-b7b6-9ef1af52f0ee)
+	openEHR-EHR-COMPOSITION.spo2_scale_decision.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2023-04-25">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"416a8ffe837ad4209b5f8f8200f0675f">
+		["build_uid"] = <"3592daf3-07a0-3044-965b-36bdf8f7b9e2">
+	>
+
+definition
+	COMPOSITION[at0000] matches {    -- SpO2 scale decision
+		category matches {
+			DV_CODED_TEXT matches {
+				defining_code matches {
+					[openehr::433]
+				}
+			}
+		}
+		context matches {
+			EVENT_CONTEXT matches {
+				other_context matches {
+					ITEM_TREE matches {
+						items cardinality matches {0..*; unordered} matches {
+							allow_archetype CLUSTER[at0002] occurrences matches {0..*} matches {    -- Extension
+								include
+									archetype_id/value matches {/.*/}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"SpO2 scale decision">
+					description = <"SpO2 scale decision">
+				>
+				["at0002"] = <
+					text = <"Extension">
+					description = <"">
+				>
+			>
+		>
+	>
