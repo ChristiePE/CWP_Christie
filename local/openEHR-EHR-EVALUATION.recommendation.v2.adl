@@ -88,6 +88,15 @@ Zum Beispiel als Bestandteil der Schlussfolgerungen, die im Rahmen einer klinisc
 Är tänkt att ge stöd för att dokumentera en behandlingsrekommendation vid en specifik tidpunkt. Exempelvis som en del av slutsatsen vid en klinisk konsultation.">
 			misuse = <"*Not to be used to carry structured data elements detailing additional instructions, such as timing, frequency, duration or dosage - use appropriate INSTRUCTION archetypes for this purpose. (en)">
 		>
+		["es-ar"] = <
+			language = <[ISO_639-1::es-ar]>
+			purpose = <"Para el registro de una sugerencia, consejo o propuesta para el manejo clínico en un momento determinado.">
+			keywords = <"consejo","propuesta","sugerencia">
+			use = <"Utilícese para registrar una sugerencia, consejo o propuesta para el manejo clínico en un momento específico.
+
+El caso de uso previsto se vincula a permitir el registro por parte del clínico de una o mas recomendaciones, en un mento específico en el tiempo. Por ejemplo, como un componente de las conclusiones a las que se ha arribado como parte de una consutla clínica.">
+			misuse = <"*Not to be used to carry structured data elements detailing additional instructions, such as timing, frequency, duration or dosage - use appropriate INSTRUCTION archetypes for this purpose. (en)">
+		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"Anvendes for å registrere et forslag, et råd eller en anmodning om klinisk oppfølging på et spesifikt tidspunkt.">
@@ -97,15 +106,6 @@ Zum Beispiel als Bestandteil der Schlussfolgerungen, die im Rahmen einer klinisc
 Arketypen er ment å understøtte klinikere som dokumenterer en eller flere anbefalinger på et spesifikt tidspunkt.
 Anbefalingen kan for eksempel benyttes som en del av dokumentasjonen av konklusjonene som trekkes i forbindelse med en klinisk konsultasjon.">
 			misuse = <"Brukes ikke for å registrere strukturerte dataelementer for å beskrive ytterligere instruksjoner som for eksempel 'timing', frekvens, varighet eller dose. Bruk relevante INSTRUCTION-arketyper for dette formålet.">
-		>
-		["es-ar"] = <
-			language = <[ISO_639-1::es-ar]>
-			purpose = <"Para el registro de una sugerencia, consejo o propuesta para el manejo clínico en un momento determinado.">
-			keywords = <"consejo","propuesta","sugerencia">
-			use = <"Utilícese para registrar una sugerencia, consejo o propuesta para el manejo clínico en un momento específico.
-
-El caso de uso previsto se vincula a permitir el registro por parte del clínico de una o mas recomendaciones, en un mento específico en el tiempo. Por ejemplo, como un componente de las conclusiones a las que se ha arribado como parte de una consutla clínica.">
-			misuse = <"*Not to be used to carry structured data elements detailing additional instructions, such as timing, frequency, duration or dosage - use appropriate INSTRUCTION archetypes for this purpose. (en)">
 		>
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
@@ -146,7 +146,7 @@ Bijvoorbeeld als onderdeel van de conclusies uit een gezondheidsconsult.">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"659667CE8B718AF6A82889E1A17024A7">
+		["MD5-CAM-1.0.1"] = <"7ff732380b33b25547790faabfdcb7a4">
 		["build_uid"] = <"fbbdd0e1-380d-4fc9-b59e-a7c443629bff">
 		["revision"] = <"2.0.3">
 	>
@@ -158,17 +158,40 @@ definition
 				items cardinality matches {0..*; unordered} matches {
 					ELEMENT[at0006] occurrences matches {0..1} matches {    -- Topic
 						value matches {
-							DV_TEXT matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::at0010]    -- SpO2 scale
+								}
+							}
+						}
+						name matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::at0009;at0009]    -- SpO2 scale
+								}
+							}
 						}
 					}
 					ELEMENT[at0002] occurrences matches {1..*} matches {    -- Recommendation
 						value matches {
-							DV_TEXT matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0011,    -- Scale 1
+									at0012]    -- Scale 2
+								}
+							}
 						}
 					}
 					ELEMENT[at0003] occurrences matches {0..*} matches {    -- Rationale
 						value matches {
-							DV_TEXT matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0013,    -- Patient at risk of hypercapnic respiratory failure as per BTS guidelines
+									at0014]    -- ABG result PCO2 >6
+								}
+							}
 						}
 					}
 				}
@@ -230,6 +253,30 @@ ontology
 					text = <"Last updated">
 					description = <"The date this recommendation was last updated.">
 				>
+				["at0009"] = <
+					text = <"SpO2 scale">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"SpO2 scale">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Scale 1">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Scale 2">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Patient at risk of hypercapnic respiratory failure as per BTS guidelines">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"ABG result PCO2 >6">
+					description = <"">
+				>
 			>
 		>
 		["es-ar"] = <
@@ -268,6 +315,30 @@ ontology
 				["at0007"] = <
 					text = <"*Last updated (en)">
 					description = <"*The date this recommendation was last updated. (en)">
+				>
+				["at0009"] = <
+					text = <"*SpO2 scale (en)">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"*SpO2 scale (en)">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"*Scale 1 (en)">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"*Scale 2 (en)">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"*Patient at risk of hypercapnic respiratory failure as per BTS guidelines (en)">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"*ABG result PCO2 >6 (en)">
+					description = <"">
 				>
 			>
 		>
@@ -308,6 +379,30 @@ ontology
 					text = <"*Last updated (en)">
 					description = <"*The date this recommendation was last updated. (en)">
 				>
+				["at0009"] = <
+					text = <"*SpO2 scale (en)">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"*SpO2 scale (en)">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"*Scale 1 (en)">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"*Scale 2 (en)">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"*Patient at risk of hypercapnic respiratory failure as per BTS guidelines (en)">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"*ABG result PCO2 >6 (en)">
+					description = <"">
+				>
 			>
 		>
 		["nb"] = <
@@ -346,6 +441,30 @@ ontology
 				["at0007"] = <
 					text = <"Sist oppdatert">
 					description = <"Datoen denne anbefalingen sist ble oppdatert.">
+				>
+				["at0009"] = <
+					text = <"*SpO2 scale (en)">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"*SpO2 scale (en)">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"*Scale 1 (en)">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"*Scale 2 (en)">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"*Patient at risk of hypercapnic respiratory failure as per BTS guidelines (en)">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"*ABG result PCO2 >6 (en)">
+					description = <"">
 				>
 			>
 		>
@@ -386,6 +505,30 @@ ontology
 					text = <"*Last updated (en)">
 					description = <"*The date this recommendation was last updated. (en)">
 				>
+				["at0009"] = <
+					text = <"*SpO2 scale (en)">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"*SpO2 scale (en)">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"*Scale 1 (en)">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"*Scale 2 (en)">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"*Patient at risk of hypercapnic respiratory failure as per BTS guidelines (en)">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"*ABG result PCO2 >6 (en)">
+					description = <"">
+				>
 			>
 		>
 		["de"] = <
@@ -425,6 +568,30 @@ ontology
 					text = <"Zuletzt aktualisiert">
 					description = <"Das Datum, an dem diese Empfehlung zuletzt aktualisiert wurde.">
 				>
+				["at0009"] = <
+					text = <"*SpO2 scale (en)">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"*SpO2 scale (en)">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"*Scale 1 (en)">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"*Scale 2 (en)">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"*Patient at risk of hypercapnic respiratory failure as per BTS guidelines (en)">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"*ABG result PCO2 >6 (en)">
+					description = <"">
+				>
 			>
 		>
 		["nl"] = <
@@ -463,6 +630,30 @@ ontology
 				["at0007"] = <
 					text = <"Laatst geüpdate">
 					description = <"De datum waarop het advies voor het laatst is geüpdate.">
+				>
+				["at0009"] = <
+					text = <"*SpO2 scale (en)">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"*SpO2 scale (en)">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"*Scale 1 (en)">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"*Scale 2 (en)">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"*Patient at risk of hypercapnic respiratory failure as per BTS guidelines (en)">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"*ABG result PCO2 >6 (en)">
+					description = <"">
 				>
 			>
 		>
