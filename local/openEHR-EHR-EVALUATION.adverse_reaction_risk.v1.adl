@@ -272,13 +272,13 @@ Thien FC. Drug hypersensitivity. Med J Aust. 2006 Sep 18;185(6):333-8. Review. P
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5e6c968fd83e23207ac55d9ff0e34b54">
+		["MD5-CAM-1.0.1"] = <"B4483042E23D5CD00F74356FBF609CA1">
 		["build_uid"] = <"30061fb3-9a49-4874-bf4e-585808573ce3">
 		["revision"] = <"1.1.2">
 	>
 
 definition
-	EVALUATION[at0000] occurrences matches {0..1} matches {    -- Adverse reaction risk
+	EVALUATION[at0000] matches {    -- Adverse reaction risk
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Tree
 				items cardinality matches {1..*; unordered} matches {
