@@ -1,0 +1,54 @@
+archetype (adl_version=1.4; uid=20b41951-b6ec-42f6-8e53-7f6b81dd860c)
+	openEHR-EHR-COMPOSITION.average_blood_pressure.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2023-09-28">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"3929e738b50dc8d85984aee45231c9af">
+		["build_uid"] = <"53117e53-111b-3648-ad8d-613125d88adc">
+	>
+
+definition
+	COMPOSITION[at0000] matches {    -- Average blood pressure
+		category matches {
+			DV_CODED_TEXT matches {
+				defining_code matches {
+					[openehr::433]
+				}
+			}
+		}
+		context matches {
+			EVENT_CONTEXT matches {*}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Average blood pressure">
+					description = <"Average blood pressure">
+				>
+			>
+		>
+	>
